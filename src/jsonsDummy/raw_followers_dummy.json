@@ -1,0 +1,77 @@
+[
+  {
+    "id": "129269467",
+    "follows": [
+      "mauriciomacri"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "129269525",
+    "follows": [
+      "mauriciomacri"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "129269583",
+    "follows": [
+      "mauriciomacri"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292697050",
+    "follows": [
+      "CFKArgentina"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292697528",
+    "follows": [
+      "CFKArgentina",
+      "mauriciomacri"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292697938",
+    "follows": [
+      "CFKArgentina"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292698380",
+    "follows": [
+      "jlespert",
+      "mauriciomacri"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292698478",
+    "follows": [
+      "CFKArgentina"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292698590",
+    "follows": [
+      "sergiomassa",
+      "CFKArgentina"
+    ],
+    "is_private": false
+  },
+  {
+    "id": "1292700696",
+    "follows": [
+      "jlespert",
+      "CFKArgentina",
+      "mauriciomacri"
+    ],
+    "is_private": false
+  }
+]

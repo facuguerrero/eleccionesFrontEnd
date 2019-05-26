@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "prefer-destructuring": 0,
+    "react/destructuring-assignment": 0,
+    "react/prop-types": 0
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  
+  "extends": ["airbnb", "plugin:react/recommended"]
+}

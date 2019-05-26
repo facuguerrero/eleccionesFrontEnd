@@ -1,0 +1,25 @@
+.top-header{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--fifth-color-light);
+}
+
+.candidate-header{
+  display: flex;
+  transition: opacity .2s;
+  overflow: hidden;
+}
+
+.logo{
+  margin-left: 10px;
+  height: 83px;
+  width: 207px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1023px){
+  .candidate-header{
+    overflow-x: scroll;
+  }
+}

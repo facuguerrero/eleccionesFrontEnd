@@ -1,0 +1,24 @@
+.header-candidate-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.header-candidate-wrapper:hover{
+  .header-candidate-img {
+    border: 2px solid var(--forth-color);
+  }
+  .header-candidate-text{
+    color: var(--forth-color);
+  }
+  cursor: pointer;
+}
+
+.header-candidate-img{
+  border: 2px solid;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
