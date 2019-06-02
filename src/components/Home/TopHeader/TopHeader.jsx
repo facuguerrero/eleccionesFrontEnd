@@ -13,8 +13,8 @@ function mapDispatchToProps(dispatch) {
 
 class TopHeaderConnected extends React.Component {
 
-    alterCandidateState = (candidate, isActive) => {
-        isActive ? this.props.removeActiveCandidate({ candidate }) : this.props.addActiveCandidate({ candidate });
+    alterCandidateState = (name, screenName, isActive) => {
+        isActive ? this.props.removeActiveCandidate({ name, screenName }) : this.props.addActiveCandidate({ name, screenName });
     };
 
     render() {

@@ -1,0 +1,20 @@
+.followers-graphs{
+  align-items: center;
+}
+
+.followers-graph{
+  border-radius: 5px;
+  border-width: thin;
+  margin: 15px;
+  padding: 20px;
+  max-width: 1280px;
+  border-color: var(--second-color);
+  border-style: solid;
+  position: relative;
+  -webkit-transition: box-shadow 0.3s;
+}
+
+.followers-graph:hover{
+  box-shadow: 5px 5px 15px dimgray;
+}
+

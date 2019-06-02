@@ -13,7 +13,7 @@ class HeaderCandidate extends React.Component {
 
     changeActive = () => {
         this.setState({ isActive: !this.state.isActive });
-        this.props.onClick(this.props.candidate.name, this.state.isActive);
+        this.props.onClick(this.props.candidate.name, this.props.candidate.screen_name, this.state.isActive);
     };
 
     render() {

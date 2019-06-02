@@ -13,7 +13,7 @@ export function removeActiveCandidate(payload) {
 
 export function getCandidates() {
     return function(dispatch) {
-        return axios.get('http://localhost:8085/src/jsonsDummy/candidates_dummy.json')
+        return axios.get('http://localhost:8080/src/jsonsDummy/candidates_dummy.json')
             .then((response) => {
                 dispatch({ type: LOAD_CANDIDATES, payload: response.data });
             })
