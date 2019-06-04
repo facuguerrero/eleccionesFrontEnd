@@ -23,7 +23,7 @@ function rootReducer(state = initialState, action) {
 
     } if (action.type === REMOVE_ACTIVE_CANDIDATE) {
         const activeCandidates =
-            state.activeCandidates.filter((candidate) => candidate.candidate !== action.payload.candidate);
+            state.activeCandidates.filter((candidate) => candidate.name !== action.payload.name);
         const processedCandidates = processActiveCandidates(state.candidates, activeCandidates);
         return Object.assign({}, state, {
             activeCandidates: activeCandidates,

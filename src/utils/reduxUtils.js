@@ -1,20 +1,14 @@
 import * as moment from "moment";
 
 export function processActiveCandidates(candidates, activeCandidates) {
-    let data = [];
-    for (let i=0; i < candidates.length; i++){
+
+    return candidates.map(candidate => {
         let entry = {};
-        entry["date"] = moment.unix(candidates[i].date).format("DD/MM/YYYY");
-        candidates[i].counts
-            .forEach(candidate => {
-                    const candidateScreenName = Object.keys(candidate)[0];
-                    activeCandidates.forEach(activeCandidate => activeCandidate.screenName === candidateScreenName ?
-                        entry[activeCandidate.name] = candidate[candidateScreenName] : null)
-                }
-            );
-        data.push(entry);
-    }
-    return data;
+        entry["date"] = moment.unix(candidate.date).format("DD/MM/YYYY");
+        activeCandidates.forEach(activeCandidate => entry[activeCandidate.name] = candidate[activeCandidate.screenName])
+        return entry;
+    });
+
 }
 
 export function processCumulativeCandidates(processedCandidates) {

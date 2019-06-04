@@ -21,15 +21,18 @@ class HeaderCandidate extends React.Component {
             <div className="header-candidate-wrapper" onClick={this.changeActive}>
                 <img
                     alt={this.props.candidate.name}
-                    className={"header-candidate-img " + (this.state.isActive ? "forth-br-color" : "forth-br-color-dark")}
+                    className={"header-candidate-img " + (this.state.isActive ?
+                        this.props.candidate.screen_name + "-br-color" : "fifth-br-color")}
                     src={this.props.candidate.image}
                 />
                 <span
-                    className={"header-candidate-text " + (this.state.isActive ? "forth-font-color" : "fifth-font-color")}>
+                    className={"header-candidate-text " + (this.state.isActive ?
+                        this.props.candidate.screen_name + "-font-color" : "fifth-font-color")}>
                     {this.props.candidate.name.split(' ')[0]}
                 </span>
                 <span
-                    className={"header-candidate-text " + (this.state.isActive ? "forth-font-color" : "fifth-font-color")}>
+                    className={"header-candidate-text " + (this.state.isActive ?
+                        this.props.candidate.screen_name + "-font-color" : "fifth-font-color")}>
                     {this.props.candidate.name.split(' ')[1]}
                 </span>
             </div>

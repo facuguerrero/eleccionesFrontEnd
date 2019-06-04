@@ -1,50 +1,42 @@
 [
   {
     "date": 1557706438.479,
-    "counts" : [
-      {"mauriciomacri": 4000},
-      {"CFKArgentina": 2400},
-      {"alferdez": 2400},
-      {"jlespert": 3000},
-      {"sergiomassa": 2290},
-      {"urtubeyjm":0},
-      {"rlavagna": 0}
-    ]
+    "mauriciomacri": 4000,
+    "CFKArgentina": 2400,
+    "alferdez": 2400,
+    "jlespert": 3000,
+    "sergiomassa": 2290,
+    "urtubeyjm":0,
+    "rlavagna": 0
   },
   {
     "date": 1557851031.441,
-    "counts" : [
-      {"mauriciomacri": 4000},
-      {"CFKArgentina": 2400},
-      {"alferdez": 2400},
-      {"jlespert": 3000},
-      {"sergiomassa": 2290},
-      {"urtubeyjm":0},
-      {"rlavagna": 0}
-    ]
+    "mauriciomacri": 4000,
+    "CFKArgentina": 2400,
+    "alferdez": 2400,
+    "jlespert": 3000,
+    "sergiomassa": 2290,
+    "urtubeyjm":0,
+    "rlavagna": 0
   },
   {
     "date": 1558187620.781,
-    "counts" : [
-      {"mauriciomacri": 4000},
-      {"CFKArgentina": 2400},
-      {"alferdez": 2400},
-      {"jlespert": 3000},
-      {"sergiomassa": 2290},
-      {"urtubeyjm":0},
-      {"rlavagna": 0}
-    ]
+    "mauriciomacri": 4000,
+    "CFKArgentina": 2400,
+    "alferdez": 2400,
+    "jlespert": 3000,
+    "sergiomassa": 2290,
+    "urtubeyjm":0,
+    "rlavagna": 0
   },
   {
     "date": 1558373849.69,
-    "counts" : [
-      {"mauriciomacri": 4000},
-      {"CFKArgentina": 2400},
-      {"alferdez": 2400},
-      {"jlespert": 3000},
-      {"sergiomassa": 2290},
-      {"urtubeyjm":0},
-      {"rlavagna": 0}
-    ]
+    "mauriciomacri": 4000,
+    "CFKArgentina": 2400,
+    "alferdez": 2400,
+    "jlespert": 3000,
+    "sergiomassa": 2290,
+    "urtubeyjm":0,
+    "rlavagna": 0
   }
 ]

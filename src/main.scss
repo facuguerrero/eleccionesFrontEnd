@@ -200,13 +200,59 @@
 
 // font sizes
 .font-sm{
-  font-size: 12px;
-}
-.font-md{
   font-size: 14px;
 }
+.font-md{
+  font-size: 20px;
+}
 .font-lg{
-  font-size: 16px;
+  font-size: 30px;
+}
+
+//Candidates fonts Colors
+.mauriciomacri-font-color{
+  color: var(--mauriciomacri);
+}
+.CFKArgentina-font-color{
+  color: var(--CFKArgentina);
+}
+.urtubeyjm-font-color{
+  color: var(--urtubeyjm);
+}
+.rlavagna-font-color{
+  color: var(--rlavagna);
+}
+.sergiomassa-font-color{
+  color: var(--sergiomassa);
+}
+.jlespert-font-color{
+  color: var(--jlespert);
+}
+.alferdez-font-color{
+  color: var(--alferdez);
+}
+
+//Candidates border Colors
+.mauriciomacri-br-color{
+  border-color: var(--mauriciomacri);
+}
+.CFKArgentina-br-color{
+  border-color: var(--CFKArgentina);
+}
+.urtubeyjm-br-color{
+  border-color: var(--urtubeyjm);
+}
+.rlavagna-br-color{
+  border-color: var(--rlavagna);
+}
+.sergiomassa-br-color{
+  border-color: var(--sergiomassa);
+}
+.jlespert-br-color{
+  border-color: var(--jlespert);
+}
+.alferdez-br-color{
+  border-color: var(--alferdez);
 }
 
 :root {
@@ -225,4 +271,11 @@
   --third-color-dark: #1c5876;
   --forth-color-dark: #5e91b1;
   --fifth-color-dark: #5a5b5c;
+  --mauriciomacri: #ECE822;
+  --CFKArgentina: #20C5EA;
+  --urtubeyjm: #2C18DA;
+  --rlavagna: #16C410;
+  --sergiomassa: #E41F14;
+  --jlespert: #743430;
+  --alferdez: #1BD1D4;
 }

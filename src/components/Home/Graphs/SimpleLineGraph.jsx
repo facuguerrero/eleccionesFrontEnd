@@ -4,14 +4,25 @@ import {
 } from 'recharts';
 import './Graphs.scss';
 
+const COLORS = {
+    "mauriciomacri": "#ECE822",
+    "CFKArgentina": "#20C5EA",
+    "urtubeyjm": "#2C18DA",
+    "rlavagna": "#16C410",
+    "sergiomassa": "#E41F14",
+    "jlespert": "#743430",
+    "alferdez": "#1BD1D4"
+};
+
 class SimpleLineGraph extends React.Component {
 
     generateLines = () => {
         return this.props.activeCandidates.map((candidate, index) =>
-            <Line key={index} type="monotone" dataKey={candidate.name} stroke="#8884d8" />);
+            <Line key={index} type="monotone" dataKey={candidate.name} stroke={COLORS[candidate.screenName]} />);
     };
 
     render() {
+        console.log(this.props.activeCandidates)
         return (
             <div style={{ width: '100%', height: 600 }}>
                 <ResponsiveContainer>

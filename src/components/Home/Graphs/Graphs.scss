@@ -1,3 +1,7 @@
+.graph{
+  margin-top: 20px;
+}
+
 .graph-x-axis{
   transform: rotate(-90deg);
   align-self: center;
@@ -6,9 +10,10 @@
 }
 
 .graph-title{
-  
+  font-weight: 600;
 }
 
 .graph-y-axis{
-
+  display: flex;
+  justify-content: center;
 }
