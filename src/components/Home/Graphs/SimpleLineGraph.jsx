@@ -22,7 +22,6 @@ class SimpleLineGraph extends React.Component {
     };
 
     render() {
-        console.log(this.props.activeCandidates)
         return (
             <div style={{ width: '100%', height: 600 }}>
                 <ResponsiveContainer>

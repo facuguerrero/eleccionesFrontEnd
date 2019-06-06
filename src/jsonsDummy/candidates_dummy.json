@@ -1,33 +1,32 @@
 [
   {
     "date": 1557706438.479,
-    "mauriciomacri": 4000,
+    "mauriciomacri": 3000,
     "CFKArgentina": 2400,
-    "alferdez": 2400,
+    "alferdez": 1000,
     "jlespert": 3000,
     "sergiomassa": 2290,
-    "urtubeyjm":0,
-    "rlavagna": 0
+    "urtubeyjm":25,
+    "rlavagna": 500
   },
   {
     "date": 1557851031.441,
-    "mauriciomacri": 4000,
-    "CFKArgentina": 2400,
-    "alferdez": 2400,
-    "jlespert": 3000,
-    "sergiomassa": 2290,
-    "urtubeyjm":0,
-    "rlavagna": 0
+    "mauriciomacri": 1000,
+    "CFKArgentina": 4000,
+    "alferdez": 2000,
+    "jlespert": 35,
+    "urtubeyjm":1000,
+    "rlavagna": 2000
   },
   {
     "date": 1558187620.781,
-    "mauriciomacri": 4000,
-    "CFKArgentina": 2400,
-    "alferdez": 2400,
-    "jlespert": 3000,
-    "sergiomassa": 2290,
-    "urtubeyjm":0,
-    "rlavagna": 0
+    "mauriciomacri": 0,
+    "CFKArgentina": 300,
+    "alferdez": 240,
+    "jlespert": 300,
+    "sergiomassa": 3290,
+    "urtubeyjm":1000,
+    "rlavagna": 1200
   },
   {
     "date": 1558373849.69,

@@ -23,7 +23,9 @@ export function processCumulativeCandidates(processedCandidates) {
         //it goes from 1 as it ignores the date
         for (let i = 1; i < maxLen; i++){
 
-            let total = date[keys[i]];
+            //if one day the candidate doesn't have a value
+            let total = !date[keys[i]] ? 0 : date[keys[i]];
+
             index > 0 ? total += cumulativeCandidates[index - 1][keys[i]] : null;
             cumulativeDate[keys[i]] = total;
         }
