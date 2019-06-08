@@ -1,8 +1,17 @@
 import * as moment from "moment";
 
-export function processActiveCandidates(candidates, activeCandidates) {
+export function processActiveCandidates(candidates, activeCandidates, activeDates) {
 
-    return candidates.map(candidate => {
+    //filter by dates
+    const filteredCandidates = candidates.filter(candidate => {
+
+        const date = moment.unix(candidate.date);
+        return (activeDates[0] === null || date >= activeDates[0]) &&
+            (activeDates[1] === null || date <= activeDates[1]);
+
+    })
+
+    return filteredCandidates.map(candidate => {
         let entry = {};
         entry["date"] = moment.unix(candidate.date).format("DD/MM/YYYY");
         activeCandidates.forEach(activeCandidate => entry[activeCandidate.name] = candidate[activeCandidate.screenName])

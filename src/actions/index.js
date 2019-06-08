@@ -2,6 +2,7 @@ import axios from 'axios';
 import { ADD_ACTIVE_CANDIDATE } from "../constants/action-types";
 import { REMOVE_ACTIVE_CANDIDATE } from "../constants/action-types";
 import { LOAD_CANDIDATES } from "../constants/action-types";
+import { UPDATE_DATES } from "../constants/action-types";
 
 export function addActiveCandidate(payload) {
     return { type: ADD_ACTIVE_CANDIDATE, payload };
@@ -21,4 +22,8 @@ export function getCandidates() {
                 //TODO show error screen
             });
     };
+}
+
+export function updateDate(payload) {
+    return { type: UPDATE_DATES, payload };
 }

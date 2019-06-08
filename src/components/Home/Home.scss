@@ -1,3 +1,13 @@
+.followers-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dates-filter{
+  margin-bottom: 10px;
+}
+
 .followers-graphs{
   align-items: center;
 }
@@ -18,3 +28,11 @@
   box-shadow: 5px 5px 15px dimgray;
 }
 
+@media (min-width: 1500px) {
+  .followers-content {
+    flex-direction: row;
+  }
+  .dates-filter{
+    margin-right: 20px;
+  }
+}

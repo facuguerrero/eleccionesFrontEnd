@@ -20,7 +20,7 @@ class TopHeaderConnected extends React.Component {
     render() {
         return (
             <div className="top-header">
-                <img className="logo" src="../../../../build/static/logo.png" />
+                <img className="logo" src="../../../../static/logo.png" />
                 <div className="candidate-header">
                     {this.props.candidates.map(
                         (candidate, index) => <HeaderCandidate
