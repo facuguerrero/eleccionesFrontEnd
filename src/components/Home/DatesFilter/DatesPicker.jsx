@@ -170,7 +170,7 @@ class DateRangePickerWrapper extends React.Component {
         ]);
 
         return (
-            <div className="dates-border">
+            <div>
                 <DateRangePicker
                     {...props}
                     renderCalendarInfo={this.renderDatePresets}
