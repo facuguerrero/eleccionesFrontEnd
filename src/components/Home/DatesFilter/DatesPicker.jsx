@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import momentPropTypes from 'react-moment-proptypes';
 import moment from 'moment';
 import omit from 'lodash/omit';
+import 'react-dates/lib/css/_datepicker.css';
+import './Dates.scss';
 
 import { withStyles, withStylesPropTypes, css } from 'react-with-styles';
 
@@ -12,7 +14,6 @@ import {DateRangePickerPhrases} from "react-dates/src/defaultPhrases";
 import DateRangePickerShape from "react-dates/src/shapes/DateRangePickerShape";
 import { START_DATE, END_DATE, VERTICAL_ORIENTATION, ANCHOR_LEFT } from "react-dates/src/constants";
 import isSameDay from 'react-dates/src/utils/isSameDay';
-import 'react-dates/lib/css/_datepicker.css';
 import 'react-dates/initialize';
 
 
@@ -169,7 +170,7 @@ class DateRangePickerWrapper extends React.Component {
         ]);
 
         return (
-            <div>
+            <div className="dates-border">
                 <DateRangePicker
                     {...props}
                     renderCalendarInfo={this.renderDatePresets}
@@ -179,6 +180,7 @@ class DateRangePickerWrapper extends React.Component {
                     startDate={startDate}
                     endDate={endDate}
                     hideKeyboardShortcutsPanel={true}
+                    noBorder
                 />
             </div>
         );

@@ -1,0 +1,16 @@
+.dates-border{
+  //border-bottom: 1px solid var(--fifth-color-light);
+  //border-right: 1px solid var(--fifth-color-light);
+  //max-width: 0px;
+}
+
+.DateInput_input {
+  border: 1px solid var(--fifth-color-light);
+  border-top: 1px solid transparent;
+}
+
+.DateInput_input__focused {
+  border: 1px solid var(--fifth-color-light);
+  border-bottom: 2px solid #008489;
+  border-top: 1px solid transparent;
+}
