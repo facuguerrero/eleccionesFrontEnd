@@ -1,13 +1,13 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import Home from "./components/Home/Home";
+import NavBarWrapper from "./components/NavBarWrapper/NavBarWrapper";
 import './main.scss';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Home />
+        <NavBarWrapper />
       </div>
     );
   }

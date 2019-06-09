@@ -1,3 +1,11 @@
+@import "../node_modules/@material/theme/_color-palette";
+
+$mdc-theme-secondary: $material-color-brown-400;
+$mdc-theme-primary: $material-color-red-a200;
+$mdc-theme-background: #fff;
+
+@import "../node_modules/@material/theme/mdc-theme";
+
 //general clases
 .flex-column{
   display: flex;

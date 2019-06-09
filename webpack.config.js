@@ -117,13 +117,13 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /eva.*\.css$/,
-        use: cssLoaders({ extract: true }),
-      },
-      {
         test: /\.s?css$/,
-        exclude: /eva.*\.css$/,
-        use: cssLoaders(),
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader', options: { includePaths: ['node_modules'] } },
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg|ttf|woff2?)$/i,

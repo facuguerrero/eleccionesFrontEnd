@@ -50,9 +50,9 @@ const defaultProps = {
 
     // input related props
     startDateId: START_DATE,
-    startDatePlaceholderText: 'Start Date',
+    startDatePlaceholderText: 'Fecha Inicial',
     endDateId: END_DATE,
-    endDatePlaceholderText: 'End Date',
+    endDatePlaceholderText: 'Fecha Final',
     disabled: false,
     required: false,
     screenReaderInputMessage: '',
