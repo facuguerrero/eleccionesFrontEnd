@@ -1,23 +1,48 @@
 import React from 'react';
 import Home from "../Home/Home";
 import NavDrawer from "./ResponsiveDrawer";
+import Topic from "../Topics/Topic";
+import './NavBar.scss'
+
 
 class NavBarWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showMenu: false,
+            showFollowersWindow: true,
+            showTopicsWindow: false
         };
     }
+
+    changeWindow = (windowName) => {
+        switch (windowName) {
+            case "followers":
+                return this.setState({
+                    showFollowersWindow : true,
+                    showTopicsWindow : false,
+                });
+            case "topics":
+                return this.setState({
+                    showFollowersWindow : false,
+                    showTopicsWindow : true,
+                });
+            default:
+                return this.setState({
+                    showFollowersWindow : true,
+                    showTopicsWindow : false,
+                });
+        }
+    };
 
     render() {
         return (
             <div>
                 <div className="flex-row main-nav">
-                    <NavDrawer />
+                    <NavDrawer onSelected={this.changeWindow} selected={this.state}/>
                     <img className="logo" src="../../../../static/logo.png" />
                 </div>
-                <Home />
+                {this.state.showFollowersWindow ? <Home /> : null}
+                {this.state.showTopicsWindow ? <Topic /> : null}
             </div>
         );
     }

@@ -41,6 +41,8 @@
     "react-hot-loader": "^4.3.12",
     "react-moment-proptypes": "^1.6.0",
     "react-toolbox": "^2.0.0-beta.13",
+    "react-vis": "^1.11.7",
+    "react-vis-force": "^0.3.1",
     "react-with-styles": "^3.2.1",
     "recharts": "^1.6.2",
     "redux-responsive": "^4.3.8",

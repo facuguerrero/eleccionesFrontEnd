@@ -1,6 +1,7 @@
 import { TemporaryDrawer } from '@materialr/drawer';
 import React from 'react';
 import {Menu} from "@material-ui/icons";
+import NavButton from "./NavButton/NavButton";
 
 class NavDrawer extends React.Component {
     constructor(props) {
@@ -16,13 +17,24 @@ class NavDrawer extends React.Component {
     render() {
         return (
             <div className="drawer__sample">
-                <Menu fontSize="large" onClick={this.open} />
                 <TemporaryDrawer onClose={this.close} open={this.state.open}>
-                    {/* Drawer content */}
+                    <NavButton
+                        name="followers"
+                        text="Análisis de Seguidores"
+                        icon="TrendingUp"
+                        onClick={this.props.onSelected}
+                        isSelected={this.props.selected.showFollowersWindow}
+                    />
+                    <NavButton
+                        name="topics"
+                        text="Análisis de Tópicos"
+                        icon="Timeline"
+                        onClick={this.props.onSelected}
+                        isSelected={this.props.selected.showTopicsWindow}
+                    />
                 </TemporaryDrawer>
                 <div className="drawer__sample__toolbar-holder">
-                    {/* Toolbar - button 'onClick' calls 'open' */}
-                    {/* Page content */}
+                    <Menu className="menu-button" fontSize="large" onClick={this.open} />
                 </div>
             </div>
         );
