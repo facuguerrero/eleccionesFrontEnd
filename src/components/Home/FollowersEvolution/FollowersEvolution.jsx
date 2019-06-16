@@ -15,7 +15,7 @@ class FollowersEvolutionConnected extends React.Component {
         return (
             <div className="followers-graph">
                 <GenericGraph
-                    title="Evolución de la cantidad de seguidores en el tiempo"
+                    title="Cantidad de seguidores agregados por día"
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
                     type={<SimpleLineGraph
