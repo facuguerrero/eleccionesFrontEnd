@@ -1,18 +1,12 @@
 import React from "react";
 import { Graph } from 'react-d3-graph';
-import marvel from './marvel.json';
-
-// graph payload (with minimalist structure)
-const data = {
-    nodes: [{ id: 'Harry', x:100, y:300 }, { id: 'Sally', x:200, y:200 }, { id: 'Alice', x:100, y:100 }],
-    links: [{ source: 'Harry', target: 'Sally' }, { source: 'Harry', target: 'Alice' }]
-};
+import example from '../../jsonsDummy/graph-example.json';
 
 // the graph configuration, you only need to pass down properties
 // that you want to override, otherwise default ones will be used
 const myConfig = {
     "automaticRearrangeAfterDropNode": true,
-    "collapsible": true,
+    "collapsible": false,
     "directed": true,
     "focusAnimationDuration": 0.75,
     "focusZoom": 1,
@@ -72,13 +66,12 @@ class GenericTopic extends React.Component {
 
     render() {
         return (
-            <div className="followers-graph">
-                <Graph
-                        id="marvel-id"
-                        data={marvel}
-                        config={myConfig}
-                    />
-            </div>
+            <Graph
+                    id="marvel-id"
+                    data={this.props.data}
+                    config={myConfig}
+                    onClickNode={this.props.onClickNode}
+                />
         );
     }
 }

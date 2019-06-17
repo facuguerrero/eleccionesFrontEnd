@@ -1,9 +1,8 @@
 import React from 'react';
 import Home from "../Home/Home";
 import NavDrawer from "./ResponsiveDrawer";
-import Topic from "../Topics/Topic";
+import TopicHome from "../Topics/TopicHome";
 import './NavBar.scss'
-import GenericTopic from "../Topics/GenericTopic";
 
 
 class NavBarWrapper extends React.Component {
@@ -43,7 +42,7 @@ class NavBarWrapper extends React.Component {
                     <img className="logo" src="../../../../static/logo.png" />
                 </div>
                 {this.state.showFollowersWindow ? <Home /> : null}
-                {this.state.showTopicsWindow ? <GenericTopic /> : null}
+                {this.state.showTopicsWindow ? <TopicHome /> : null}
             </div>
         );
     }

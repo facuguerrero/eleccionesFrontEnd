@@ -19,23 +19,40 @@ const CANDIDATES = [
 
 class HomeConnected extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            showCandidates: false,
+            showError: false,
+        };
+    }
+
     componentDidMount() {
-        this.props.getCandidates();
+        this.props.getCandidates().then(() => {
+            this.setState({ showCandidates: true, showError: false });
+        }, (error) => {
+            this.setState({ showCandidates: false, showError: true });
+            //TODO show error message and loading screen
+        });
     }
 
     render() {
         return (
             <main>
-                <TopHeader candidates={CANDIDATES.sort(function() { return 0.5 - Math.random() })} />
-                <div className="followers-content">
-                    <div className="dates-filter">
-                        <DatesFilter />
+                { this.state.showCandidates ?
+                    <div>
+                        <TopHeader candidates={CANDIDATES.sort(function() { return 0.5 - Math.random() })} />
+                        <div className="followers-content">
+                            <div className="dates-filter">
+                                <DatesFilter />
+                            </div>
+                            <div className="followers-graphs flex-column">
+                                <FollowersEvolution />
+                                <CumulativeFollowersEvolution />
+                            </div>
+                        </div>
                     </div>
-                    <div className="followers-graphs flex-column">
-                        <FollowersEvolution />
-                        <CumulativeFollowersEvolution />
-                    </div>
-                </div>
+                : null}
             </main>
         );
     }

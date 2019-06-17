@@ -11,6 +11,12 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
+const mapStateToProps = state => {
+    return {
+        activeCandidates: state.activeCandidates,
+    };
+};
+
 class TopHeaderConnected extends React.Component {
 
     alterCandidateState = (name, screenName, isActive) => {
@@ -23,6 +29,8 @@ class TopHeaderConnected extends React.Component {
                 <div className="candidate-header">
                     {this.props.candidates.map(
                         (candidate, index) => <HeaderCandidate
+                            isActive={this.props.activeCandidates.filter(
+                                activeCandidate => activeCandidate.name === candidate.name).length > 0}
                             candidate={candidate}
                             key={index}
                             onClick={this.alterCandidateState}/>
@@ -34,5 +42,5 @@ class TopHeaderConnected extends React.Component {
     }
 }
 
-const TopHeader = connect(null, mapDispatchToProps)(TopHeaderConnected);
+const TopHeader = connect(mapStateToProps, mapDispatchToProps)(TopHeaderConnected);
 export default TopHeader;

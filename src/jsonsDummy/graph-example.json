@@ -1,0 +1,329 @@
+{
+  "main": {
+    "links": [
+      {
+        "source": "Marvel",
+        "target": "Heroes"
+      },
+      {
+        "source": "Marvel",
+        "target": "Villains"
+      },
+      {
+        "source": "Marvel",
+        "target": "Teams"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "Marvel",
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/marvel.png",
+        "has_subgraph": false,
+        "size": 500,
+        "fontSize": 18
+      },
+      {
+        "id": "Heroes",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": true,
+        "size": 300
+      },
+      {
+        "id": "Villains",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": true,
+        "size": 300
+      },
+      {
+        "id": "Teams",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": true,
+        "size": 300
+      }
+    ]
+  },
+  "Heroes": {
+    "links": [
+      {
+        "source": "Heroes",
+        "target": "CAPTAIN MARVEL"
+      },
+      {
+        "source": "Heroes",
+        "target": "HULK"
+      },
+      {
+        "source": "Heroes",
+        "target": "Black Widow"
+      },
+      {
+        "source": "Heroes",
+        "target": "Daredevil"
+      },
+      {
+        "source": "Heroes",
+        "target": "Wolverine"
+      },
+      {
+        "source": "Heroes",
+        "target": "Captain America"
+      },
+      {
+        "source": "Heroes",
+        "target": "Iron Man"
+      },
+      {
+        "source": "Heroes",
+        "target": "THOR"
+      },
+      {
+        "source": "Heroes",
+        "target": "Spider-Man"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "Heroes",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": false,
+        "size": 300
+      },
+      {
+        "id": "Spider-Man",
+        "name": "Peter Benjamin Parker",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_spiderman.png",
+        "size": 400
+      },
+      {
+        "id": "CAPTAIN MARVEL",
+        "name": "Carol Danvers",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainmarvel.png",
+        "size": 400
+      },
+      {
+        "id": "HULK",
+        "name": "Robert Bruce Banner",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_hulk.png",
+        "size": 400
+      },
+      {
+        "id": "Black Widow",
+        "name": "Natasha Alianovna Romanova",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_blackwidow.png",
+        "size": 400
+      },
+      {
+        "id": "Daredevil",
+        "name": "Matthew Michael Murdock",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_daredevil.png",
+        "size": 400
+      },
+      {
+        "id": "Wolverine",
+        "name": "James Howlett",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_wolverine.png",
+        "size": 400
+      },
+      {
+        "id": "Captain America",
+        "name": "Steven Rogers",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainamerica.png",
+        "size": 400
+      },
+      {
+        "id": "Iron Man",
+        "name": "Tony Stark",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_ironman.png",
+        "size": 400
+      },
+      {
+        "id": "THOR",
+        "name": "Thor Odinson",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_thor.png",
+        "size": 400
+      }
+    ]
+  },
+  "Villains": {
+    "links": [
+      {
+        "source": "Villains",
+        "target": "Dr. Doom"
+      },
+      {
+        "source": "Villains",
+        "target": "Mystique"
+      },
+      {
+        "source": "Villains",
+        "target": "Red Skull"
+      },
+      {
+        "source": "Villains",
+        "target": "Ronan"
+      },
+      {
+        "source": "Villains",
+        "target": "Magneto"
+      },
+      {
+        "source": "Villains",
+        "target": "Thanos"
+      },
+      {
+        "source": "Villains",
+        "target": "Black Cat"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "Villains",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": false,
+        "size": 300
+      },
+      {
+        "id": "Dr. Doom",
+        "name": "Victor von Doom",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/drdoom.png",
+        "size": 400
+      },
+      {
+        "id": "Mystique",
+        "name": "Unrevealed",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/mystique.png",
+        "size": 400
+      },
+      {
+        "id": "Red Skull",
+        "name": "Johann Shmidt",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/redskull.png",
+        "size": 400
+      },
+      {
+        "id": "Ronan",
+        "name": "Ronan",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/ronan.png",
+        "size": 400
+      },
+      {
+        "id": "Magneto",
+        "name": "Max Eisenhardt",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/magneto.png",
+        "size": 400
+      },
+      {
+        "id": "Thanos",
+        "name": "Thanos",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/thanos.png",
+        "size": 400
+      },
+      {
+        "id": "Black Cat",
+        "name": "Felicia Hardy",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/blackcat.png",
+        "size": 400
+      }
+    ]
+  },
+  "Teams": {
+    "links": [
+      {
+        "source": "Teams",
+        "target": "Avengers"
+      },
+      {
+        "source": "Teams",
+        "target": "Guardians of the Galaxy"
+      },
+      {
+        "source": "Teams",
+        "target": "Defenders"
+      },
+      {
+        "source": "Teams",
+        "target": "X-Men"
+      },
+      {
+        "source": "Teams",
+        "target": "Fantastic Four"
+      },
+      {
+        "source": "Teams",
+        "target": "Inhumans"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "Teams",
+        "symbolType": "circle",
+        "color": "red",
+        "has_subgraph": false,
+        "size": 300
+      },
+      {
+        "id": "Avengers",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+        "size": 400
+      },
+      {
+        "id": "Guardians of the Galaxy",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/gofgalaxy.png",
+        "size": 400
+      },
+      {
+        "id": "Defenders",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/defenders.png",
+        "size": 400
+      },
+      {
+        "id": "X-Men",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/xmen.png",
+        "size": 400
+      },
+      {
+        "id": "Fantastic Four",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/fantasticfour.png",
+        "size": 400
+      },
+      {
+        "id": "Inhumans",
+        "name": "",
+        "has_subgraph": false,
+        "svg": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/inhumans.png",
+        "size": 400
+      }
+    ]
+  }
+}

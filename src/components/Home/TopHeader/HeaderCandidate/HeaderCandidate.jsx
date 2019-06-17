@@ -7,7 +7,7 @@ class HeaderCandidate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isActive: false,
+            isActive: this.props.isActive,
         };
     }
 
