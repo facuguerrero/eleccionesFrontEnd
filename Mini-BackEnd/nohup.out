@@ -206,3 +206,12 @@ Traceback (most recent call last):
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint ''. Did you mean 'elections' instead?
 127.0.0.1 - - [19/Jun/2019 11:23:24] "GET /asdas HTTP/1.1" 500 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:9290/ (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jun/2019 13:16:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jun/2019 13:16:24] "GET /static/main.3c3c1491792ca6643ab7.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jun/2019 13:16:24] "GET /static/vendor.81deedae561f95ba49d2.js HTTP/1.1" 200 -
