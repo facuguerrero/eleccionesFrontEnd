@@ -27,7 +27,7 @@ export function getCandidates() {
 
 export function getGraphs() {
     return function(dispatch) {
-        return axios.get('src/jsonsDummy/graph-example.json')
+        return axios.get('/static/graph-example.json')
             .then((response) => {
                 dispatch({ type: LOAD_GRAPHS, payload: response.data });
             })
