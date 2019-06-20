@@ -152,4 +152,8 @@ module.exports = {
       },
     },
   },
+  // devServer: {
+  //   compress: true,
+  //   public: '157.92.44.108'
+  // }
 };

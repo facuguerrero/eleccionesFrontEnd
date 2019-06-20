@@ -1,15 +1,20 @@
 #!/bin/bash
+BACKEND="Mini-BackEnd"
 
 echo "Uncompressing file..."
 tar -xzf frontend.tar.gz
+
 echo "Deleting compressed file..."
 rm frontend.tar.gz
-cd eleccionesFrontEnd/
+
+cd $BACKEND/
+
 echo "Killing previous instances"
-kill `lsof -t -i:9290`
-echo "Installing dependencies..."
-npm i
+./shutdown.sh
+
 echo "Starting application..."
-npm run dev
+./startup.sh
+
 cd ..
+
 echo "Installation finished."

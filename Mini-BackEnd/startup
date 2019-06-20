@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Start server
+. venv/bin/activate; \
+export PYTHONPATH=$PYTHONPATH:$(pwd); \
+nohup python3 app.py &
+echo $! > save_pid.txt

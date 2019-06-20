@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf build && NODE_ENV=production webpack",
     "dev": "webpack-dev-server --inline --hot --open --host 0.0.0.0 --port 9290",
-    "prod": "npm run build && http-server build -p 9290"
+    "prod": "npm run build && http-server build -h 0.0.0.0 -p 9290"
   },
   "author": "",
   "license": "ISC",
@@ -43,6 +43,7 @@
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.3.12",
     "react-moment-proptypes": "^1.6.0",
+    "react-router-dom": "^5.0.1",
     "react-toolbox": "^2.0.0-beta.13",
     "react-vis": "^1.11.7",
     "react-vis-force": "^0.3.1",
