@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/marcosscharipa/Documents/UBA/Trabajo Profesional/eleccionesFrontEnd/Mini-BackEnd/venv/bin/python" "$0" "$@"
+'''exec' "/home/marcosscharipa/Documents/UBA/Trabajo Profesional/eleccionesBackEnd/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

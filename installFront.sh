@@ -2,7 +2,10 @@
 BACKEND="eleccionesFrontEnd/Mini-BackEnd"
 
 echo "Killing previous instances"
-.$BACKEND/shutdown
+cd $BACKEND
+./shutdown
+cd ..
+cd ..
 
 echo "Uncompressing file..."
 tar -xzf frontend.tar.gz
@@ -11,6 +14,9 @@ echo "Deleting compressed file..."
 rm frontend.tar.gz
 
 echo "Starting application..."
-.$BACKEND/startup
+cd $BACKEND
+./startup
+cd ..
+cd ..
 
 echo "Installation finished."
