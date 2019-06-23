@@ -1,4 +1,4 @@
-import {ADD_ACTIVE_CANDIDATE, UPDATE_DATES, LOAD_GRAPHS} from "../constants/action-types";
+import {ADD_ACTIVE_CANDIDATE, UPDATE_DATES, LOAD_GRAPHS, RESET_CANDIDATES} from "../constants/action-types";
 import { REMOVE_ACTIVE_CANDIDATE } from "../constants/action-types";
 import { LOAD_CANDIDATES } from "../constants/action-types";
 import { processActiveCandidates, processCumulativeCandidates} from "../utils/reduxUtils"
@@ -35,7 +35,7 @@ function rootReducer(state = FollowersInitialState, action) {
 
     } if (action.type === LOAD_CANDIDATES) {
         return Object.assign({}, state, {
-            candidates: state.activeCandidates.concat(action.payload)
+            candidates: action.payload,
         });
 
     } if (action.type === UPDATE_DATES) {
@@ -47,6 +47,13 @@ function rootReducer(state = FollowersInitialState, action) {
             activeDates: activeDates,
             processedCandidates: processedCandidates,
             cumulativeCandidates: processCumulativeCandidates(processedCandidates)
+        });
+    } if(action.type === RESET_CANDIDATES){
+        return Object.assign({}, state, {
+            activeCandidates: [],
+            processedCandidates:[],
+            cumulativeCandidates:[],
+            activeDates:[null, null],
         });
     }
     if (action.type === LOAD_GRAPHS) {

@@ -2,10 +2,12 @@ import React from 'react';
 import Home from "../Home/Home";
 import NavDrawer from "./ResponsiveDrawer";
 import TopicHome from "../Topics/TopicHome";
+import {resetCandidates} from "../../actions/index";
 import './NavBar.scss'
+import {connect} from "react-redux";
 
 
-class NavBarWrapper extends React.Component {
+class NavBarWrapperConnected extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,9 +16,12 @@ class NavBarWrapper extends React.Component {
         };
     }
 
+
+
     changeWindow = (windowName) => {
         switch (windowName) {
             case "followers":
+                this.props.resetCandidates();
                 return this.setState({
                     showFollowersWindow : true,
                     showTopicsWindow : false,
@@ -36,8 +41,8 @@ class NavBarWrapper extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="flex-row main-nav">
+            <div className="fifth-bc-color-light">
+                <div className="flex-row main-nav white-bc-color-light">
                     <NavDrawer onSelected={this.changeWindow} selected={this.state}/>
                     <img className="logo" src="../../../../static/logo.png" />
                 </div>
@@ -48,4 +53,5 @@ class NavBarWrapper extends React.Component {
     }
 }
 
+const NavBarWrapper = connect(null, {resetCandidates})(NavBarWrapperConnected);
 export default NavBarWrapper;

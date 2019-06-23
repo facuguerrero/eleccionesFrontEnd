@@ -25,7 +25,7 @@ class TopHeaderConnected extends React.Component {
 
     render() {
         return (
-            <div className="top-header">
+            <div>
                 <div className="candidate-header">
                     {this.props.candidates.map(
                         (candidate, index) => <HeaderCandidate

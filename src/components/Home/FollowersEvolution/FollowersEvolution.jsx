@@ -13,7 +13,7 @@ const mapStateToProps = state => {
 class FollowersEvolutionConnected extends React.Component {
     render() {
         return (
-            <div className="followers-graph">
+            <div className="followers-graph white-bc-color-light">
                 <GenericGraph
                     title="Cantidad de seguidores agregados por día"
                     xLabel="Cantidad de seguidores"

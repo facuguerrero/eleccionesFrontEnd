@@ -38,18 +38,19 @@ class HomeConnected extends React.Component {
 
     render() {
         return (
-            <main>
+            <main className="main">
                 { this.state.showCandidates ?
                     <div>
-                        <TopHeader candidates={CANDIDATES.sort(function() { return 0.5 - Math.random() })} />
-                        <div className="followers-content">
-                            <div className="dates-filter">
+                        <div className="main-filters header-box card-mg-pd white-bc-color-light">
+                            <TopHeader candidates={CANDIDATES.sort(function() { return 0.5 - Math.random() })} />
+                            <div className="dates-filter flex-column">
+                                <span className="font-md">Filtros Por Fecha</span>
                                 <DatesFilter />
                             </div>
-                            <div className="followers-graphs flex-column">
-                                <FollowersEvolution />
-                                <CumulativeFollowersEvolution />
-                            </div>
+                        </div>
+                        <div className="followers-graphs">
+                            <FollowersEvolution />
+                            <CumulativeFollowersEvolution />
                         </div>
                     </div>
                 : null}

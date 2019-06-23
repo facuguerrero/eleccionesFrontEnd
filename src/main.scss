@@ -17,6 +17,19 @@ $mdc-theme-background: #fff;
   flex-direction: row;
 }
 
+.no-margin{
+  margin: 0;
+}
+
+.main{
+  min-height: 100vh;
+}
+
+.card-mg-pd{
+  margin: 15px;
+  padding: 20px;
+}
+
 // Backgroud colors
 .first-bc-color{
   background-color: #687864;
@@ -56,7 +69,11 @@ $mdc-theme-background: #fff;
 }
 
 .fifth-bc-color-light{
-  background-color: #b7b8b9;
+  background-color: #eaebed;
+}
+
+.white-bc-color-light{
+  background-color: white;
 }
 
 // Backgroud colors dark

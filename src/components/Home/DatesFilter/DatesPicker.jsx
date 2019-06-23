@@ -170,17 +170,15 @@ class DateRangePickerWrapper extends React.Component {
         ]);
 
         return (
-            <div>
+            <div className="date-style">
                 <DateRangePicker
                     {...props}
-                    renderCalendarInfo={this.renderDatePresets}
                     onDatesChange={this.onDatesChange}
                     onFocusChange={this.onFocusChange}
                     focusedInput={focusedInput}
                     startDate={startDate}
                     endDate={endDate}
                     hideKeyboardShortcutsPanel={true}
-                    noBorder
                 />
             </div>
         );
@@ -200,7 +198,7 @@ export default withStyles(({ reactDates: { color } }) => ({
         height: '100%',
         textAlign: 'center',
         background: 'none',
-        border: `2px solid ${color.core.primary}`,
+        border: `2px solid transparent`,
         color: color.core.primary,
         padding: '4px 12px',
         marginRight: 8,

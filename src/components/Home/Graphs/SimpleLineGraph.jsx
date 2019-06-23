@@ -23,7 +23,7 @@ class SimpleLineGraph extends React.Component {
 
     render() {
         return (
-            <div style={{ width: '100%', height: 600 }}>
+            <div style={{ width: '100%', height: 500 }}>
                 <ResponsiveContainer>
                     <LineChart
                         data={this.props.data}

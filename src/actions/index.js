@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {ADD_ACTIVE_CANDIDATE, LOAD_GRAPHS} from "../constants/action-types";
+import {ADD_ACTIVE_CANDIDATE, LOAD_GRAPHS, RESET_CANDIDATES} from "../constants/action-types";
 import { REMOVE_ACTIVE_CANDIDATE } from "../constants/action-types";
 import { LOAD_CANDIDATES } from "../constants/action-types";
 import { UPDATE_DATES } from "../constants/action-types";
@@ -14,8 +14,8 @@ export function removeActiveCandidate(payload) {
 
 export function getCandidates() {
     return function(dispatch) {
-        return axios.get('http://localhost:8080/candidates')
-        // return axios.get('http://localhost:9290/src/jsonsDummy/candidates_dummy.json')
+        // return axios.get('http://localhost:8080/candidates')
+        return axios.get('http://0.0.0.0:9290/src/jsonsDummy/candidates_dummy.json')
             .then((response) => {
                 dispatch({ type: LOAD_CANDIDATES, payload: response.data });
             })
@@ -23,6 +23,10 @@ export function getCandidates() {
                 return error;
             });
     };
+}
+
+export function resetCandidates() {
+    return { type: RESET_CANDIDATES };
 }
 
 export function getGraphs() {
