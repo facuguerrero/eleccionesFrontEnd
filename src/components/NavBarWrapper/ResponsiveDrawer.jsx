@@ -33,8 +33,8 @@ class NavDrawer extends React.Component {
                         isSelected={this.props.selected.showTopicsWindow}
                     />
                 </TemporaryDrawer>
-                <div className="drawer__sample__toolbar-holder">
-                    <Menu className="menu-button" fontSize="large" onClick={this.open} />
+                <div className="drawer__sample__toolbar-holder menu-button">
+                    <Menu fontSize="large" onClick={this.open} />
                 </div>
             </div>
         );

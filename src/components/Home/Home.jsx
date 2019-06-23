@@ -6,6 +6,7 @@ import TopHeader from "./TopHeader/TopHeader";
 import FollowersEvolution from "./FollowersEvolution/FollowersEvolution";
 import CumulativeFollowersEvolution from "./CumulativeFollowersEvolution/CumulativeFollowersEvolution";
 import DatesFilter from "./DatesFilter/DatesFilter";
+import EmptySelection from "./EmptySelection/EmptySelection";
 
 const CANDIDATES = [
     {screen_name: 'CFKArgentina', name:'Cristina Kirchner' , image:'static/candidateImages/kirchner.jpg'},
@@ -15,7 +16,7 @@ const CANDIDATES = [
     {screen_name: 'urtubeyjm', name:'Juan Manuel Urtubey' , image:'static/candidateImages/urtubey.jpg'},
     {screen_name: 'jlespert', name:'Jose Luis Espert' , image:'static/candidateImages/espert.jpg'},
     {screen_name: 'alferdez', name:'Alberto Fernández' , image:'static/candidateImages/fernandez.jpg'},
-];
+].sort(function() { return 0.5 - Math.random() });
 
 class HomeConnected extends React.Component {
 
@@ -24,8 +25,13 @@ class HomeConnected extends React.Component {
         this.state = {
             showCandidates: false,
             showError: false,
+            areCandidatesActive: false,
         };
     }
+
+    areCandidatesActive = (areActive) => {
+        this.setState({areCandidatesActive: areActive});
+    };
 
     componentDidMount() {
         this.props.getCandidates().then(() => {
@@ -42,16 +48,22 @@ class HomeConnected extends React.Component {
                 { this.state.showCandidates ?
                     <div>
                         <div className="main-filters header-box card-mg-pd white-bc-color-light">
-                            <TopHeader candidates={CANDIDATES.sort(function() { return 0.5 - Math.random() })} />
+                            <TopHeader
+                                candidates={CANDIDATES}
+                                areCandidatesActive={this.areCandidatesActive}
+                            />
                             <div className="dates-filter flex-column">
                                 <span className="font-md">Filtros Por Fecha</span>
                                 <DatesFilter />
                             </div>
                         </div>
-                        <div className="followers-graphs">
-                            <FollowersEvolution />
-                            <CumulativeFollowersEvolution />
-                        </div>
+                        {this.state.areCandidatesActive ?
+                            <div className="followers-graphs">
+                                <FollowersEvolution />
+                                <CumulativeFollowersEvolution />
+                            </div>
+                            : <EmptySelection />
+                        }
                     </div>
                 : null}
             </main>

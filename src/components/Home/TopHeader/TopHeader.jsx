@@ -21,6 +21,11 @@ class TopHeaderConnected extends React.Component {
 
     alterCandidateState = (name, screenName, isActive) => {
         isActive ? this.props.removeActiveCandidate({ name, screenName }) : this.props.addActiveCandidate({ name, screenName });
+        this.props.areCandidatesActive(
+            (this.props.activeCandidates.length > 1 && isActive)
+            ||
+            (this.props.activeCandidates.length >=  0 && !isActive)
+        );
     };
 
     render() {

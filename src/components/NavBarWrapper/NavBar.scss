@@ -17,6 +17,14 @@
   cursor: pointer;
 }
 
+.menu-button{
+  margin-left: 15px;
+}
+
+.drawer__sample{
+  align-self: center;
+}
+
 .menu-button:hover{
   cursor: pointer;
   color: var(--second-color-dark);
