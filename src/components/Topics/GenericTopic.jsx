@@ -1,16 +1,15 @@
 import React from "react";
 import { Graph } from 'react-d3-graph';
-import example from '../../jsonsDummy/graph-example.json';
 
 // the graph configuration, you only need to pass down properties
 // that you want to override, otherwise default ones will be used
 const myConfig = {
     "automaticRearrangeAfterDropNode": true,
     "collapsible": false,
-    "directed": true,
+    "directed": false,
     "focusAnimationDuration": 0.75,
     "focusZoom": 1,
-    "height": 800,
+    "height": 500,
     "highlightDegree": 2,
     "highlightOpacity": 0.2,
     "linkHighlightBehavior": true,
@@ -19,7 +18,7 @@ const myConfig = {
     "nodeHighlightBehavior": true,
     "panAndZoom": false,
     "staticGraph": false,
-    "width": 1400,
+    "width": 820,
     "d3": {
         "alphaTarget": 0.05,
         "gravity": -250,
@@ -66,12 +65,14 @@ class GenericTopic extends React.Component {
 
     render() {
         return (
-            <Graph
-                    id="marvel-id"
+            <div className="graph-border">
+                <Graph
+                    id={this.props.id}
                     data={this.props.data}
                     config={myConfig}
                     onClickNode={this.props.onClickNode}
                 />
+            </div>
         );
     }
 }

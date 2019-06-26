@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import {getGraphs} from "../../actions";
 import CandidatesGraph from "./CandidatesGraph/CandidatesGraph";
+import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
 
 class TopicHomeConnected extends React.Component {
 
@@ -24,9 +25,16 @@ class TopicHomeConnected extends React.Component {
 
     render() {
         return (
-            <div>
-                { this.state.graphsAreLoaded ? <CandidatesGraph /> : null }
-            </div>
+            <main className="main">
+                <div>
+                    <div className="main-filters header-box card-mg-pd white-bc-color-light">
+                    </div>
+                </div>
+                <div className="followers-graphs">
+                    { this.state.graphsAreLoaded ? <CandidatesGraph id="graph1" /> : null }
+                    { this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }
+                </div>
+            </main>
         );
     }
 }

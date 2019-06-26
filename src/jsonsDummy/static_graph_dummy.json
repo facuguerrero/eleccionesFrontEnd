@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "defenderlaargentina",
+      "size": 10,
+      "cluster": 0
+    },
+    {
+      "id": "hayalternativa",
+      "size": 22,
+      "cluster": 0
+    },
+    {
+      "id": "massapresidente",
+      "size": 15,
+      "cluster": 0
+    },
+    {
+      "id": "alimentos",
+      "size": 8,
+      "cluster": 6
+    },
+    {
+      "id": "cmcubs19",
+      "size": 12,
+      "cluster": 7
+    },
+    {
+      "id": "política",
+      "size": 44,
+      "cluster": 3
+    },
+    {
+      "id": "elecciones",
+      "size": 46,
+      "cluster": 2
+    },
+    {
+      "id": "sociedad",
+      "size": 22,
+      "cluster": 8
+    },
+    {
+      "id": "encuestas",
+      "size": 20,
+      "cluster": 9
+    },
+    {
+      "id": "argentina",
+      "size": 57,
+      "cluster": 4
+    },
+    {
+      "id": "economía",
+      "size": 19,
+      "cluster": 10
+    },
+    {
+      "id": "salta",
+      "size": 27,
+      "cluster": 5
+    },
+    {
+      "id": "running",
+      "size": 20,
+      "cluster": 12
+    },
+    {
+      "id": "runner",
+      "size": 20,
+      "cluster": 11
+    },
+    {
+      "id": "asamblealegislativa",
+      "size": 7,
+      "cluster": 13
+    },
+    {
+      "id": "congreso",
+      "size": 7,
+      "cluster": 14
+    },
+    {
+      "id": "ilustracion",
+      "size": 24,
+      "cluster": 1
+    },
+    {
+      "id": "artemiguelbrea",
+      "size": 34,
+      "cluster": 1
+    },
+    {
+      "id": "mantra",
+      "size": 50,
+      "cluster": 15
+    },
+    {
+      "id": "illustration",
+      "size": 17,
+      "cluster": 1
+    },
+    {
+      "id": "mantras",
+      "size": 23,
+      "cluster": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "defenderlaargentina",
+      "target": "hayalternativa",
+      "weight": 4
+    },
+    {
+      "source": "defenderlaargentina",
+      "target": "massapresidente",
+      "weight": 4
+    },
+    {
+      "source": "hayalternativa",
+      "target": "massapresidente",
+      "weight": 7
+    },
+    {
+      "source": "alimentos",
+      "target": "cmcubs19",
+      "weight": 3
+    },
+    {
+      "source": "elecciones",
+      "target": "política",
+      "weight": 7
+    },
+    {
+      "source": "política",
+      "target": "sociedad",
+      "weight": 3
+    },
+    {
+      "source": "elecciones",
+      "target": "sociedad",
+      "weight": 2
+    },
+    {
+      "source": "encuestas",
+      "target": "política",
+      "weight": 3
+    },
+    {
+      "source": "elecciones",
+      "target": "encuestas",
+      "weight": 2
+    },
+    {
+      "source": "encuestas",
+      "target": "sociedad",
+      "weight": 1
+    },
+    {
+      "source": "argentina",
+      "target": "política",
+      "weight": 5
+    },
+    {
+      "source": "argentina",
+      "target": "encuestas",
+      "weight": 2
+    },
+    {
+      "source": "argentina",
+      "target": "elecciones",
+      "weight": 6
+    },
+    {
+      "source": "economía",
+      "target": "elecciones",
+      "weight": 1
+    },
+    {
+      "source": "economía",
+      "target": "política",
+      "weight": 3
+    },
+    {
+      "source": "argentina",
+      "target": "economía",
+      "weight": 2
+    },
+    {
+      "source": "economía",
+      "target": "encuestas",
+      "weight": 1
+    },
+    {
+      "source": "economía",
+      "target": "sociedad",
+      "weight": 1
+    },
+    {
+      "source": "argentina",
+      "target": "salta",
+      "weight": 4
+    },
+    {
+      "source": "runner",
+      "target": "running",
+      "weight": 3
+    },
+    {
+      "source": "asamblealegislativa",
+      "target": "congreso",
+      "weight": 3
+    },
+    {
+      "source": "artemiguelbrea",
+      "target": "ilustracion",
+      "weight": 7
+    },
+    {
+      "source": "illustration",
+      "target": "ilustracion",
+      "weight": 4
+    },
+    {
+      "source": "artemiguelbrea",
+      "target": "illustration",
+      "weight": 5
+    },
+    {
+      "source": "mantra",
+      "target": "mantras",
+      "weight": 3
+    }
+  ]
+}

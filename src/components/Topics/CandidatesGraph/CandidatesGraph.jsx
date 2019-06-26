@@ -1,8 +1,8 @@
 import React from 'react';
 import GenericTopic from "../GenericTopic";
 import {connect} from "react-redux";
-import {NavigateBefore} from "@material-ui/icons";
 import "./CandidatesGraph.scss"
+import TopicTitleBar from "../TopicTitleBar/TopicTitleBar";
 
 const mapStateToProps = state => {
     return {
@@ -36,14 +36,17 @@ class CandidatesGraphConnected extends React.Component {
             previousGraphs: newPreviousGraphs,
             currentGraph: this.props.candidateGraphs[newPreviousGraphs[newPreviousGraphs.length-1]],
         })
-        console.log(newPreviousGraphs)
     };
 
     render() {
         return (
-            <div className="followers-graph">
-                <NavigateBefore className="graph-back-button" fontSize="large" onClick={this.changeToPreviousGraph}/>
-                <GenericTopic data={this.state.currentGraph} onClickNode={this.changeGraph} />
+            <div className="followers-graph white-bc-color-light">
+                <TopicTitleBar withPrevious={true}
+                               showPrevious={this.changeToPreviousGraph}
+                               title={"Grafo con Navegación"}/>
+                <GenericTopic id={this.props.id}
+                              data={this.state.currentGraph}
+                              onClickNode={this.changeGraph} />
             </div>
         );
     }
