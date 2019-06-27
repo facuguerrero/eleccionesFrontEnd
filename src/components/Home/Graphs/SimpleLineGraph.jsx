@@ -11,7 +11,8 @@ const COLORS = {
     "rlavagna": "#16C410",
     "sergiomassa": "#E41F14",
     "jlespert": "#743430",
-    "alferdez": "#1BD1D4"
+    "alferdez": "#1BD1D4",
+    "NicolasdelCano": "#d40048"
 };
 
 class SimpleLineGraph extends React.Component {

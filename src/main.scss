@@ -266,6 +266,9 @@ html *
 .alferdez-font-color{
   color: var(--alferdez);
 }
+.NicolasdelCano-font-color{
+  color: var(--NicolasdelCano);
+}
 
 //Candidates border Colors
 .mauriciomacri-br-color{
@@ -288,6 +291,9 @@ html *
 }
 .alferdez-br-color{
   border-color: var(--alferdez);
+}
+.NicolasdelCano-br-color{
+  border-color: var(--NicolasdelCano);
 }
 
 :root {
@@ -314,4 +320,5 @@ html *
   --sergiomassa: #E41F14;
   --jlespert: #743430;
   --alferdez: #1BD1D4;
+  --NicolasdelCano: #d40048;
 }

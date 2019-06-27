@@ -1,8 +1,9 @@
 #!/bin/bash
 BACKEND="eleccionesFrontEnd/Mini-BackEnd"
+TEST=="TestEleccionesFrontEnd/Mini-BackEnd"
 
 echo "Killing previous instances"
-cd $BACKEND
+cd $TEST
 ./shutdown
 cd ..
 cd ..
@@ -14,7 +15,7 @@ echo "Deleting compressed file..."
 rm frontend.tar.gz
 
 echo "Starting application..."
-cd $BACKEND
+cd $TEST
 ./startup
 cd ..
 cd ..

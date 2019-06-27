@@ -1,0 +1,5929 @@
+{
+  "links": [
+    {
+      "source": "repuesto",
+      "target": "venezuela",
+      "weight": 112
+    },
+    {
+      "source": "4mar",
+      "target": "venezuela",
+      "weight": 76
+    },
+    {
+      "source": "27feb",
+      "target": "venezuela",
+      "weight": 43
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "venezuela",
+      "weight": 15
+    },
+    {
+      "source": "lasmáscompartidas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "guaidoterrorista",
+      "target": "venezuela",
+      "weight": 29
+    },
+    {
+      "source": "28feb",
+      "target": "venezuela",
+      "weight": 28
+    },
+    {
+      "source": "caputova",
+      "target": "venezuela",
+      "weight": 28
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "venezuela",
+      "weight": 15
+    },
+    {
+      "source": "3mar",
+      "target": "venezuela",
+      "weight": 12
+    },
+    {
+      "source": "misrrssvzla",
+      "target": "venezuela",
+      "weight": 22
+    },
+    {
+      "source": "desfiledecaranaval2019",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "carnavalesesalegría",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "noabranlasfronteras",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "blogstelesur",
+      "target": "venezuela",
+      "weight": 18
+    },
+    {
+      "source": "sancristobaltachira",
+      "target": "venezuela",
+      "weight": 17
+    },
+    {
+      "source": "asesorpaís",
+      "target": "venezuela",
+      "weight": 17
+    },
+    {
+      "source": "21eparouniversitarioindefinido",
+      "target": "venezuela",
+      "weight": 16
+    },
+    {
+      "source": "jan23",
+      "target": "venezuela",
+      "weight": 15
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "nosimporta",
+      "target": "venezuela",
+      "weight": 14
+    },
+    {
+      "source": "2mar",
+      "target": "venezuela",
+      "weight": 14
+    },
+    {
+      "source": "liberenalospresospoliticos",
+      "target": "venezuela",
+      "weight": 13
+    },
+    {
+      "source": "gameofthrone",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "28e",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "thread",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "23n",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "4mvzlaalacalle",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "dialogoypaz",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "megarecoleccionhumanitaria",
+      "target": "venezuela",
+      "weight": 11
+    },
+    {
+      "source": "liberenahenry",
+      "target": "venezuela",
+      "weight": 10
+    },
+    {
+      "source": "febrerodevictoriachavista",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "mitierra",
+      "target": "venezuela",
+      "weight": 10
+    },
+    {
+      "source": "hechoensocialismo",
+      "target": "venezuela",
+      "weight": 10
+    },
+    {
+      "source": "ayudaylibertadvenezuela",
+      "target": "venezuela",
+      "weight": 10
+    },
+    {
+      "source": "golpedeestadovenezuela",
+      "target": "venezuela",
+      "weight": 10
+    },
+    {
+      "source": "01mar",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "nousa",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cadivi",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "noalaintervención",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "saqueo",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "30e",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "expectativa",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "elliottabrams",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "paraentender",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "noticias_regionales",
+      "target": "venezuela",
+      "weight": 9
+    },
+    {
+      "source": "cancilleria",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "opositores",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "maduroyahuelesapodrido",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "festivalrecreativocarnaval2019",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "invasion",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "liderinterno",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "elmastershow",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "jan21",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "presidenteencargado",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ehc",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "upata",
+      "target": "venezuela",
+      "weight": 8
+    },
+    {
+      "source": "fuerzaarmada",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "contactoeuropa",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "rennyottolina",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "janiotpm",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "soyvente",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "presidentemaduro",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "barlovento",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "realidades",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "muertessoninversión",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "askavenezuelan",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "recertificación",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "r2p",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "venezolanismo",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "15junio",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "asígastantudinero",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "cucutazo",
+      "target": "venezuela",
+      "weight": 7
+    },
+    {
+      "source": "digoyo",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "sirjop",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "camilovenezuela",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "intervention",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "unioneeuropea",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "paísesnoalineados",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "golpeenvenezuela",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "sinvergüenzas",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "emigrante",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "hablaguaido",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "gringos",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "30deenero",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "desbloqueenaporrea",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "socialismodelsiglo21",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "seriedelcaribeportves",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "internacionalsocialista",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "rumberanetwork",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "bicentenariodeangostura",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "democraciaylibertad",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "ivic",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "quesesepa",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "turkiye",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "guaidólibertador",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "pastorlopez",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "nuevavenezuela",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "soldadoreflexiona",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "colômbia",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "mejorandovidas",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "aguantemaduro",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "petrofraude",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "intervención",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "moralesglobal",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "hyperinflation",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "nomades",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "03mar",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "agárrate",
+      "target": "venezuela",
+      "weight": 6
+    },
+    {
+      "source": "operacionliberad",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "360cnn",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "codepink",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "gobiernoilegitimo",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "cooperativaesclasico",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "naciones",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "31e",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "shameonyou",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "espanaconguaido",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "pueblosoberano",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "360mundo",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "canaima",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "ramoverde",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "concluapagonven",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "desbloqueenaporreaya",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "liberenalosniñosyadolescentes",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "gocho",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "tanqueta",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "23deene",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "freedomforvenezuela",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "gritemosconbrío23e",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "fedecamaras",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "autodeterminaciondelospueblos",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "caracasenescena",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "cnne",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "almallanera",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "diplomacy",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "agrosos",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "liberenasimonovis",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "diosbendigaavenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "threads",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "toquefinal",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "unsueñoparavenezuela",
+      "target": "venezuela",
+      "weight": 5
+    },
+    {
+      "source": "tatgranada19",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "guaidog",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "grupodelimaconvzla",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pontifex",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "necesitamosayuda",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "solonopodemos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "4demayo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pazylibertad",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "bolichicos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "tierradegracia",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pafuera",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "misil",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cubahandsoffvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "elhambrehabla",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "urgent",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "hoyxhoyvzla",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "oposion",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pruebasdegolpedeestadoenvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "concluflorido",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "esclavos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "convenzionedivienna",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ambasciatavenezuelana",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nazioniunite",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "26ene19",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "13deenero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "tajani",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "conclusionescnn",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "inpcan",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "gallerysecurity",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "noalplannariyahenvzla",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "challengecarnavales2019",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "grandemivinotinto",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "socialismosigloxxi",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "geoestrategia",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "leogonzalez",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "20añosdebatallayvictoria",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "lanoche24h",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "soportala",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "234ula",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "llevotuluzytuaromaenmipiel",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "construir",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "falseflag",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cabildos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "descarado",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "mcm",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "venezolanosensantiago",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "21ener19",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cortepenalinternacional",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "madurorolitrancoemmgvo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "noticiasvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "tcmsfinal",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "29e",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "sanare",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "rogerwater",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pemón",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "sabrosito",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "respira",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "liderdeverdad",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "sololideres",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "elmundoestaloco",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "poramor",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "06mar",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "olgatañon",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "autoproclamado",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "january23",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "jan26",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "lejosperonoausente",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "colombiayvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nuncajamasseremospatiotrasero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "pazyvida",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "100k",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "condiosdelante",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "triunfaralapaz",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "muertealchavismo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "opina",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "humorvenezolano",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "uft",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nomasrevolucion",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "conflictos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "checknews",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "soycocinero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "primeminister",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "envenezolanismos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cubaestacontigo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ajedrezdealtonivel",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "incertidumbre",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "bolivariano",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "noalcarnaval",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "todossomsguaido",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "caraetabla",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "iusy",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "merida_ve",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "16febrero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "cuadrigadw",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "22mayo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "paíshermano",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "salvadorallende",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "art187n11ya",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "condiostodo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "mandatoilegitimo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "torturas",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "unidosporvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "retornadas",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "usroguegovt",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "macritequiero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nau",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "asílomiragabo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "noalamentira",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "corrupcionespiritual",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "faltadeinversion",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "23febayudaylibertad",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ayudahumanitara",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "confirmandoaloscreyentes",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "actúatec2019",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "recuento",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "inmaduro",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "primermundo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "plazabolivardechacao",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "lamañanadelonce",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "hacenjusticiaenyaracuy",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "globovisión",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "guerracivil",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "golpismo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "esteesmi187",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ecosinternacional",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "soluciónpolítica",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "diálogos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ojosdelcielo",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "juanluisguerra",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nodesestabilización",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "granada1984",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "escuálidos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "tves",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "csm2019",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "usurpación",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "tereconocemosguaidó",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "djsdaily",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "asambleasdedios",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "dialogue",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "veneuropa",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "ffaav",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "elliotabrams",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "handsofvenezuela",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "asesinado",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "liberenalospm",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "albamovimientos",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "luisanee",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "conductorslife",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "actualidadpolítica",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "periodismops",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "emigrar",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "benews",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "conomonetario",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "18j",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "diadelganadero",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "operaciónlibertadmerida",
+      "target": "venezuela",
+      "weight": 4
+    },
+    {
+      "source": "nicolás_maduro",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "palante",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "art187num11",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "depredador",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "dianca",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "opositor",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "aristobulo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "socialismoescancer",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ladictadura",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "conclutarre",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "arrechatevenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ultimasnoticias",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "desesperanza",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "parlamentoeuroepeo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "hechoenrobolucion",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "progres",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "falsa",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "eddiesantiago",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ilegítimo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "relacionesdiplomaticas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "antidemocracia",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "usurpacion",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "gorrin",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "valgamedios",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ntn24",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "antiimperialistas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "gregoriovallesesnavidad",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "maduroseva",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "univisión",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "vamosdom",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nosvemosenlacalle",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "pabellones",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "mefui",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "intervencionmilitarinternacionalya",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "caraca",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "regime",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "bloqueado",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "expresidentemaduroelasesino",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "telesurtv",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "alzamiento",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "jan13",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "fuerayankysdeaméricalatina",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "11mayo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "reconstruir",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "eléctrica",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ruge",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "psuvcriminal",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "venezolanosenflorida",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "eurocamara",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "resistenciavenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "varsovia",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "rtenespañol",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "cello",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "marditomaduro",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "dondeestaamanda",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "capitancaguaripano",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "gob",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "trumpgohome",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "miamimarathon2019",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "despiertavenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "buenossomosmas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "padrinolópez",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "golpemilitar",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "usurpateur",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nomerepresentas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "andesvenezolanos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "asambleanacionalconstituyente",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "himnonacionaldevenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "perder",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "corpoelect",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "dictaduranuncamas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "anticapitalistasenred",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "lastienditas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "mcetm",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "autoproclamacion",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "handsoff",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "biots",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "simónbolivar",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "suramericanosub17",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "bienesyraices",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "novamosbien",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "juventuddivinotesoro",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "arrechera",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "concluvzlaayuda",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "soto",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "liveaid",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "10yearschallange",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "duqueeneeuu",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "elvaticano",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "estoyconvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "dialecto",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "justintrudeau",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "talentonacional",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "conclucolvzla",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "marcosrubio",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "opiniónads",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "hoytodossomosvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "oramosxvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "freedomvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "sensatez",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "bayly",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "diosbendiga",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "estadomiranda",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "bolívia",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "petrolio",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "crisenavenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "religions",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "6marzo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "lapuertadelsol",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "seteniaquedecir",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "12enero",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "escándalomundial",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nomerepresenta",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "fuerzas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "guaidochallange",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nomasinjerencia",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "sanantoniodelosaltos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "conclugrupolima",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ojopelao",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "finaladictadura",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "steinmeier",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "colombian",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "presosporinformar",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "cabildoabiertotachira",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "genteopinando",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "miperspectiva",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "cev",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "sialaayudahumanitaria",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "noticiasuno",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "lomásleídoseh2018",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "lasmorochas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "firmazoantiimperialistaporlapaz",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "labotagringa",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "vayansealcarajoyankisdemierda",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "noticiasinternacionales",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "inclusionsocialparatodos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "honorariosminimos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "01abril",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "posverdad",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "llanosvenezolanos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "masoneria",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "milagrosalas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "gangof13",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nitu",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "likeporvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "panasencolombia",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "argentinaconmaduro",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "liliantintori",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "pasiónporelagro",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "ceroinjerenciaextranjera",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "usurpadores",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "pazenelmundo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "procesoprocésarv",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "inmueblesariasderemax",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "saberesproductivo",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "movimientolibertario",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "guaira",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "onuenvenezuela",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "albertofranceschi",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "bolivarianrevolution",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "crisisunive",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "estamosconustedes",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "odca",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "arepasaroundtheworld",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "absurdarevolucion",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "n3327ene19",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "cambiopolitico",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "sitemetesconvenezuelatesecas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "soyaméricalatina",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "manipulación",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "maríarey",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "descarados",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "malts",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "asistenciahumanitaria",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "paulinos",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "enimagen",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "screenwriting",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "passport",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "retrobeatzradio",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "nomasbalasperdidas",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "españaconguaidó",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "emergenciahumanitariacompleja",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "monitorservicios",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "golazodeamérica",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "usurpadorydestructor",
+      "target": "venezuela",
+      "weight": 3
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 3
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 6
+    },
+    {
+      "source": "01mar",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 8
+    },
+    {
+      "source": "carnales2019enpazyalegria",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 8
+    },
+    {
+      "source": "carnavalenamormayor",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 7
+    },
+    {
+      "source": "challengecarnavales2019",
+      "target": "festivalrecreativocarnaval2019",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "desfiledecarnaval2019",
+      "weight": 3
+    },
+    {
+      "source": "desfiledecaranaval2019",
+      "target": "desfiledecarnaval2019",
+      "weight": 6
+    },
+    {
+      "source": "venezuela",
+      "target": "čaputova",
+      "weight": 27
+    },
+    {
+      "source": "caputova",
+      "target": "čaputova",
+      "weight": 27
+    },
+    {
+      "source": "venezuela",
+      "target": "yankigohome",
+      "weight": 9
+    },
+    {
+      "source": "venezuela",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 7
+    },
+    {
+      "source": "4mar",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 3
+    },
+    {
+      "source": "desfiledecarnaval2019",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 42
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 37
+    },
+    {
+      "source": "desfiledecaranaval2019",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 20
+    },
+    {
+      "source": "carnavalesesalegría",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 4
+    },
+    {
+      "source": "noabranlasfronteras",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 19
+    },
+    {
+      "source": "2mar",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 5
+    },
+    {
+      "source": "noabranlafrontera",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 6
+    },
+    {
+      "source": "03mar",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 3
+    },
+    {
+      "source": "pemón",
+      "target": "venezueladisfrutaelcarnaval",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelacrisis",
+      "weight": 7
+    },
+    {
+      "source": "venezuela",
+      "target": "yanqui",
+      "weight": 6
+    },
+    {
+      "source": "nuncajamasseremospatiotrasero",
+      "target": "yanqui",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "ventevenezuela",
+      "weight": 6
+    },
+    {
+      "source": "venezuela",
+      "target": "venzuelalibre",
+      "weight": 5
+    },
+    {
+      "source": "venezuela",
+      "target": "yankee",
+      "weight": 5
+    },
+    {
+      "source": "venezuela",
+      "target": "yoapoyoa",
+      "weight": 5
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelaembassy",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "zoomntn24",
+      "weight": 4
+    },
+    {
+      "source": "zoom23e",
+      "target": "zoomntn24",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "zoom23e",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelalibreysana",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "vzlaenlaonu",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "verdaderoofalso",
+      "weight": 4
+    },
+    {
+      "source": "ojobiónico",
+      "target": "verdaderoofalso",
+      "weight": 6
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelapideauxilio",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelairreversibleenlaw",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "wenezuela",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "zajárova",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezueladecristo",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "yonoreconozcoamaduro",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "voa",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelaid",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "yomeentiendo",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelapresidelaopep",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelaproductivaenmarcha",
+      "weight": 3
+    },
+    {
+      "source": "noabranlasfronterasconcolombia",
+      "target": "venezuelaproductivaenmarcha",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelaaldia",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelanspring",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "yoestoyconmaduro",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezueladividida",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "éxodo",
+      "weight": 3
+    },
+    {
+      "source": "leyendasurbanas",
+      "target": "éxodo",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelamuereintervencionya",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelahoy",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "vidaagro",
+      "weight": 3
+    },
+    {
+      "source": "pasiónporelagro",
+      "target": "vidaagro",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "vzlanosincomida",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "μαδουρο",
+      "weight": 3
+    },
+    {
+      "source": "βενεζουελα",
+      "target": "μαδουρο",
+      "weight": 4
+    },
+    {
+      "source": "venezuela",
+      "target": "βενεζουελα",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelavisionaria",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "williamsaguado",
+      "weight": 3
+    },
+    {
+      "source": "venezuela",
+      "target": "venezuelaeníndices",
+      "weight": 3
+    },
+    {
+      "source": "asígastantudinero",
+      "target": "venezuelaeníndices",
+      "weight": 3
+    },
+    {
+      "source": "27feb",
+      "target": "carnavalesfelices2019",
+      "weight": 22
+    },
+    {
+      "source": "28feb",
+      "target": "carnavalesfelices2019",
+      "weight": 8
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "carnavalesfelices2019",
+      "weight": 5
+    },
+    {
+      "source": "carnavalesenpaz",
+      "target": "carnavalesfelices2019",
+      "weight": 11
+    },
+    {
+      "source": "3mar",
+      "target": "carnavalesfelices2019",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesesalegría",
+      "target": "carnavalesfelices2019",
+      "weight": 20
+    },
+    {
+      "source": "27frebelionantiimperialista",
+      "target": "carnavalesfelices2019",
+      "weight": 16
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "carnavalesfelices2019",
+      "weight": 12
+    },
+    {
+      "source": "2mar",
+      "target": "carnavalesfelices2019",
+      "weight": 7
+    },
+    {
+      "source": "bonodecarnaval",
+      "target": "carnavalesfelices2019",
+      "weight": 13
+    },
+    {
+      "source": "02mar",
+      "target": "carnavalesfelices2019",
+      "weight": 9
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "carnavalesfelices2019",
+      "weight": 8
+    },
+    {
+      "source": "carnavalesesalegria",
+      "target": "carnavalesfelices2019",
+      "weight": 6
+    },
+    {
+      "source": "carnavalescaribeccs2019",
+      "target": "carnavalesfelices2019",
+      "weight": 4
+    },
+    {
+      "source": "03mar",
+      "target": "carnavalesfelices2019",
+      "weight": 5
+    },
+    {
+      "source": "carnavalescaribe2019",
+      "target": "carnavalesfelices2019",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "noabranlasfronteras",
+      "weight": 27
+    },
+    {
+      "source": "2mar",
+      "target": "noabranlasfronteras",
+      "weight": 6
+    },
+    {
+      "source": "02mar",
+      "target": "noabranlasfronteras",
+      "weight": 3
+    },
+    {
+      "source": "noabranlafrontera",
+      "target": "noabranlasfronteras",
+      "weight": 4
+    },
+    {
+      "source": "28feb",
+      "target": "carnavales2019enpazyalegría",
+      "weight": 24
+    },
+    {
+      "source": "01mar",
+      "target": "carnavales2019enpazyalegría",
+      "weight": 9
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "granmisiontransportevenezuela",
+      "weight": 24
+    },
+    {
+      "source": "festivalrecreativocarnaval2019",
+      "target": "granmisiontransportevenezuela",
+      "weight": 8
+    },
+    {
+      "source": "carnales2019enpazyalegria",
+      "target": "granmisiontransportevenezuela",
+      "weight": 8
+    },
+    {
+      "source": "carnalesfelices2019",
+      "target": "granmisiontransportevenezuela",
+      "weight": 6
+    },
+    {
+      "source": "03mar",
+      "target": "granmisiontransportevenezuela",
+      "weight": 4
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "revolucionchavistaenzk",
+      "weight": 4
+    },
+    {
+      "source": "challengecarnavales2019",
+      "target": "revolucionchavistaenzk",
+      "weight": 3
+    },
+    {
+      "source": "01mar",
+      "target": "recaudacionvictoriosa",
+      "weight": 6
+    },
+    {
+      "source": "carnavalenamormayor",
+      "target": "recaudacionvictoriosa",
+      "weight": 6
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "noabranlafrontera",
+      "weight": 6
+    },
+    {
+      "source": "noabranesaverga",
+      "target": "noabranlafrontera",
+      "weight": 11
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "pemón",
+      "weight": 4
+    },
+    {
+      "source": "noabranlafrontera",
+      "target": "pemón",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "queleer",
+      "weight": 14
+    },
+    {
+      "source": "28feb",
+      "target": "queleer",
+      "weight": 4
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "queleer",
+      "weight": 6
+    },
+    {
+      "source": "envenezuelavenciólapaz",
+      "target": "queleer",
+      "weight": 4
+    },
+    {
+      "source": "5demarzo",
+      "target": "queleer",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "desfiledecaranaval2019",
+      "weight": 10
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "desfiledecaranaval2019",
+      "weight": 4
+    },
+    {
+      "source": "challengecarnavales2019",
+      "target": "desfiledecaranaval2019",
+      "weight": 3
+    },
+    {
+      "source": "4mar",
+      "target": "carnavalesalegría",
+      "weight": 4
+    },
+    {
+      "source": "2mar",
+      "target": "carnavalesalegría",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "carnavalesguaicaipuro2019",
+      "weight": 4
+    },
+    {
+      "source": "2mar",
+      "target": "carnavalesguaicaipuro2019",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesalegría",
+      "target": "carnavalesguaicaipuro2019",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "respira",
+      "weight": 4
+    },
+    {
+      "source": "4mar",
+      "target": "4mvzlaalacalle",
+      "weight": 4
+    },
+    {
+      "source": "3mar",
+      "target": "carnavalesenpaz",
+      "weight": 11
+    },
+    {
+      "source": "4mvzlaalacalle",
+      "target": "carnavalesenpaz",
+      "weight": 4
+    },
+    {
+      "source": "carnavalescaribeccs2019",
+      "target": "carnavalesenpaz",
+      "weight": 4
+    },
+    {
+      "source": "27feb",
+      "target": "gn",
+      "weight": 5
+    },
+    {
+      "source": "28feb",
+      "target": "gn",
+      "weight": 5
+    },
+    {
+      "source": "27feb",
+      "target": "27frebeliónantiimperialista",
+      "weight": 27
+    },
+    {
+      "source": "27feb",
+      "target": "27frebelionantiimperialista",
+      "weight": 23
+    },
+    {
+      "source": "27feb",
+      "target": "bonodecarnaval",
+      "weight": 10
+    },
+    {
+      "source": "28feb",
+      "target": "bonodecarnaval",
+      "weight": 4
+    },
+    {
+      "source": "27frebelionantiimperialista",
+      "target": "bonodecarnaval",
+      "weight": 10
+    },
+    {
+      "source": "27feb",
+      "target": "elcaracazo",
+      "weight": 6
+    },
+    {
+      "source": "27feb",
+      "target": "febrerodevictoriachavista",
+      "weight": 6
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "febrerodevictoriachavista",
+      "weight": 11
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "febrerodevictoriachavista",
+      "weight": 10
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "febrerodevictoriachavista",
+      "weight": 15
+    },
+    {
+      "source": "envenezuelavenciólapaz",
+      "target": "febrerodevictoriachavista",
+      "weight": 4
+    },
+    {
+      "source": "27feb",
+      "target": "28feb",
+      "weight": 5
+    },
+    {
+      "source": "28falconsejo",
+      "target": "28feb",
+      "weight": 3
+    },
+    {
+      "source": "27feb",
+      "target": "encuentropopular27f",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "challengecarnavales2019",
+      "weight": 10
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "challengecarnavales2019",
+      "weight": 4
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "challengecarnavales2019",
+      "weight": 6
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "envenezuelavenciolapaz",
+      "weight": 5
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "envenezuelavenciolapaz",
+      "weight": 3
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "colinatierradeencuentro",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "venavenezuela",
+      "weight": 4
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "venavenezuela",
+      "weight": 4
+    },
+    {
+      "source": "challengecarnavales2019",
+      "target": "venavenezuela",
+      "weight": 4
+    },
+    {
+      "source": "carnavalesfelices2019",
+      "target": "venezuelapotenciaenergetica",
+      "weight": 3
+    },
+    {
+      "source": "27frebelionantiimperialista",
+      "target": "venezuelapotenciaenergetica",
+      "weight": 3
+    },
+    {
+      "source": "28feb",
+      "target": "envenezuelavenciólapaz",
+      "weight": 6
+    },
+    {
+      "source": "carnavales2019enpazyalegría",
+      "target": "envenezuelavenciólapaz",
+      "weight": 27
+    },
+    {
+      "source": "carnavales2019enpazyalegria",
+      "target": "envenezuelavenciólapaz",
+      "weight": 5
+    },
+    {
+      "source": "28feb",
+      "target": "noalcarnavalenvenezuela",
+      "weight": 4
+    },
+    {
+      "source": "28feb",
+      "target": "carnavales2019enpazyalegria",
+      "weight": 3
+    },
+    {
+      "source": "caputova",
+      "target": "sefcovic",
+      "weight": 3
+    },
+    {
+      "source": "carnavalesenpaz",
+      "target": "carnavalesesalegría",
+      "weight": 25
+    },
+    {
+      "source": "3mar",
+      "target": "carnavalesesalegría",
+      "weight": 15
+    },
+    {
+      "source": "carnavalescaribeccs2019",
+      "target": "carnavalesesalegría",
+      "weight": 6
+    },
+    {
+      "source": "03mar",
+      "target": "carnavalesesalegría",
+      "weight": 5
+    },
+    {
+      "source": "carnavalesenpaz",
+      "target": "carnavalesesalegria",
+      "weight": 3
+    },
+    {
+      "source": "carnavalesenpaz",
+      "target": "hinterlaces",
+      "weight": 3
+    },
+    {
+      "source": "3mar",
+      "target": "carnavalescaribeccs2019",
+      "weight": 7
+    },
+    {
+      "source": "3mar",
+      "target": "4mar",
+      "weight": 6
+    },
+    {
+      "source": "2mar",
+      "target": "4mar",
+      "weight": 4
+    },
+    {
+      "source": "3mar",
+      "target": "fiestacaribeccs2019",
+      "weight": 3
+    },
+    {
+      "source": "carnavalescaribeccs2019",
+      "target": "fiestacaribeccs2019",
+      "weight": 5
+    },
+    {
+      "source": "21eparouniversitarioindefinido",
+      "target": "cumplaseiiiccu",
+      "weight": 3
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "quienesdefiendenaltirano",
+      "weight": 8
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "venezuelapotenciaenergética",
+      "weight": 6
+    },
+    {
+      "source": "27frebeliónantiimperialista",
+      "target": "caracazo",
+      "weight": 5
+    },
+    {
+      "source": "2mar",
+      "target": "ventasmaracay",
+      "weight": 7
+    },
+    {
+      "source": "2mar",
+      "target": "nonosdetenemos",
+      "weight": 4
+    },
+    {
+      "source": "liberenalospresospoliticos",
+      "target": "liberenasimonovis",
+      "weight": 6
+    },
+    {
+      "source": "23n",
+      "target": "tereconocemosguaidó",
+      "weight": 4
+    },
+    {
+      "source": "dialogoypaz",
+      "target": "justicialboral",
+      "weight": 4
+    },
+    {
+      "source": "noabranesaverga",
+      "target": "quesejodanlosputoscolombianosjbolas",
+      "weight": 5
+    },
+    {
+      "source": "noabranlafrontera",
+      "target": "quesejodanlosputoscolombianosjbolas",
+      "weight": 5
+    },
+    {
+      "source": "megarecoleccionhumanitaria",
+      "target": "porvenezuela",
+      "weight": 3
+    },
+    {
+      "source": "01mar",
+      "target": "carnavalenamormayor",
+      "weight": 10
+    },
+    {
+      "source": "01mar",
+      "target": "nitu",
+      "weight": 3
+    },
+    {
+      "source": "festivalrecreativocarnaval2019",
+      "target": "nitu",
+      "weight": 3
+    },
+    {
+      "source": "nousa",
+      "target": "porlapatriagrande",
+      "weight": 10
+    },
+    {
+      "source": "187n11ya",
+      "target": "r2p",
+      "weight": 6
+    },
+    {
+      "source": "paraentender",
+      "target": "thread",
+      "weight": 8
+    },
+    {
+      "source": "elmastershow",
+      "target": "rumberanetwork",
+      "weight": 8
+    },
+    {
+      "source": "jan21",
+      "target": "jan23",
+      "weight": 8
+    },
+    {
+      "source": "contactoeuropa",
+      "target": "ueenvenezuela",
+      "weight": 4
+    },
+    {
+      "source": "barlovento",
+      "target": "bumbum",
+      "weight": 4
+    },
+    {
+      "source": "5metas",
+      "target": "poramor",
+      "weight": 7
+    },
+    {
+      "source": "digoyo",
+      "target": "nose",
+      "weight": 3
+    },
+    {
+      "source": "hablaguaido",
+      "target": "janiotpm",
+      "weight": 6
+    },
+    {
+      "source": "estaesmicasa",
+      "target": "vamosdom",
+      "weight": 3
+    },
+    {
+      "source": "internacionalsocialista",
+      "target": "internacionalsocialistaenrd",
+      "weight": 4
+    },
+    {
+      "source": "granmason",
+      "target": "masoneria",
+      "weight": 6
+    },
+    {
+      "source": "duquedigaleatrump",
+      "target": "duqueeneeuu",
+      "weight": 6
+    },
+    {
+      "source": "03mar",
+      "target": "carnalesfelices2019",
+      "weight": 4
+    },
+    {
+      "source": "noticias_internacionales",
+      "target": "noticias_regionales",
+      "weight": 6
+    },
+    {
+      "source": "agárrate",
+      "target": "cucutazo",
+      "weight": 3
+    },
+    {
+      "source": "ndcodca",
+      "target": "odca",
+      "weight": 6
+    },
+    {
+      "source": "espanaconguaido",
+      "target": "espanaconvenezuela",
+      "weight": 3
+    },
+    {
+      "source": "diplomacy",
+      "target": "isa2019",
+      "weight": 3
+    },
+    {
+      "source": "las10principales",
+      "target": "toquefinal",
+      "weight": 5
+    },
+    {
+      "source": "tatgranada19",
+      "target": "tatgranada7",
+      "weight": 5
+    },
+    {
+      "source": "rosaledasur",
+      "target": "sanantoniodelosaltos",
+      "weight": 4
+    },
+    {
+      "source": "cadavezotravez",
+      "target": "eddiesantiago",
+      "weight": 4
+    },
+    {
+      "source": "20añosdebatallayvictoria",
+      "target": "lealessimepretraidoresnunca",
+      "weight": 3
+    },
+    {
+      "source": "mcm",
+      "target": "tre",
+      "weight": 4
+    },
+    {
+      "source": "poramor",
+      "target": "valeapenaverdenovo",
+      "weight": 4
+    },
+    {
+      "source": "ceoforonemonth",
+      "target": "periodismops",
+      "weight": 4
+    },
+    {
+      "source": "actualidadpolítica",
+      "target": "periodismops",
+      "weight": 4
+    },
+    {
+      "source": "radicalmenteliberales",
+      "target": "soyvente",
+      "weight": 4
+    },
+    {
+      "source": "afiuniesinocente",
+      "target": "corrupcionespiritual",
+      "weight": 4
+    },
+    {
+      "source": "condiostodo",
+      "target": "doramazzone",
+      "weight": 4
+    },
+    {
+      "source": "davidduchovny",
+      "target": "mcm",
+      "weight": 4
+    },
+    {
+      "source": "confirmandoaloscreyentes",
+      "target": "pariaguan",
+      "weight": 4
+    },
+    {
+      "source": "benews",
+      "target": "protestasparis",
+      "weight": 4
+    },
+    {
+      "source": "armadas",
+      "target": "fuerzas",
+      "weight": 3
+    },
+    {
+      "source": "lucíapérez",
+      "target": "opiniónads",
+      "weight": 3
+    },
+    {
+      "source": "firmazoantiimperialistaporlapaz",
+      "target": "labotagringa",
+      "weight": 3
+    },
+    {
+      "source": "masoneria",
+      "target": "rosacruces",
+      "weight": 3
+    },
+    {
+      "source": "magalytvlafirme",
+      "target": "valgamedios",
+      "weight": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "repuesto",
+      "size": 112
+    },
+    {
+      "id": "venezuela",
+      "size": 2657
+    },
+    {
+      "id": "4mar",
+      "size": 132
+    },
+    {
+      "id": "27feb",
+      "size": 151
+    },
+    {
+      "id": "carnavalesfelices2019",
+      "size": 311
+    },
+    {
+      "id": "lasmáscompartidas",
+      "size": 3
+    },
+    {
+      "id": "guaidoterrorista",
+      "size": 29
+    },
+    {
+      "id": "28feb",
+      "size": 94
+    },
+    {
+      "id": "caputova",
+      "size": 58
+    },
+    {
+      "id": "carnavales2019enpazyalegría",
+      "size": 110
+    },
+    {
+      "id": "3mar",
+      "size": 58
+    },
+    {
+      "id": "misrrssvzla",
+      "size": 22
+    },
+    {
+      "id": "desfiledecaranaval2019",
+      "size": 46
+    },
+    {
+      "id": "carnavalesesalegría",
+      "size": 81
+    },
+    {
+      "id": "noabranlasfronteras",
+      "size": 70
+    },
+    {
+      "id": "blogstelesur",
+      "size": 18
+    },
+    {
+      "id": "sancristobaltachira",
+      "size": 17
+    },
+    {
+      "id": "asesorpaís",
+      "size": 17
+    },
+    {
+      "id": "21eparouniversitarioindefinido",
+      "size": 19
+    },
+    {
+      "id": "jan23",
+      "size": 23
+    },
+    {
+      "id": "27frebeliónantiimperialista",
+      "size": 80
+    },
+    {
+      "id": "nosimporta",
+      "size": 14
+    },
+    {
+      "id": "2mar",
+      "size": 55
+    },
+    {
+      "id": "liberenalospresospoliticos",
+      "size": 19
+    },
+    {
+      "id": "gameofthrone",
+      "size": 3
+    },
+    {
+      "id": "28e",
+      "size": 11
+    },
+    {
+      "id": "thread",
+      "size": 19
+    },
+    {
+      "id": "23n",
+      "size": 15
+    },
+    {
+      "id": "4mvzlaalacalle",
+      "size": 19
+    },
+    {
+      "id": "dialogoypaz",
+      "size": 15
+    },
+    {
+      "id": "megarecoleccionhumanitaria",
+      "size": 14
+    },
+    {
+      "id": "liberenahenry",
+      "size": 10
+    },
+    {
+      "id": "febrerodevictoriachavista",
+      "size": 51
+    },
+    {
+      "id": "mitierra",
+      "size": 10
+    },
+    {
+      "id": "hechoensocialismo",
+      "size": 10
+    },
+    {
+      "id": "ayudaylibertadvenezuela",
+      "size": 10
+    },
+    {
+      "id": "golpedeestadovenezuela",
+      "size": 10
+    },
+    {
+      "id": "01mar",
+      "size": 43
+    },
+    {
+      "id": "nousa",
+      "size": 14
+    },
+    {
+      "id": "cadivi",
+      "size": 9
+    },
+    {
+      "id": "noalaintervención",
+      "size": 9
+    },
+    {
+      "id": "saqueo",
+      "size": 9
+    },
+    {
+      "id": "30e",
+      "size": 9
+    },
+    {
+      "id": "expectativa",
+      "size": 3
+    },
+    {
+      "id": "elliottabrams",
+      "size": 9
+    },
+    {
+      "id": "paraentender",
+      "size": 17
+    },
+    {
+      "id": "noticias_regionales",
+      "size": 15
+    },
+    {
+      "id": "cancilleria",
+      "size": 8
+    },
+    {
+      "id": "opositores",
+      "size": 8
+    },
+    {
+      "id": "maduroyahuelesapodrido",
+      "size": 8
+    },
+    {
+      "id": "festivalrecreativocarnaval2019",
+      "size": 54
+    },
+    {
+      "id": "invasion",
+      "size": 8
+    },
+    {
+      "id": "liderinterno",
+      "size": 8
+    },
+    {
+      "id": "elmastershow",
+      "size": 12
+    },
+    {
+      "id": "jan21",
+      "size": 16
+    },
+    {
+      "id": "presidenteencargado",
+      "size": 8
+    },
+    {
+      "id": "carnavales2019enpazyalegria",
+      "size": 32
+    },
+    {
+      "id": "ehc",
+      "size": 8
+    },
+    {
+      "id": "upata",
+      "size": 8
+    },
+    {
+      "id": "fuerzaarmada",
+      "size": 7
+    },
+    {
+      "id": "contactoeuropa",
+      "size": 11
+    },
+    {
+      "id": "rennyottolina",
+      "size": 7
+    },
+    {
+      "id": "janiotpm",
+      "size": 13
+    },
+    {
+      "id": "soyvente",
+      "size": 11
+    },
+    {
+      "id": "presidentemaduro",
+      "size": 7
+    },
+    {
+      "id": "barlovento",
+      "size": 11
+    },
+    {
+      "id": "realidades",
+      "size": 7
+    },
+    {
+      "id": "muertessoninversión",
+      "size": 7
+    },
+    {
+      "id": "askavenezuelan",
+      "size": 6
+    },
+    {
+      "id": "recertificación",
+      "size": 7
+    },
+    {
+      "id": "r2p",
+      "size": 13
+    },
+    {
+      "id": "venezolanismo",
+      "size": 7
+    },
+    {
+      "id": "15junio",
+      "size": 7
+    },
+    {
+      "id": "asígastantudinero",
+      "size": 10
+    },
+    {
+      "id": "cucutazo",
+      "size": 10
+    },
+    {
+      "id": "digoyo",
+      "size": 9
+    },
+    {
+      "id": "sirjop",
+      "size": 6
+    },
+    {
+      "id": "camilovenezuela",
+      "size": 6
+    },
+    {
+      "id": "intervention",
+      "size": 6
+    },
+    {
+      "id": "unioneeuropea",
+      "size": 6
+    },
+    {
+      "id": "paísesnoalineados",
+      "size": 6
+    },
+    {
+      "id": "golpeenvenezuela",
+      "size": 6
+    },
+    {
+      "id": "sinvergüenzas",
+      "size": 6
+    },
+    {
+      "id": "emigrante",
+      "size": 6
+    },
+    {
+      "id": "hablaguaido",
+      "size": 10
+    },
+    {
+      "id": "gringos",
+      "size": 6
+    },
+    {
+      "id": "30deenero",
+      "size": 6
+    },
+    {
+      "id": "desbloqueenaporrea",
+      "size": 6
+    },
+    {
+      "id": "socialismodelsiglo21",
+      "size": 6
+    },
+    {
+      "id": "seriedelcaribeportves",
+      "size": 6
+    },
+    {
+      "id": "internacionalsocialista",
+      "size": 10
+    },
+    {
+      "id": "rumberanetwork",
+      "size": 14
+    },
+    {
+      "id": "bicentenariodeangostura",
+      "size": 6
+    },
+    {
+      "id": "democraciaylibertad",
+      "size": 6
+    },
+    {
+      "id": "ivic",
+      "size": 6
+    },
+    {
+      "id": "quesesepa",
+      "size": 6
+    },
+    {
+      "id": "turkiye",
+      "size": 6
+    },
+    {
+      "id": "guaidólibertador",
+      "size": 6
+    },
+    {
+      "id": "pastorlopez",
+      "size": 6
+    },
+    {
+      "id": "nuevavenezuela",
+      "size": 6
+    },
+    {
+      "id": "soldadoreflexiona",
+      "size": 6
+    },
+    {
+      "id": "colômbia",
+      "size": 6
+    },
+    {
+      "id": "mejorandovidas",
+      "size": 6
+    },
+    {
+      "id": "aguantemaduro",
+      "size": 6
+    },
+    {
+      "id": "petrofraude",
+      "size": 6
+    },
+    {
+      "id": "intervención",
+      "size": 6
+    },
+    {
+      "id": "moralesglobal",
+      "size": 6
+    },
+    {
+      "id": "hyperinflation",
+      "size": 6
+    },
+    {
+      "id": "nomades",
+      "size": 6
+    },
+    {
+      "id": "03mar",
+      "size": 25
+    },
+    {
+      "id": "agárrate",
+      "size": 9
+    },
+    {
+      "id": "operacionliberad",
+      "size": 5
+    },
+    {
+      "id": "360cnn",
+      "size": 5
+    },
+    {
+      "id": "codepink",
+      "size": 5
+    },
+    {
+      "id": "gobiernoilegitimo",
+      "size": 5
+    },
+    {
+      "id": "cooperativaesclasico",
+      "size": 3
+    },
+    {
+      "id": "naciones",
+      "size": 5
+    },
+    {
+      "id": "31e",
+      "size": 5
+    },
+    {
+      "id": "shameonyou",
+      "size": 5
+    },
+    {
+      "id": "espanaconguaido",
+      "size": 8
+    },
+    {
+      "id": "pueblosoberano",
+      "size": 5
+    },
+    {
+      "id": "360mundo",
+      "size": 5
+    },
+    {
+      "id": "canaima",
+      "size": 5
+    },
+    {
+      "id": "ramoverde",
+      "size": 5
+    },
+    {
+      "id": "concluapagonven",
+      "size": 5
+    },
+    {
+      "id": "desbloqueenaporreaya",
+      "size": 5
+    },
+    {
+      "id": "liberenalosniñosyadolescentes",
+      "size": 5
+    },
+    {
+      "id": "gocho",
+      "size": 5
+    },
+    {
+      "id": "tanqueta",
+      "size": 5
+    },
+    {
+      "id": "23deene",
+      "size": 5
+    },
+    {
+      "id": "freedomforvenezuela",
+      "size": 5
+    },
+    {
+      "id": "gritemosconbrío23e",
+      "size": 5
+    },
+    {
+      "id": "fedecamaras",
+      "size": 5
+    },
+    {
+      "id": "autodeterminaciondelospueblos",
+      "size": 5
+    },
+    {
+      "id": "caracasenescena",
+      "size": 3
+    },
+    {
+      "id": "cnne",
+      "size": 5
+    },
+    {
+      "id": "almallanera",
+      "size": 5
+    },
+    {
+      "id": "diplomacy",
+      "size": 8
+    },
+    {
+      "id": "agrosos",
+      "size": 5
+    },
+    {
+      "id": "liberenasimonovis",
+      "size": 11
+    },
+    {
+      "id": "diosbendigaavenezuela",
+      "size": 4
+    },
+    {
+      "id": "threads",
+      "size": 5
+    },
+    {
+      "id": "toquefinal",
+      "size": 10
+    },
+    {
+      "id": "unsueñoparavenezuela",
+      "size": 5
+    },
+    {
+      "id": "tatgranada19",
+      "size": 8
+    },
+    {
+      "id": "guaidog",
+      "size": 4
+    },
+    {
+      "id": "grupodelimaconvzla",
+      "size": 4
+    },
+    {
+      "id": "pontifex",
+      "size": 4
+    },
+    {
+      "id": "necesitamosayuda",
+      "size": 4
+    },
+    {
+      "id": "solonopodemos",
+      "size": 4
+    },
+    {
+      "id": "4demayo",
+      "size": 4
+    },
+    {
+      "id": "pazylibertad",
+      "size": 4
+    },
+    {
+      "id": "bolichicos",
+      "size": 4
+    },
+    {
+      "id": "tierradegracia",
+      "size": 4
+    },
+    {
+      "id": "pafuera",
+      "size": 4
+    },
+    {
+      "id": "misil",
+      "size": 4
+    },
+    {
+      "id": "cubahandsoffvenezuela",
+      "size": 4
+    },
+    {
+      "id": "elhambrehabla",
+      "size": 4
+    },
+    {
+      "id": "urgent",
+      "size": 4
+    },
+    {
+      "id": "hoyxhoyvzla",
+      "size": 4
+    },
+    {
+      "id": "oposion",
+      "size": 4
+    },
+    {
+      "id": "pruebasdegolpedeestadoenvenezuela",
+      "size": 4
+    },
+    {
+      "id": "concluflorido",
+      "size": 4
+    },
+    {
+      "id": "esclavos",
+      "size": 4
+    },
+    {
+      "id": "convenzionedivienna",
+      "size": 4
+    },
+    {
+      "id": "ambasciatavenezuelana",
+      "size": 4
+    },
+    {
+      "id": "nazioniunite",
+      "size": 4
+    },
+    {
+      "id": "26ene19",
+      "size": 4
+    },
+    {
+      "id": "13deenero",
+      "size": 4
+    },
+    {
+      "id": "tajani",
+      "size": 3
+    },
+    {
+      "id": "conclusionescnn",
+      "size": 4
+    },
+    {
+      "id": "inpcan",
+      "size": 4
+    },
+    {
+      "id": "gallerysecurity",
+      "size": 4
+    },
+    {
+      "id": "noalplannariyahenvzla",
+      "size": 4
+    },
+    {
+      "id": "challengecarnavales2019",
+      "size": 37
+    },
+    {
+      "id": "grandemivinotinto",
+      "size": 4
+    },
+    {
+      "id": "socialismosigloxxi",
+      "size": 4
+    },
+    {
+      "id": "geoestrategia",
+      "size": 4
+    },
+    {
+      "id": "leogonzalez",
+      "size": 4
+    },
+    {
+      "id": "20añosdebatallayvictoria",
+      "size": 7
+    },
+    {
+      "id": "lanoche24h",
+      "size": 4
+    },
+    {
+      "id": "soportala",
+      "size": 4
+    },
+    {
+      "id": "234ula",
+      "size": 4
+    },
+    {
+      "id": "llevotuluzytuaromaenmipiel",
+      "size": 4
+    },
+    {
+      "id": "construir",
+      "size": 4
+    },
+    {
+      "id": "falseflag",
+      "size": 4
+    },
+    {
+      "id": "cabildos",
+      "size": 4
+    },
+    {
+      "id": "descarado",
+      "size": 4
+    },
+    {
+      "id": "mcm",
+      "size": 11
+    },
+    {
+      "id": "venezolanosensantiago",
+      "size": 4
+    },
+    {
+      "id": "21ener19",
+      "size": 4
+    },
+    {
+      "id": "cortepenalinternacional",
+      "size": 4
+    },
+    {
+      "id": "madurorolitrancoemmgvo",
+      "size": 4
+    },
+    {
+      "id": "noticiasvenezuela",
+      "size": 4
+    },
+    {
+      "id": "tcmsfinal",
+      "size": 4
+    },
+    {
+      "id": "29e",
+      "size": 4
+    },
+    {
+      "id": "sanare",
+      "size": 4
+    },
+    {
+      "id": "rogerwater",
+      "size": 4
+    },
+    {
+      "id": "pemón",
+      "size": 16
+    },
+    {
+      "id": "sabrosito",
+      "size": 4
+    },
+    {
+      "id": "respira",
+      "size": 8
+    },
+    {
+      "id": "liderdeverdad",
+      "size": 4
+    },
+    {
+      "id": "sololideres",
+      "size": 4
+    },
+    {
+      "id": "elmundoestaloco",
+      "size": 4
+    },
+    {
+      "id": "poramor",
+      "size": 14
+    },
+    {
+      "id": "06mar",
+      "size": 4
+    },
+    {
+      "id": "olgatañon",
+      "size": 4
+    },
+    {
+      "id": "autoproclamado",
+      "size": 3
+    },
+    {
+      "id": "january23",
+      "size": 4
+    },
+    {
+      "id": "jan26",
+      "size": 4
+    },
+    {
+      "id": "lejosperonoausente",
+      "size": 4
+    },
+    {
+      "id": "colombiayvenezuela",
+      "size": 4
+    },
+    {
+      "id": "nuncajamasseremospatiotrasero",
+      "size": 8
+    },
+    {
+      "id": "pazyvida",
+      "size": 4
+    },
+    {
+      "id": "100k",
+      "size": 4
+    },
+    {
+      "id": "condiosdelante",
+      "size": 4
+    },
+    {
+      "id": "triunfaralapaz",
+      "size": 4
+    },
+    {
+      "id": "muertealchavismo",
+      "size": 4
+    },
+    {
+      "id": "opina",
+      "size": 4
+    },
+    {
+      "id": "humorvenezolano",
+      "size": 4
+    },
+    {
+      "id": "uft",
+      "size": 4
+    },
+    {
+      "id": "nomasrevolucion",
+      "size": 4
+    },
+    {
+      "id": "conflictos",
+      "size": 4
+    },
+    {
+      "id": "checknews",
+      "size": 4
+    },
+    {
+      "id": "soycocinero",
+      "size": 4
+    },
+    {
+      "id": "primeminister",
+      "size": 4
+    },
+    {
+      "id": "envenezolanismos",
+      "size": 4
+    },
+    {
+      "id": "cubaestacontigo",
+      "size": 4
+    },
+    {
+      "id": "ajedrezdealtonivel",
+      "size": 4
+    },
+    {
+      "id": "incertidumbre",
+      "size": 4
+    },
+    {
+      "id": "bolivariano",
+      "size": 4
+    },
+    {
+      "id": "noalcarnaval",
+      "size": 4
+    },
+    {
+      "id": "todossomsguaido",
+      "size": 4
+    },
+    {
+      "id": "caraetabla",
+      "size": 4
+    },
+    {
+      "id": "iusy",
+      "size": 4
+    },
+    {
+      "id": "merida_ve",
+      "size": 4
+    },
+    {
+      "id": "16febrero",
+      "size": 4
+    },
+    {
+      "id": "cuadrigadw",
+      "size": 4
+    },
+    {
+      "id": "22mayo",
+      "size": 3
+    },
+    {
+      "id": "paíshermano",
+      "size": 4
+    },
+    {
+      "id": "salvadorallende",
+      "size": 4
+    },
+    {
+      "id": "art187n11ya",
+      "size": 4
+    },
+    {
+      "id": "condiostodo",
+      "size": 7
+    },
+    {
+      "id": "mandatoilegitimo",
+      "size": 4
+    },
+    {
+      "id": "torturas",
+      "size": 4
+    },
+    {
+      "id": "unidosporvenezuela",
+      "size": 4
+    },
+    {
+      "id": "retornadas",
+      "size": 4
+    },
+    {
+      "id": "usroguegovt",
+      "size": 4
+    },
+    {
+      "id": "macritequiero",
+      "size": 4
+    },
+    {
+      "id": "nau",
+      "size": 4
+    },
+    {
+      "id": "asílomiragabo",
+      "size": 4
+    },
+    {
+      "id": "noalamentira",
+      "size": 4
+    },
+    {
+      "id": "corrupcionespiritual",
+      "size": 8
+    },
+    {
+      "id": "faltadeinversion",
+      "size": 4
+    },
+    {
+      "id": "23febayudaylibertad",
+      "size": 4
+    },
+    {
+      "id": "ayudahumanitara",
+      "size": 4
+    },
+    {
+      "id": "confirmandoaloscreyentes",
+      "size": 8
+    },
+    {
+      "id": "actúatec2019",
+      "size": 4
+    },
+    {
+      "id": "recuento",
+      "size": 4
+    },
+    {
+      "id": "inmaduro",
+      "size": 4
+    },
+    {
+      "id": "primermundo",
+      "size": 4
+    },
+    {
+      "id": "plazabolivardechacao",
+      "size": 4
+    },
+    {
+      "id": "lamañanadelonce",
+      "size": 4
+    },
+    {
+      "id": "hacenjusticiaenyaracuy",
+      "size": 4
+    },
+    {
+      "id": "globovisión",
+      "size": 4
+    },
+    {
+      "id": "guerracivil",
+      "size": 4
+    },
+    {
+      "id": "golpismo",
+      "size": 4
+    },
+    {
+      "id": "esteesmi187",
+      "size": 4
+    },
+    {
+      "id": "ecosinternacional",
+      "size": 4
+    },
+    {
+      "id": "soluciónpolítica",
+      "size": 4
+    },
+    {
+      "id": "diálogos",
+      "size": 4
+    },
+    {
+      "id": "ojosdelcielo",
+      "size": 4
+    },
+    {
+      "id": "juanluisguerra",
+      "size": 4
+    },
+    {
+      "id": "nodesestabilización",
+      "size": 4
+    },
+    {
+      "id": "granada1984",
+      "size": 4
+    },
+    {
+      "id": "escuálidos",
+      "size": 4
+    },
+    {
+      "id": "tves",
+      "size": 4
+    },
+    {
+      "id": "csm2019",
+      "size": 4
+    },
+    {
+      "id": "usurpación",
+      "size": 4
+    },
+    {
+      "id": "tereconocemosguaidó",
+      "size": 8
+    },
+    {
+      "id": "djsdaily",
+      "size": 4
+    },
+    {
+      "id": "asambleasdedios",
+      "size": 4
+    },
+    {
+      "id": "dialogue",
+      "size": 4
+    },
+    {
+      "id": "veneuropa",
+      "size": 4
+    },
+    {
+      "id": "ffaav",
+      "size": 4
+    },
+    {
+      "id": "elliotabrams",
+      "size": 4
+    },
+    {
+      "id": "handsofvenezuela",
+      "size": 4
+    },
+    {
+      "id": "asesinado",
+      "size": 4
+    },
+    {
+      "id": "liberenalospm",
+      "size": 4
+    },
+    {
+      "id": "albamovimientos",
+      "size": 4
+    },
+    {
+      "id": "luisanee",
+      "size": 4
+    },
+    {
+      "id": "conductorslife",
+      "size": 4
+    },
+    {
+      "id": "actualidadpolítica",
+      "size": 8
+    },
+    {
+      "id": "periodismops",
+      "size": 12
+    },
+    {
+      "id": "emigrar",
+      "size": 4
+    },
+    {
+      "id": "benews",
+      "size": 8
+    },
+    {
+      "id": "conomonetario",
+      "size": 3
+    },
+    {
+      "id": "18j",
+      "size": 4
+    },
+    {
+      "id": "diadelganadero",
+      "size": 4
+    },
+    {
+      "id": "operaciónlibertadmerida",
+      "size": 4
+    },
+    {
+      "id": "nicolás_maduro",
+      "size": 3
+    },
+    {
+      "id": "palante",
+      "size": 3
+    },
+    {
+      "id": "art187num11",
+      "size": 3
+    },
+    {
+      "id": "depredador",
+      "size": 3
+    },
+    {
+      "id": "dianca",
+      "size": 3
+    },
+    {
+      "id": "opositor",
+      "size": 3
+    },
+    {
+      "id": "aristobulo",
+      "size": 3
+    },
+    {
+      "id": "socialismoescancer",
+      "size": 3
+    },
+    {
+      "id": "ladictadura",
+      "size": 3
+    },
+    {
+      "id": "conclutarre",
+      "size": 3
+    },
+    {
+      "id": "arrechatevenezuela",
+      "size": 3
+    },
+    {
+      "id": "ultimasnoticias",
+      "size": 3
+    },
+    {
+      "id": "desesperanza",
+      "size": 3
+    },
+    {
+      "id": "parlamentoeuroepeo",
+      "size": 3
+    },
+    {
+      "id": "hechoenrobolucion",
+      "size": 3
+    },
+    {
+      "id": "progres",
+      "size": 3
+    },
+    {
+      "id": "falsa",
+      "size": 3
+    },
+    {
+      "id": "eddiesantiago",
+      "size": 7
+    },
+    {
+      "id": "ilegítimo",
+      "size": 3
+    },
+    {
+      "id": "relacionesdiplomaticas",
+      "size": 3
+    },
+    {
+      "id": "antidemocracia",
+      "size": 3
+    },
+    {
+      "id": "usurpacion",
+      "size": 3
+    },
+    {
+      "id": "gorrin",
+      "size": 3
+    },
+    {
+      "id": "valgamedios",
+      "size": 6
+    },
+    {
+      "id": "ntn24",
+      "size": 3
+    },
+    {
+      "id": "antiimperialistas",
+      "size": 3
+    },
+    {
+      "id": "gregoriovallesesnavidad",
+      "size": 3
+    },
+    {
+      "id": "maduroseva",
+      "size": 3
+    },
+    {
+      "id": "univisión",
+      "size": 3
+    },
+    {
+      "id": "vamosdom",
+      "size": 6
+    },
+    {
+      "id": "nosvemosenlacalle",
+      "size": 3
+    },
+    {
+      "id": "pabellones",
+      "size": 3
+    },
+    {
+      "id": "mefui",
+      "size": 3
+    },
+    {
+      "id": "intervencionmilitarinternacionalya",
+      "size": 3
+    },
+    {
+      "id": "caraca",
+      "size": 3
+    },
+    {
+      "id": "regime",
+      "size": 3
+    },
+    {
+      "id": "bloqueado",
+      "size": 3
+    },
+    {
+      "id": "expresidentemaduroelasesino",
+      "size": 3
+    },
+    {
+      "id": "telesurtv",
+      "size": 3
+    },
+    {
+      "id": "alzamiento",
+      "size": 3
+    },
+    {
+      "id": "jan13",
+      "size": 3
+    },
+    {
+      "id": "fuerayankysdeaméricalatina",
+      "size": 3
+    },
+    {
+      "id": "11mayo",
+      "size": 3
+    },
+    {
+      "id": "reconstruir",
+      "size": 3
+    },
+    {
+      "id": "eléctrica",
+      "size": 3
+    },
+    {
+      "id": "ruge",
+      "size": 3
+    },
+    {
+      "id": "psuvcriminal",
+      "size": 3
+    },
+    {
+      "id": "venezolanosenflorida",
+      "size": 3
+    },
+    {
+      "id": "eurocamara",
+      "size": 3
+    },
+    {
+      "id": "resistenciavenezuela",
+      "size": 3
+    },
+    {
+      "id": "varsovia",
+      "size": 3
+    },
+    {
+      "id": "rtenespañol",
+      "size": 3
+    },
+    {
+      "id": "cello",
+      "size": 3
+    },
+    {
+      "id": "marditomaduro",
+      "size": 3
+    },
+    {
+      "id": "dondeestaamanda",
+      "size": 3
+    },
+    {
+      "id": "capitancaguaripano",
+      "size": 3
+    },
+    {
+      "id": "gob",
+      "size": 3
+    },
+    {
+      "id": "trumpgohome",
+      "size": 3
+    },
+    {
+      "id": "miamimarathon2019",
+      "size": 3
+    },
+    {
+      "id": "despiertavenezuela",
+      "size": 3
+    },
+    {
+      "id": "buenossomosmas",
+      "size": 3
+    },
+    {
+      "id": "padrinolópez",
+      "size": 3
+    },
+    {
+      "id": "golpemilitar",
+      "size": 3
+    },
+    {
+      "id": "usurpateur",
+      "size": 3
+    },
+    {
+      "id": "nomerepresentas",
+      "size": 3
+    },
+    {
+      "id": "andesvenezolanos",
+      "size": 3
+    },
+    {
+      "id": "asambleanacionalconstituyente",
+      "size": 3
+    },
+    {
+      "id": "himnonacionaldevenezuela",
+      "size": 3
+    },
+    {
+      "id": "perder",
+      "size": 3
+    },
+    {
+      "id": "corpoelect",
+      "size": 3
+    },
+    {
+      "id": "dictaduranuncamas",
+      "size": 3
+    },
+    {
+      "id": "anticapitalistasenred",
+      "size": 3
+    },
+    {
+      "id": "lastienditas",
+      "size": 3
+    },
+    {
+      "id": "mcetm",
+      "size": 3
+    },
+    {
+      "id": "autoproclamacion",
+      "size": 3
+    },
+    {
+      "id": "handsoff",
+      "size": 3
+    },
+    {
+      "id": "biots",
+      "size": 3
+    },
+    {
+      "id": "simónbolivar",
+      "size": 3
+    },
+    {
+      "id": "suramericanosub17",
+      "size": 3
+    },
+    {
+      "id": "bienesyraices",
+      "size": 3
+    },
+    {
+      "id": "novamosbien",
+      "size": 3
+    },
+    {
+      "id": "juventuddivinotesoro",
+      "size": 3
+    },
+    {
+      "id": "arrechera",
+      "size": 3
+    },
+    {
+      "id": "concluvzlaayuda",
+      "size": 3
+    },
+    {
+      "id": "soto",
+      "size": 3
+    },
+    {
+      "id": "liveaid",
+      "size": 3
+    },
+    {
+      "id": "10yearschallange",
+      "size": 3
+    },
+    {
+      "id": "duqueeneeuu",
+      "size": 9
+    },
+    {
+      "id": "elvaticano",
+      "size": 3
+    },
+    {
+      "id": "estoyconvenezuela",
+      "size": 3
+    },
+    {
+      "id": "dialecto",
+      "size": 3
+    },
+    {
+      "id": "justintrudeau",
+      "size": 3
+    },
+    {
+      "id": "talentonacional",
+      "size": 3
+    },
+    {
+      "id": "conclucolvzla",
+      "size": 3
+    },
+    {
+      "id": "marcosrubio",
+      "size": 3
+    },
+    {
+      "id": "opiniónads",
+      "size": 6
+    },
+    {
+      "id": "hoytodossomosvenezuela",
+      "size": 3
+    },
+    {
+      "id": "oramosxvenezuela",
+      "size": 3
+    },
+    {
+      "id": "freedomvenezuela",
+      "size": 3
+    },
+    {
+      "id": "sensatez",
+      "size": 3
+    },
+    {
+      "id": "bayly",
+      "size": 3
+    },
+    {
+      "id": "diosbendiga",
+      "size": 3
+    },
+    {
+      "id": "estadomiranda",
+      "size": 3
+    },
+    {
+      "id": "bolívia",
+      "size": 3
+    },
+    {
+      "id": "petrolio",
+      "size": 3
+    },
+    {
+      "id": "crisenavenezuela",
+      "size": 3
+    },
+    {
+      "id": "religions",
+      "size": 3
+    },
+    {
+      "id": "6marzo",
+      "size": 3
+    },
+    {
+      "id": "lapuertadelsol",
+      "size": 3
+    },
+    {
+      "id": "seteniaquedecir",
+      "size": 3
+    },
+    {
+      "id": "12enero",
+      "size": 3
+    },
+    {
+      "id": "escándalomundial",
+      "size": 3
+    },
+    {
+      "id": "nomerepresenta",
+      "size": 3
+    },
+    {
+      "id": "fuerzas",
+      "size": 6
+    },
+    {
+      "id": "guaidochallange",
+      "size": 3
+    },
+    {
+      "id": "nomasinjerencia",
+      "size": 3
+    },
+    {
+      "id": "sanantoniodelosaltos",
+      "size": 7
+    },
+    {
+      "id": "conclugrupolima",
+      "size": 3
+    },
+    {
+      "id": "ojopelao",
+      "size": 3
+    },
+    {
+      "id": "finaladictadura",
+      "size": 3
+    },
+    {
+      "id": "steinmeier",
+      "size": 3
+    },
+    {
+      "id": "colombian",
+      "size": 3
+    },
+    {
+      "id": "presosporinformar",
+      "size": 3
+    },
+    {
+      "id": "cabildoabiertotachira",
+      "size": 3
+    },
+    {
+      "id": "genteopinando",
+      "size": 3
+    },
+    {
+      "id": "miperspectiva",
+      "size": 3
+    },
+    {
+      "id": "cev",
+      "size": 3
+    },
+    {
+      "id": "sialaayudahumanitaria",
+      "size": 3
+    },
+    {
+      "id": "noticiasuno",
+      "size": 3
+    },
+    {
+      "id": "lomásleídoseh2018",
+      "size": 3
+    },
+    {
+      "id": "lasmorochas",
+      "size": 3
+    },
+    {
+      "id": "firmazoantiimperialistaporlapaz",
+      "size": 6
+    },
+    {
+      "id": "labotagringa",
+      "size": 6
+    },
+    {
+      "id": "vayansealcarajoyankisdemierda",
+      "size": 3
+    },
+    {
+      "id": "noticiasinternacionales",
+      "size": 3
+    },
+    {
+      "id": "inclusionsocialparatodos",
+      "size": 3
+    },
+    {
+      "id": "honorariosminimos",
+      "size": 3
+    },
+    {
+      "id": "01abril",
+      "size": 3
+    },
+    {
+      "id": "posverdad",
+      "size": 3
+    },
+    {
+      "id": "llanosvenezolanos",
+      "size": 3
+    },
+    {
+      "id": "masoneria",
+      "size": 12
+    },
+    {
+      "id": "milagrosalas",
+      "size": 3
+    },
+    {
+      "id": "gangof13",
+      "size": 3
+    },
+    {
+      "id": "nitu",
+      "size": 9
+    },
+    {
+      "id": "likeporvenezuela",
+      "size": 3
+    },
+    {
+      "id": "panasencolombia",
+      "size": 3
+    },
+    {
+      "id": "argentinaconmaduro",
+      "size": 3
+    },
+    {
+      "id": "liliantintori",
+      "size": 3
+    },
+    {
+      "id": "pasiónporelagro",
+      "size": 6
+    },
+    {
+      "id": "ceroinjerenciaextranjera",
+      "size": 3
+    },
+    {
+      "id": "usurpadores",
+      "size": 3
+    },
+    {
+      "id": "pazenelmundo",
+      "size": 3
+    },
+    {
+      "id": "procesoprocésarv",
+      "size": 3
+    },
+    {
+      "id": "inmueblesariasderemax",
+      "size": 3
+    },
+    {
+      "id": "saberesproductivo",
+      "size": 3
+    },
+    {
+      "id": "movimientolibertario",
+      "size": 3
+    },
+    {
+      "id": "guaira",
+      "size": 3
+    },
+    {
+      "id": "onuenvenezuela",
+      "size": 3
+    },
+    {
+      "id": "albertofranceschi",
+      "size": 3
+    },
+    {
+      "id": "bolivarianrevolution",
+      "size": 3
+    },
+    {
+      "id": "crisisunive",
+      "size": 3
+    },
+    {
+      "id": "estamosconustedes",
+      "size": 3
+    },
+    {
+      "id": "odca",
+      "size": 9
+    },
+    {
+      "id": "arepasaroundtheworld",
+      "size": 3
+    },
+    {
+      "id": "absurdarevolucion",
+      "size": 3
+    },
+    {
+      "id": "n3327ene19",
+      "size": 3
+    },
+    {
+      "id": "cambiopolitico",
+      "size": 3
+    },
+    {
+      "id": "sitemetesconvenezuelatesecas",
+      "size": 3
+    },
+    {
+      "id": "soyaméricalatina",
+      "size": 3
+    },
+    {
+      "id": "manipulación",
+      "size": 3
+    },
+    {
+      "id": "maríarey",
+      "size": 3
+    },
+    {
+      "id": "descarados",
+      "size": 3
+    },
+    {
+      "id": "malts",
+      "size": 3
+    },
+    {
+      "id": "asistenciahumanitaria",
+      "size": 3
+    },
+    {
+      "id": "paulinos",
+      "size": 3
+    },
+    {
+      "id": "enimagen",
+      "size": 3
+    },
+    {
+      "id": "screenwriting",
+      "size": 3
+    },
+    {
+      "id": "passport",
+      "size": 3
+    },
+    {
+      "id": "retrobeatzradio",
+      "size": 3
+    },
+    {
+      "id": "nomasbalasperdidas",
+      "size": 3
+    },
+    {
+      "id": "españaconguaidó",
+      "size": 3
+    },
+    {
+      "id": "emergenciahumanitariacompleja",
+      "size": 3
+    },
+    {
+      "id": "monitorservicios",
+      "size": 3
+    },
+    {
+      "id": "golazodeamérica",
+      "size": 3
+    },
+    {
+      "id": "usurpadorydestructor",
+      "size": 3
+    },
+    {
+      "id": "carnales2019enpazyalegria",
+      "size": 16
+    },
+    {
+      "id": "carnavalenamormayor",
+      "size": 23
+    },
+    {
+      "id": "desfiledecarnaval2019",
+      "size": 51
+    },
+    {
+      "id": "čaputova",
+      "size": 54
+    },
+    {
+      "id": "yankigohome",
+      "size": 9
+    },
+    {
+      "id": "venezueladisfrutaelcarnaval",
+      "size": 150
+    },
+    {
+      "id": "noabranlafrontera",
+      "size": 36
+    },
+    {
+      "id": "venezuelacrisis",
+      "size": 7
+    },
+    {
+      "id": "yanqui",
+      "size": 10
+    },
+    {
+      "id": "ventevenezuela",
+      "size": 6
+    },
+    {
+      "id": "venzuelalibre",
+      "size": 5
+    },
+    {
+      "id": "yankee",
+      "size": 5
+    },
+    {
+      "id": "yoapoyoa",
+      "size": 5
+    },
+    {
+      "id": "venezuelaembassy",
+      "size": 4
+    },
+    {
+      "id": "zoomntn24",
+      "size": 8
+    },
+    {
+      "id": "zoom23e",
+      "size": 8
+    },
+    {
+      "id": "venezuelalibreysana",
+      "size": 4
+    },
+    {
+      "id": "vzlaenlaonu",
+      "size": 4
+    },
+    {
+      "id": "verdaderoofalso",
+      "size": 10
+    },
+    {
+      "id": "ojobiónico",
+      "size": 6
+    },
+    {
+      "id": "venezuelapideauxilio",
+      "size": 4
+    },
+    {
+      "id": "venezuelairreversibleenlaw",
+      "size": 4
+    },
+    {
+      "id": "wenezuela",
+      "size": 4
+    },
+    {
+      "id": "zajárova",
+      "size": 4
+    },
+    {
+      "id": "venezueladecristo",
+      "size": 4
+    },
+    {
+      "id": "yonoreconozcoamaduro",
+      "size": 4
+    },
+    {
+      "id": "voa",
+      "size": 4
+    },
+    {
+      "id": "venezuelaid",
+      "size": 3
+    },
+    {
+      "id": "yomeentiendo",
+      "size": 3
+    },
+    {
+      "id": "venezuelapresidelaopep",
+      "size": 3
+    },
+    {
+      "id": "venezuelaproductivaenmarcha",
+      "size": 7
+    },
+    {
+      "id": "noabranlasfronterasconcolombia",
+      "size": 4
+    },
+    {
+      "id": "venezuelaaldia",
+      "size": 3
+    },
+    {
+      "id": "venezuelanspring",
+      "size": 3
+    },
+    {
+      "id": "yoestoyconmaduro",
+      "size": 3
+    },
+    {
+      "id": "venezueladividida",
+      "size": 3
+    },
+    {
+      "id": "éxodo",
+      "size": 6
+    },
+    {
+      "id": "leyendasurbanas",
+      "size": 3
+    },
+    {
+      "id": "venezuelamuereintervencionya",
+      "size": 3
+    },
+    {
+      "id": "venezuelahoy",
+      "size": 3
+    },
+    {
+      "id": "vidaagro",
+      "size": 6
+    },
+    {
+      "id": "vzlanosincomida",
+      "size": 3
+    },
+    {
+      "id": "μαδουρο",
+      "size": 7
+    },
+    {
+      "id": "βενεζουελα",
+      "size": 7
+    },
+    {
+      "id": "venezuelavisionaria",
+      "size": 3
+    },
+    {
+      "id": "williamsaguado",
+      "size": 3
+    },
+    {
+      "id": "venezuelaeníndices",
+      "size": 6
+    },
+    {
+      "id": "carnavalesenpaz",
+      "size": 61
+    },
+    {
+      "id": "27frebelionantiimperialista",
+      "size": 52
+    },
+    {
+      "id": "bonodecarnaval",
+      "size": 37
+    },
+    {
+      "id": "02mar",
+      "size": 12
+    },
+    {
+      "id": "carnavalesesalegria",
+      "size": 9
+    },
+    {
+      "id": "carnavalescaribeccs2019",
+      "size": 26
+    },
+    {
+      "id": "carnavalescaribe2019",
+      "size": 4
+    },
+    {
+      "id": "granmisiontransportevenezuela",
+      "size": 50
+    },
+    {
+      "id": "carnalesfelices2019",
+      "size": 10
+    },
+    {
+      "id": "revolucionchavistaenzk",
+      "size": 7
+    },
+    {
+      "id": "recaudacionvictoriosa",
+      "size": 12
+    },
+    {
+      "id": "noabranesaverga",
+      "size": 16
+    },
+    {
+      "id": "queleer",
+      "size": 32
+    },
+    {
+      "id": "envenezuelavenciólapaz",
+      "size": 46
+    },
+    {
+      "id": "5demarzo",
+      "size": 4
+    },
+    {
+      "id": "carnavalesalegría",
+      "size": 12
+    },
+    {
+      "id": "carnavalesguaicaipuro2019",
+      "size": 12
+    },
+    {
+      "id": "gn",
+      "size": 10
+    },
+    {
+      "id": "elcaracazo",
+      "size": 6
+    },
+    {
+      "id": "28falconsejo",
+      "size": 3
+    },
+    {
+      "id": "encuentropopular27f",
+      "size": 4
+    },
+    {
+      "id": "envenezuelavenciolapaz",
+      "size": 8
+    },
+    {
+      "id": "colinatierradeencuentro",
+      "size": 4
+    },
+    {
+      "id": "venavenezuela",
+      "size": 12
+    },
+    {
+      "id": "venezuelapotenciaenergetica",
+      "size": 6
+    },
+    {
+      "id": "noalcarnavalenvenezuela",
+      "size": 4
+    },
+    {
+      "id": "sefcovic",
+      "size": 3
+    },
+    {
+      "id": "hinterlaces",
+      "size": 3
+    },
+    {
+      "id": "fiestacaribeccs2019",
+      "size": 8
+    },
+    {
+      "id": "cumplaseiiiccu",
+      "size": 3
+    },
+    {
+      "id": "quienesdefiendenaltirano",
+      "size": 8
+    },
+    {
+      "id": "venezuelapotenciaenergética",
+      "size": 6
+    },
+    {
+      "id": "caracazo",
+      "size": 5
+    },
+    {
+      "id": "ventasmaracay",
+      "size": 7
+    },
+    {
+      "id": "nonosdetenemos",
+      "size": 4
+    },
+    {
+      "id": "justicialboral",
+      "size": 4
+    },
+    {
+      "id": "quesejodanlosputoscolombianosjbolas",
+      "size": 10
+    },
+    {
+      "id": "porvenezuela",
+      "size": 3
+    },
+    {
+      "id": "porlapatriagrande",
+      "size": 10
+    },
+    {
+      "id": "187n11ya",
+      "size": 6
+    },
+    {
+      "id": "ueenvenezuela",
+      "size": 4
+    },
+    {
+      "id": "bumbum",
+      "size": 4
+    },
+    {
+      "id": "5metas",
+      "size": 7
+    },
+    {
+      "id": "nose",
+      "size": 3
+    },
+    {
+      "id": "estaesmicasa",
+      "size": 3
+    },
+    {
+      "id": "internacionalsocialistaenrd",
+      "size": 4
+    },
+    {
+      "id": "granmason",
+      "size": 6
+    },
+    {
+      "id": "duquedigaleatrump",
+      "size": 6
+    },
+    {
+      "id": "noticias_internacionales",
+      "size": 6
+    },
+    {
+      "id": "ndcodca",
+      "size": 6
+    },
+    {
+      "id": "espanaconvenezuela",
+      "size": 3
+    },
+    {
+      "id": "isa2019",
+      "size": 3
+    },
+    {
+      "id": "las10principales",
+      "size": 5
+    },
+    {
+      "id": "tatgranada7",
+      "size": 5
+    },
+    {
+      "id": "rosaledasur",
+      "size": 4
+    },
+    {
+      "id": "cadavezotravez",
+      "size": 4
+    },
+    {
+      "id": "lealessimepretraidoresnunca",
+      "size": 3
+    },
+    {
+      "id": "tre",
+      "size": 4
+    },
+    {
+      "id": "valeapenaverdenovo",
+      "size": 4
+    },
+    {
+      "id": "ceoforonemonth",
+      "size": 4
+    },
+    {
+      "id": "radicalmenteliberales",
+      "size": 4
+    },
+    {
+      "id": "afiuniesinocente",
+      "size": 4
+    },
+    {
+      "id": "doramazzone",
+      "size": 4
+    },
+    {
+      "id": "davidduchovny",
+      "size": 4
+    },
+    {
+      "id": "pariaguan",
+      "size": 4
+    },
+    {
+      "id": "protestasparis",
+      "size": 4
+    },
+    {
+      "id": "armadas",
+      "size": 3
+    },
+    {
+      "id": "lucíapérez",
+      "size": 3
+    },
+    {
+      "id": "rosacruces",
+      "size": 3
+    },
+    {
+      "id": "magalytvlafirme",
+      "size": 3
+    }
+  ]
+}

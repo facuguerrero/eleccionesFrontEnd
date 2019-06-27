@@ -25,16 +25,14 @@ class HeaderCandidate extends React.Component {
                         this.props.candidate.screen_name + "-br-color" : "fifth-br-color")}
                     src={this.props.candidate.image}
                 />
-                <span
-                    className={"header-candidate-text " + (this.state.isActive ?
+                {this.props.candidate.name.split(' ').map((name, index) =>
+                    <span
+                        key={index}
+                        className={"header-candidate-text " + (this.state.isActive ?
                         this.props.candidate.screen_name + "-font-color" : "fifth-font-color")}>
-                    {this.props.candidate.name.split(' ')[0]}
-                </span>
-                <span
-                    className={"header-candidate-text " + (this.state.isActive ?
-                        this.props.candidate.screen_name + "-font-color" : "fifth-font-color")}>
-                    {this.props.candidate.name.split(' ')[1]}
-                </span>
+                        {name}
+                    </span>
+                )}
             </div>
         );
     }

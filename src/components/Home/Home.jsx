@@ -16,6 +16,7 @@ const CANDIDATES = [
     {screen_name: 'urtubeyjm', name:'Juan Manuel Urtubey' , image:'static/candidateImages/urtubey.jpg'},
     {screen_name: 'jlespert', name:'Jose Luis Espert' , image:'static/candidateImages/espert.jpg'},
     {screen_name: 'alferdez', name:'Alberto Fernández' , image:'static/candidateImages/fernandez.jpg'},
+    {screen_name: 'NicolasdelCano', name:'Nicolas del Caño' , image:'static/candidateImages/caño.jpg'},
 ].sort(function() { return 0.5 - Math.random() });
 
 class HomeConnected extends React.Component {
