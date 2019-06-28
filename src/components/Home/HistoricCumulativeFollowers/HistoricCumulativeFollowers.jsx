@@ -6,21 +6,21 @@ import GenericGraph from "../Graphs/GenericGraph";
 const mapStateToProps = state => {
     return {
         activeCandidates: state.activeCandidates,
-        cumulativeCandidates: state.cumulativeCandidates
+        historicCumulativeCandidates: state.historicCumulativeCandidates
     };
 };
 
-class CumulativeFollowersEvolutionConnected extends React.Component {
+class HistoricCumulativeFollowersConnected extends React.Component {
 
     render() {
         return (
             <div className="followers-graph white-bc-color-light">
                 <GenericGraph
-                    title={"Cantidad de seguidores acumulados desde el " + this.props.cumulativeCandidates[0].date}
+                    title="Cantidad de seguidores acumulados"
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
                     type={<SimpleLineGraph
-                        data={this.props.cumulativeCandidates}
+                        data={this.props.historicCumulativeCandidates}
                         activeCandidates={this.props.activeCandidates}
                     />}
                 />
@@ -29,5 +29,5 @@ class CumulativeFollowersEvolutionConnected extends React.Component {
     }
 }
 
-const CumulativeFollowersEvolution = connect(mapStateToProps, null)(CumulativeFollowersEvolutionConnected);
-export default CumulativeFollowersEvolution;
+const HistoricCumulativeFollowers = connect(mapStateToProps, null)(HistoricCumulativeFollowersConnected);
+export default HistoricCumulativeFollowers;

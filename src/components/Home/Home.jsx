@@ -7,6 +7,7 @@ import FollowersEvolution from "./FollowersEvolution/FollowersEvolution";
 import CumulativeFollowersEvolution from "./CumulativeFollowersEvolution/CumulativeFollowersEvolution";
 import DatesFilter from "./DatesFilter/DatesFilter";
 import EmptySelection from "./EmptySelection/EmptySelection";
+import HistoricCumulativeFollowers from "./HistoricCumulativeFollowers/HistoricCumulativeFollowers";
 
 const CANDIDATES = [
     {screen_name: 'CFKArgentina', name:'Cristina Kirchner' , image:'static/candidateImages/kirchner.jpg'},
@@ -62,6 +63,7 @@ class HomeConnected extends React.Component {
                             <div className="followers-graphs">
                                 <FollowersEvolution />
                                 <CumulativeFollowersEvolution />
+                                <HistoricCumulativeFollowers />
                             </div>
                             : <EmptySelection />
                         }

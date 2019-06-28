@@ -1,17 +1,37 @@
 import * as moment from "moment";
 
-export function processActiveCandidates(candidates, activeCandidates, activeDates) {
+export function processFilteredLastDateActiveCandidates(candidates, activeCandidates, activeDates) {
 
     //filter by dates
     const filteredCandidates = candidates.filter(candidate => {
 
         const date = moment.unix(candidate.date);
-        return (activeDates[0] === null || date >= activeDates[0]) &&
-            (activeDates[1] === null || date <= activeDates[1]);
+        return (activeDates[1] === null || date <= activeDates[1].startOf("day"));
 
-    })
+    });
 
-    return filteredCandidates.map(candidate => {
+    return processActiveCandidates(filteredCandidates, activeCandidates)
+
+}
+
+export function processFilteredAllDatesActiveCandidates(candidates, activeCandidates, activeDates) {
+
+    //filter by dates
+    const filteredCandidates = candidates.filter(candidate => {
+
+        const date = moment.unix(candidate.date);
+        return (activeDates[0] === null || date >= activeDates[0].startOf("day")) &&
+            (activeDates[1] === null || date <= activeDates[1].startOf("day"));
+
+    });
+
+    return processActiveCandidates(filteredCandidates, activeCandidates)
+
+}
+
+export function processActiveCandidates(candidates, activeCandidates) {
+
+    return candidates.map(candidate => {
         let entry = {};
         entry["date"] = moment.unix(candidate.date).format("DD/MM/YYYY");
         activeCandidates.forEach(activeCandidate => entry[activeCandidate.name] = candidate[activeCandidate.screenName])
