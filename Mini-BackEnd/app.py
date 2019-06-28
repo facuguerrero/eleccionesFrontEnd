@@ -14,9 +14,9 @@ def candidates():
     candidatesData = requests.get(url='http://localhost:8080/candidates')
     return candidatesData.text
 
-#@app.route('/<path:path>')
-#def catch_all(path):
-#    return render_template('not_found.html')
+@app.route('/<path:path>')
+def catch_all(path):
+    return render_template('not_found.html')
 
 
 if __name__ == '__main__':

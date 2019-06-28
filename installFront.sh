@@ -1,6 +1,6 @@
 #!/bin/bash
 BACKEND="eleccionesFrontEnd/Mini-BackEnd"
-TEST=="TestEleccionesFrontEnd/Mini-BackEnd"
+TEST="TestEleccionesFrontEnd/Mini-BackEnd"
 
 echo "Killing previous instances"
 cd $TEST

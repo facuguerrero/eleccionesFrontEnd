@@ -17,7 +17,7 @@ export function getCandidates() {
         // return axios.get('http://localhost:8080/candidates')
         // 'http://0.0.0.0:9290/src/jsonsDummy/candidates_dummy.json',
         return axios.get(
-            'http://localhost:8080/candidates',
+            'http://elecciones2019.fi.uba.ar:9290/candidates',
             {
             proxy: false
             })
