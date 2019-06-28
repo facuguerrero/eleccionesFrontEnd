@@ -6,7 +6,6 @@ import {resetCandidates} from "../../actions/index";
 import './NavBar.scss'
 import {connect} from "react-redux";
 
-
 class NavBarWrapperConnected extends React.Component {
     constructor(props) {
         super(props);

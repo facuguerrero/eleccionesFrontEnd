@@ -1,9 +1,8 @@
 import React from 'react';
 import GenericTopic from "../GenericTopic";
 import {connect} from "react-redux";
-import graph from "../../../jsonsDummy/static_graph_dummy.json"
+import graph from "../../../jsonsDummy/topic_graph.json"
 import TopicTitleBar from "../TopicTitleBar/TopicTitleBar";
-
 
 // const mapStateToProps = state => {
 //     return {

@@ -23,6 +23,7 @@
     "@materialr/drawer": "^2.0.2",
     "@trendmicro/react-sidenav": "^0.4.5",
     "axios": "^0.19.0",
+    "axios-https-proxy-fix": "^0.17.1",
     "copy-webpack-plugin": "^4.6.0",
     "d3": "^5.9.2",
     "d3-scale": "^0.7.0",
