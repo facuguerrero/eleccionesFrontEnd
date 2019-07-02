@@ -1,7 +1,7 @@
 .candidate-header{
-  display: flex;
-  transition: opacity .2s;
-  overflow: hidden;
+  flex-grow: 1;
+  overflow-x: scroll;
+
 }
 
 .logo{
@@ -11,9 +11,22 @@
   margin-bottom: 10px;
 }
 
+.candidates{
+  margin-top: 10px;
+  justify-content: space-between;
+}
 
-@media (max-width: 1023px){
+.party-name{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 930px) {
+
   .candidate-header{
-    overflow-x: scroll;
+    justify-content: space-between;
+    overflow-x: hidden;
   }
+
 }

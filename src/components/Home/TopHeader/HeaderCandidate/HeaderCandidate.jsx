@@ -28,8 +28,8 @@ class HeaderCandidate extends React.Component {
                 {this.props.candidate.name.split(' ').map((name, index) =>
                     <span
                         key={index}
-                        className={"header-candidate-text " + (this.state.isActive ?
-                        this.props.candidate.screen_name + "-font-color" : "fifth-font-color")}>
+                        className={"header-candidate-text font-sm " + (this.state.isActive ?
+                        this.props.candidate.screen_name + "-font-color" : "fifth-font-color-dark")}>
                         {name}
                     </span>
                 )}

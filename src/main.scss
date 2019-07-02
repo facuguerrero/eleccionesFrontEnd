@@ -36,6 +36,11 @@ html *
   padding: 20px;
 }
 
+.-filter-card-mg-pd{
+  margin: 15px 5px;
+  padding: 5px 10px;
+}
+
 // Backgroud colors
 .first-bc-color{
   background-color: #687864;
@@ -166,6 +171,10 @@ html *
   border-color: #5a5b5c;
 }
 
+.br-color-super-light{
+  border-color: #eff0f1;
+}
+
 // Font Colors
 .first-font-color{
   color: #687864;
@@ -237,6 +246,9 @@ html *
 .font-sm{
   font-size: 14px;
 }
+.font-xmd{
+  font-size: 16px;
+}
 .font-md{
   font-size: 20px;
 }
@@ -268,6 +280,23 @@ html *
 }
 .NicolasdelCano-font-color{
   color: var(--NicolasdelCano);
+}
+
+//Party colors Colors
+.FrenteDeTodos-br-color{
+  border-color: var(--FrenteDeTodos);
+}
+.JuntosPorElCambio-br-color{
+  border-color: var(--JuntosPorElCambio);
+}
+.ConsensoFederal-br-color{
+  border-color: var(--ConsensoFederal);
+}
+.FrenteDeIzquierda-br-color{
+  border-color: var(--FrenteDeIzquierda);
+}
+.FrenteDespertar-br-color{
+  border-color: var(--FrenteDespertar);
 }
 
 //Candidates border Colors
@@ -321,4 +350,9 @@ html *
   --jlespert: #743430;
   --alferdez: #1BD1D4;
   --NicolasdelCano: #d40048;
+  --FrenteDeTodos: #188bb6;
+  --JuntosPorElCambio: #b9b939;
+  --ConsensoFederal: #9f2099;
+  --FrenteDeIzquierda: #b02f38;
+  --FrenteDespertar: #4449ad;
 }
