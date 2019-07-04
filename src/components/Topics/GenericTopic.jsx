@@ -1,8 +1,12 @@
 import React from "react";
 import { Graph } from 'react-d3-graph';
 
-// the graph configuration, you only need to pass down properties
-// that you want to override, otherwise default ones will be used
+
+
+function calculateWindowSize(){
+    return window.innerWidth > 1280 ? window.innerWidth/3 - 30 : window.innerWidth - 40
+}
+
 const myConfig = {
     "automaticRearrangeAfterDropNode": true,
     "collapsible": false,
@@ -18,7 +22,7 @@ const myConfig = {
     "nodeHighlightBehavior": true,
     "panAndZoom": false,
     "staticGraph": false,
-    "width": 820,
+    "width": calculateWindowSize(),
     "d3": {
         "alphaTarget": 0.05,
         "gravity": -250,
@@ -62,7 +66,6 @@ const myConfig = {
 };
 
 class GenericTopic extends React.Component {
-
     render() {
         return (
             <div className="graph-border">
