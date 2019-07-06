@@ -1,2 +1,6 @@
+gunicorn
 flask
-requests
+flask-restful
+flask-cors
+flask_pymongo
+pymongo
