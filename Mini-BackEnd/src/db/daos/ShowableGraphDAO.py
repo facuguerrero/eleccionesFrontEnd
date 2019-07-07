@@ -20,9 +20,10 @@ class ShowableGraphDAO(GenericDAO, metaclass=Singleton):
                      for key, graph in graphs.items()]
         self.collection.insert_many(documents)
 
-    def find(self, start_date, end_date):
-        """ Retrieve graph in given window. """
-        document = self.get_first({'start_date': start_date, 'end_date': end_date})
+    def find(self, topic_id, start_date, end_date):
+        """ Retrieve graph in given window with given id. """
+        query = {'start_date': start_date, 'end_date': end_date, 'topic_id': topic_id}
+        document = self.get_first(query)
         if not document:
-            raise NoCooccurrenceGraphError(start_date, end_date)
+            raise NoCooccurrenceGraphError(start_date, end_date, topic_id)
         return document['graph']

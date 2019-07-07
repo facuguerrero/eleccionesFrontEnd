@@ -1,0 +1,8 @@
+2019-07-07 12:11:36,202 - [MainThread] - INFO - src.app - Starting application in environment dev
+2019-07-07 12:11:36,203 - [MainThread] - INFO - RawFollowerDAO - Creating has_tweets index for collection raw_followers.
+2019-07-07 12:11:36,204 - [MainThread] - INFO - CooccurrenceGraphDAO - Creating topic_id index for collection cooccurrence_graphs.
+2019-07-07 12:11:36,205 - [MainThread] - INFO - src.app - Application setup done.
+2019-07-07 12:13:23,318 - [MainThread] - INFO - src.app - Starting application in environment dev
+2019-07-07 12:13:23,319 - [MainThread] - INFO - RawFollowerDAO - Creating has_tweets index for collection raw_followers.
+2019-07-07 12:13:23,321 - [MainThread] - INFO - CooccurrenceGraphDAO - Creating topic_id index for collection cooccurrence_graphs.
+2019-07-07 12:13:23,321 - [MainThread] - INFO - src.app - Application setup done.
