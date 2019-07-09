@@ -7,4 +7,3 @@ python3 -m venv venv; \
 pip install -r requirements.txt;
 export PYTHONPATH=$PYTHONPATH:$(pwd); \
 gunicorn -b 0.0.0.0:9290 wsgi:app
-echo $! > save_pid.txt
