@@ -26,7 +26,7 @@ const myConfig = {
     "d3": {
         "alphaTarget": 0.05,
         "gravity": -250,
-        "linkLength": 120,
+        "linkLength": 1,
         "linkStrength": 2
     },
     "node": {
@@ -42,7 +42,7 @@ const myConfig = {
         "mouseCursor": "crosshair",
         "opacity": 0.9,
         "renderLabel": true,
-        "size": 200,
+        "size": 0.1,
         "strokeColor": "none",
         "strokeWidth": 1.5,
         "svg": "",
@@ -61,7 +61,7 @@ const myConfig = {
         "opacity": 1,
         "renderLabel": false,
         "semanticStrokeWidth": true,
-        "strokeWidth": 3
+        "strokeWidth": 300
     }
 };
 

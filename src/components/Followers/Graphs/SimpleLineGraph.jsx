@@ -5,14 +5,17 @@ import {
 import './Graphs.scss';
 
 const COLORS = {
-    "mauriciomacri": "#ECE822",
-    "CFKArgentina": "#20C5EA",
+    "mauriciomacri": "#b3a712",
+    "CFKArgentina": "#ea6bb",
     "urtubeyjm": "#2C18DA",
-    "rlavagna": "#16C410",
+    "rlavagna": "#7139aa",
     "sergiomassa": "#E41F14",
-    "jlespert": "#743430",
-    "alferdez": "#1BD1D4",
-    "NicolasdelCano": "#d40048"
+    "jlespert": "#133474",
+    "alferdez": "#2287aa",
+    "NicolasdelCano": "#ad1a32",
+    "MiguelPichetto": "#d8c413",
+    "RominaDelPla": "#ad3829",
+    "luisrosalesARG": "#1448a1",
 };
 
 class SimpleLineGraph extends React.Component {

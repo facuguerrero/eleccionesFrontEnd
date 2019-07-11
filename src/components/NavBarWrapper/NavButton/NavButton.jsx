@@ -1,5 +1,5 @@
 import React from 'react';
-import {Menu, TrendingUp, Timeline} from "@material-ui/icons";
+import {Menu, TrendingUp, Timeline, Home} from "@material-ui/icons";
 
 
 class NavButton extends React.Component {
@@ -10,6 +10,8 @@ class NavButton extends React.Component {
                 return <TrendingUp className="nav-button-icon" fontSize="large"/>;
             case 'Timeline':
                 return <Timeline className="nav-button-icon" fontSize="large"/>;
+            case 'Home':
+                return <Home className="nav-button-icon" fontSize="large"/>;
             default:
                 return <Menu className="nav-button-icon" fontSize="large"/>;
         }

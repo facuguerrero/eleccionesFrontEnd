@@ -19,6 +19,13 @@ class NavDrawer extends React.Component {
             <div className="drawer__sample">
                 <TemporaryDrawer onClose={this.close} open={this.state.open}>
                     <NavButton
+                        name="dashboard"
+                        text="Información General"
+                        icon="Home"
+                        onClick={this.props.onSelected}
+                        isSelected={this.props.selected.showDashboardWindow}
+                    />
+                    <NavButton
                         name="followers"
                         text="Análisis de Seguidores"
                         icon="TrendingUp"

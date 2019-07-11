@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { getCandidates } from "../../actions/index";
-import './Home.scss';
+import './Followers.scss';
 import TopHeader from "./TopHeader/TopHeader";
 import FollowersEvolution from "./FollowersEvolution/FollowersEvolution";
 import CumulativeFollowersEvolution from "./CumulativeFollowersEvolution/CumulativeFollowersEvolution";
@@ -128,5 +128,5 @@ class HomeConnected extends React.Component {
 }
 
 
-const Home = connect(null, {getCandidates})(HomeConnected);
-export default Home;
+const Followers = connect(null, {getCandidates})(HomeConnected);
+export default Followers;

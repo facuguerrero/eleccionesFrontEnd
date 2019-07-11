@@ -12,10 +12,10 @@ class GenericGraph extends React.Component {
                     <Information />
                 </div>
                 <div className="flex-row graph">
-                    <span className="graph-x-axis font-md">{this.props.xLabel}</span>
+                    {this.showLabels ? <span className="graph-x-axis font-md">{this.props.xLabel}</span> : null}
                     {this.props.type}
                 </div>
-                <span className="graph-y-axis font-md">{this.props.yLabel}</span>
+                {this.showLabels ? <span className="graph-y-axis font-md">{this.props.yLabel}</span> : null}
             </div>
         );
     }

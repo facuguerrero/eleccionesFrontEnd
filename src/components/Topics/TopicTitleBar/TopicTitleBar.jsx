@@ -1,7 +1,7 @@
 import React from 'react';
 import "./TopicTitleBar.scss"
 import {NavigateBefore} from "@material-ui/icons";
-import Information from "../../Home/Graphs/GenericGraph";
+import Information from "../../Followers/Graphs/GenericGraph";
 
 
 class TopicTitleBar extends React.Component {

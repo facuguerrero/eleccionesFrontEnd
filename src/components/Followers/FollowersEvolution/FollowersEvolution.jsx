@@ -18,6 +18,7 @@ class FollowersEvolutionConnected extends React.Component {
                     title="Cantidad de seguidores agregados por día"
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
+                    showLabels={true}
                     type={<SimpleLineGraph
                         data={this.props.processedCandidates}
                         activeCandidates={this.props.activeCandidates}

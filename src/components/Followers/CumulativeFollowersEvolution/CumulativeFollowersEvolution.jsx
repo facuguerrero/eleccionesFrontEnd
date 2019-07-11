@@ -19,6 +19,7 @@ class CumulativeFollowersEvolutionConnected extends React.Component {
                     title={"Cantidad de seguidores acumulados desde el " + this.props.cumulativeCandidates[0].date}
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
+                    showLabels={true}
                     type={<SimpleLineGraph
                         data={this.props.cumulativeCandidates}
                         activeCandidates={this.props.activeCandidates}

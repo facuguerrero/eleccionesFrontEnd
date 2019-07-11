@@ -29,7 +29,7 @@
   width: fit-content;
   border-radius: 5px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: transparent;
   position: relative;
   box-shadow: 1px 1px 7px lightgray;
@@ -75,6 +75,7 @@
 @media (min-width: 1110px) {
   .header-party{
     height: 120px;
+    flex-basis: 15%;
   }
 }
 

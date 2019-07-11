@@ -30,21 +30,19 @@ class HeaderPartyConnected extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className={"header-party -filter-card-mg-pd flex-column header-box white-bc-color-light "
-                + this.props.partyName.replace(/ /g, "") + "-br-color"}>
-                    <span className="font-xmd party-name fifth-font-color-dark">{this.props.partyName}</span>
-                    <div className="flex-row candidates">
-                        {this.props.candidates.map(
-                            (candidate, index) => <HeaderCandidate
-                                isActive={this.props.activeCandidates.filter(
-                                    activeCandidate => activeCandidate.name === candidate.name).length > 0}
-                                candidate={candidate}
-                                key={index}
-                                onClick={this.alterCandidateState}/>
-                        )
-                        }
-                    </div>
+            <div className={"header-party -filter-card-mg-pd flex-column header-box white-bc-color-light "
+            + this.props.partyName.replace(/ /g, "") + "-br-color"}>
+                <span className="font-xmd party-name fifth-font-color-dark">{this.props.partyName}</span>
+                <div className="flex-row candidates">
+                    {this.props.candidates.map(
+                        (candidate, index) => <HeaderCandidate
+                            isActive={this.props.activeCandidates.filter(
+                                activeCandidate => activeCandidate.name === candidate.name).length > 0}
+                            candidate={candidate}
+                            key={index}
+                            onClick={this.alterCandidateState}/>
+                    )
+                    }
                 </div>
             </div>
         );
