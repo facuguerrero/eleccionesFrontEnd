@@ -112,9 +112,9 @@ class HomeConnected extends React.Component {
                             <div>
                                 <div className="followers-graphs">
                                     <FollowersEvolution />
-                                    <CumulativeFollowersEvolution />
                                 </div>
                                 <div className="followers-graphs">
+                                    <CumulativeFollowersEvolution />
                                     <HistoricCumulativeFollowers />
                                 </div>
                             </div>

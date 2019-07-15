@@ -13,13 +13,14 @@
 
 .candidates{
   margin-top: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .party-name{
   margin-top: 5px;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 @media (min-width: 930px) {

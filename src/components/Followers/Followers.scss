@@ -25,6 +25,10 @@
   box-shadow: 5px 5px 15px dimgray;
 }
 
+.full-basis{
+  flex-basis: 100% !important;
+}
+
 .header-box{
   width: fit-content;
   border-radius: 5px;

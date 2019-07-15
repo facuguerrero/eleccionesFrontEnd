@@ -3,10 +3,11 @@ import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import './Graphs.scss';
+import moment from "moment";
 
 const COLORS = {
     "mauriciomacri": "#b3a712",
-    "CFKArgentina": "#ea6bb",
+    "CFKArgentina": "#1ea6bb",
     "urtubeyjm": "#2C18DA",
     "rlavagna": "#7139aa",
     "sergiomassa": "#E41F14",
@@ -17,6 +18,10 @@ const COLORS = {
     "RominaDelPla": "#ad3829",
     "luisrosalesARG": "#1448a1",
 };
+
+function kFormatter(num) {
+    return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+}
 
 class SimpleLineGraph extends React.Component {
 
@@ -36,8 +41,10 @@ class SimpleLineGraph extends React.Component {
                         }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="date" />
-                        <YAxis />
+                        <XAxis dataKey="date"
+                               tickFormatter={(tick) => tick.replace("/2019","")}
+                        />
+                        <YAxis tickFormatter={(tick) => kFormatter(tick)} />
                         <Tooltip />
                         <Legend />
                         {this.generateLines()}

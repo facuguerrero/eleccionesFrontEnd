@@ -1,9 +1,96 @@
 {
-  "tweets": 208890874,
-  "total_users": 9093436,
-  "active_users": 2533600,
-  "active_proportion": 0.2786185551864004,
-  "topic_count": 47532,
-  "hashtag_count": 2020656,
-  "cooccurrences_count": 16213572
+  "tweets": 298344064,
+  "total_users": 9109192,
+  "active_users": 1590282,
+  "active_proportion": 0.1745799188336353,
+  "followers_by_candidate": {
+    "rlavagna": {
+      "followers": 160318,
+      "active_followers": 70526,
+      "proportion": 0.43991317256951806
+    },
+    "mauriciomacri": {
+      "followers": 4900397,
+      "active_followers": 915456,
+      "proportion": 0.18681261946736152
+    },
+    "sergiomassa": {
+      "followers": 1068103,
+      "active_followers": 207123,
+      "proportion": 0.19391669155502794
+    },
+    "urtubeyjm": {
+      "followers": 175197,
+      "active_followers": 39551,
+      "proportion": 0.22575158250426663
+    },
+    "jlespert": {
+      "followers": 333281,
+      "active_followers": 153931,
+      "proportion": 0.461865512885523
+    },
+    "CFKArgentina": {
+      "followers": 5497679,
+      "active_followers": 874983,
+      "proportion": 0.15915498158404665
+    },
+    "alferdez": {
+      "followers": 204575,
+      "active_followers": 137983,
+      "proportion": 0.6744861297812538
+    },
+    "NicolasdelCano": {
+      "followers": 105762,
+      "active_followers": 38415,
+      "proportion": 0.36322119475804165
+    },
+    "MiguelPichetto": {
+      "followers": 54954,
+      "active_followers": 41724,
+      "proportion": 0.7592531935800851
+    },
+    "RominaDelPla": {
+      "followers": 13833,
+      "active_followers": 8474,
+      "proportion": 0.6125930745319165
+    },
+    "juanjomalvinas": {
+      "followers": 18759,
+      "active_followers": 14744,
+      "proportion": 0.7859694013540167
+    },
+    "CynthiaHotton": {
+      "followers": 8180,
+      "active_followers": 4415,
+      "proportion": 0.5397310513447433
+    },
+    "luisrosalesARG": {
+      "followers": 11154,
+      "active_followers": 7984,
+      "proportion": 0.7157970234893312
+    },
+    "BiondiniAR": {
+      "followers": 11495,
+      "active_followers": 4469,
+      "proportion": 0.38877772944758593
+    },
+    "ManuelaC22": {
+      "followers": 12642,
+      "active_followers": 7446,
+      "proportion": 0.5889890840056953
+    },
+    "EduardoMulhall": {
+      "followers": 801,
+      "active_followers": 496,
+      "proportion": 0.6192259675405742
+    },
+    "romeroferis": {
+      "followers": 1007,
+      "active_followers": 702,
+      "proportion": 0.6971201588877854
+    }
+  },
+  "topic_count": 93539,
+  "hashtag_count": 2568029,
+  "cooccurrences_count": 14192809
 }

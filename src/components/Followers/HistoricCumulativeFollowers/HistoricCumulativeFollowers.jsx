@@ -19,6 +19,7 @@ class HistoricCumulativeFollowersConnected extends React.Component {
                     title="Cantidad de seguidores acumulados"
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
+                    showLabels={true}
                     type={<SimpleLineGraph
                         data={this.props.historicCumulativeCandidates}
                         activeCandidates={this.props.activeCandidates}

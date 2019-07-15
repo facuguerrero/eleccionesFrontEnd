@@ -12,10 +12,20 @@ class MainDashboard extends React.Component {
         this.state = {
             dashboardInfo: {},
             showDashboard: false,
+            partiesDataLoaded: false,
+            partiesData:{}
         };
     }
 
     componentDidMount() {
+        this.timer = setInterval(()=> this.getData(), 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+
+    async getData(){
         axios.get(
             //TODO change when deployed
             // 'http://elecciones2019.fi.uba.ar:9290/dashboard',
@@ -26,7 +36,7 @@ class MainDashboard extends React.Component {
             .then((response) => {
                 this.setState({
                     dashboardInfo: response.data,
-                    showDashboard: true
+                    showDashboard: true,
                 });
             })
             .catch((error) => {
@@ -68,11 +78,12 @@ class MainDashboard extends React.Component {
                 title: "Tópicos Calculados",
                 value: this.state.dashboardInfo.topic_count
             },
-            {
-                title: "Coocurrencias Encontradas",
-                value: this.state.dashboardInfo.cooccurrences_count
-            }
+            // {
+            //     title: "Coocurrencias Encontradas",
+            //     value: this.state.dashboardInfo.cooccurrences_count
+            // }
         ];
+
     }
 
     mapUsersData() {
@@ -85,33 +96,42 @@ class MainDashboard extends React.Component {
     }
 
     mapPartyData() {
-        return [
+
+        if(this.state.partiesDataLoaded){
+            return this.state.partiesData
+        }
+
+        const partiesData = [
             {
                 name: 'Frente De Todos',
-                'Alberto Fernández': this.state.dashboardInfo.active_users,
-                'Cristina Kirchner': this.state.dashboardInfo.active_users
+                'Alberto Fernández': this.state.dashboardInfo.followers_by_candidate.alferdez.followers,
+                'Cristina Kirchner': this.state.dashboardInfo.followers_by_candidate.CFKArgentina.followers
             },
             {
                 name: 'Juntos por el Cambio',
-                'Mauricio Macri': this.state.dashboardInfo.active_users,
-                'Miguel Ángel Pichetto': this.state.dashboardInfo.active_users
+                'Mauricio Macri': this.state.dashboardInfo.followers_by_candidate.mauriciomacri.followers,
+                'Miguel Ángel Pichetto': this.state.dashboardInfo.followers_by_candidate.MiguelPichetto.followers
             },
             {
                 name: 'Consenso Federal',
-                'Roberto Lavagna': this.state.dashboardInfo.active_users,
-                'Juan Manuel Urtubey': this.state.dashboardInfo.active_users
+                'Roberto Lavagna': this.state.dashboardInfo.followers_by_candidate.rlavagna.followers,
+                'Juan Manuel Urtubey': this.state.dashboardInfo.followers_by_candidate.urtubeyjm.followers
             },
             {
                 name: 'Frente De Izquierda',
-                'Nicolas del Caño': this.state.dashboardInfo.active_users,
-                'Romina Del Plá': this.state.dashboardInfo.active_users
+                'Nicolas del Caño': this.state.dashboardInfo.followers_by_candidate.NicolasdelCano.followers,
+                'Romina Del Plá': this.state.dashboardInfo.followers_by_candidate.RominaDelPla.followers
             },
             {
                 name: 'Frente Despertar',
-                'Jose Luis Espert': this.state.dashboardInfo.active_users,
-                'Luis Rosales': this.state.dashboardInfo.active_users
+                'Jose Luis Espert': this.state.dashboardInfo.followers_by_candidate.jlespert.followers,
+                'Luis Rosales': this.state.dashboardInfo.followers_by_candidate.luisrosalesARG.followers
             },
-        ];
+        ].sort(function() { return 0.5 - Math.random() });
+
+        this.setState({ partiesDataLoaded: true, partiesData:partiesData })
+        return partiesData
+
     }
 }
 
