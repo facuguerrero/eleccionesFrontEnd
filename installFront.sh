@@ -15,7 +15,7 @@ echo "Deleting compressed file..."
 rm frontend.tar.gz
 
 echo "Copy install to folder"
-cp /frontScripts/startup $TEST
+cp frontScripts/startup $TEST
 
 echo "Starting application..."
 cd $TEST
