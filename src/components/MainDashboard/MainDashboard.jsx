@@ -29,7 +29,7 @@ class MainDashboard extends React.Component {
         axios.get(
             //TODO change when deployed
             // 'http://elecciones2019.fi.uba.ar:9290/dashboard',
-            'http://0.0.0.0:9290/src/jsonsDummy/dashboard.json',
+            'http://elecciones2019.fi.uba.ar:9290/dashboard',
             {
                 proxy: false
             })
