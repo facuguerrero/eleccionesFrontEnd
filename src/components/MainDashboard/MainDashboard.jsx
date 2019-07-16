@@ -18,7 +18,7 @@ class MainDashboard extends React.Component {
     }
 
     componentDidMount() {
-        this.timer = setInterval(()=> this.getData(), 1000);
+        this.timer = setInterval(()=> this.getData(), 10000);
     }
 
     componentWillUnmount() {
