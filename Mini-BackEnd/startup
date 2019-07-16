@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Start server
+
+python3 -m venv venv; \
+. venv/bin/activate; \
+pip install -r requirements.txt;
+export PYTHONPATH=$PYTHONPATH:$(pwd); \
+gunicorn -b 0.0.0.0:9290 wsgi:app
