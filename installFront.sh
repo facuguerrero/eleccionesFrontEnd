@@ -14,6 +14,9 @@ tar -xzf frontend.tar.gz
 echo "Deleting compressed file..."
 rm frontend.tar.gz
 
+echo "Copy install to folder"
+cp /frontScripts/startup $TEST
+
 echo "Starting application..."
 cd $TEST
 ./startup
