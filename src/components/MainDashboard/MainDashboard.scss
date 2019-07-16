@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
+  flex-wrap: wrap;
 }
 
 .data-box{
@@ -15,5 +16,11 @@
   align-items: center;
   justify-content: space-between;
   -webkit-transition: box-shadow 0.3s;
-  flex-basis: 20%;
+  flex-basis: 45%;
+}
+
+@media (min-width: 700px) {
+  .data-box{
+    flex-basis: 20%;
+  }
 }

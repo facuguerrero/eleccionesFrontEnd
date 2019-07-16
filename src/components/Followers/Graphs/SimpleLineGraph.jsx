@@ -3,7 +3,7 @@ import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import './Graphs.scss';
-import moment from "moment";
+import {kFormatter} from "../../../utils/graphFunctions";
 
 const COLORS = {
     "mauriciomacri": "#b3a712",
@@ -18,10 +18,6 @@ const COLORS = {
     "RominaDelPla": "#ad3829",
     "luisrosalesARG": "#1448a1",
 };
-
-function kFormatter(num) {
-    return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
-}
 
 class SimpleLineGraph extends React.Component {
 

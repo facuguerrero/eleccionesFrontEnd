@@ -34,6 +34,7 @@ class MainDashboard extends React.Component {
                 proxy: false
             })
             .then((response) => {
+                this.mapPartyData(response.data)
                 this.setState({
                     dashboardInfo: response.data,
                     showDashboard: true,
@@ -52,7 +53,7 @@ class MainDashboard extends React.Component {
                         <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()} />
                         <div className="followers-graphs">
                             <UsersGraph data={this.mapUsersData()} />
-                            <PartyGraph data={this.mapPartyData()} />
+                            <PartyGraph data={this.state.partiesData} />
                         </div>
                     </div>
                 :null}
@@ -95,42 +96,40 @@ class MainDashboard extends React.Component {
         ];
     }
 
-    mapPartyData() {
+    mapPartyData(data) {
 
-        if(this.state.partiesDataLoaded){
-            return this.state.partiesData
+        if(!this.state.partiesDataLoaded){
+            const partiesData = [
+                {
+                    name: 'Frente De Todos',
+                    'Alberto Fernández': data.followers_by_candidate.alferdez.followers,
+                    'Cristina Kirchner': data.followers_by_candidate.CFKArgentina.followers
+                },
+                {
+                    name: 'Juntos por el Cambio',
+                    'Mauricio Macri': data.followers_by_candidate.mauriciomacri.followers,
+                    'Miguel Ángel Pichetto': data.followers_by_candidate.MiguelPichetto.followers
+                },
+                {
+                    name: 'Consenso Federal',
+                    'Roberto Lavagna': data.followers_by_candidate.rlavagna.followers,
+                    'Juan Manuel Urtubey': data.followers_by_candidate.urtubeyjm.followers
+                },
+                {
+                    name: 'Frente De Izquierda',
+                    'Nicolas del Caño': data.followers_by_candidate.NicolasdelCano.followers,
+                    'Romina Del Plá': data.followers_by_candidate.RominaDelPla.followers
+                },
+                {
+                    name: 'Frente Despertar',
+                    'Jose Luis Espert': data.followers_by_candidate.jlespert.followers,
+                    'Luis Rosales': data.followers_by_candidate.luisrosalesARG.followers
+                },
+            ].sort(function() { return 0.5 - Math.random() });
+
+            this.setState({ partiesDataLoaded: true, partiesData:partiesData });
+            return partiesData
         }
-
-        const partiesData = [
-            {
-                name: 'Frente De Todos',
-                'Alberto Fernández': this.state.dashboardInfo.followers_by_candidate.alferdez.followers,
-                'Cristina Kirchner': this.state.dashboardInfo.followers_by_candidate.CFKArgentina.followers
-            },
-            {
-                name: 'Juntos por el Cambio',
-                'Mauricio Macri': this.state.dashboardInfo.followers_by_candidate.mauriciomacri.followers,
-                'Miguel Ángel Pichetto': this.state.dashboardInfo.followers_by_candidate.MiguelPichetto.followers
-            },
-            {
-                name: 'Consenso Federal',
-                'Roberto Lavagna': this.state.dashboardInfo.followers_by_candidate.rlavagna.followers,
-                'Juan Manuel Urtubey': this.state.dashboardInfo.followers_by_candidate.urtubeyjm.followers
-            },
-            {
-                name: 'Frente De Izquierda',
-                'Nicolas del Caño': this.state.dashboardInfo.followers_by_candidate.NicolasdelCano.followers,
-                'Romina Del Plá': this.state.dashboardInfo.followers_by_candidate.RominaDelPla.followers
-            },
-            {
-                name: 'Frente Despertar',
-                'Jose Luis Espert': this.state.dashboardInfo.followers_by_candidate.jlespert.followers,
-                'Luis Rosales': this.state.dashboardInfo.followers_by_candidate.luisrosalesARG.followers
-            },
-        ].sort(function() { return 0.5 - Math.random() });
-
-        this.setState({ partiesDataLoaded: true, partiesData:partiesData })
-        return partiesData
 
     }
 }
