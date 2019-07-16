@@ -18,7 +18,7 @@ class MainDashboard extends React.Component {
     }
 
     componentDidMount() {
-        this.timer = setInterval(()=> this.getData(), 10000);
+        this.timer = setInterval(()=> this.getData(), 2000);
     }
 
     componentWillUnmount() {
@@ -34,7 +34,7 @@ class MainDashboard extends React.Component {
                 proxy: false
             })
             .then((response) => {
-                this.mapPartyData(response.data)
+                // this.mapPartyData(response.data)
                 this.setState({
                     dashboardInfo: response.data,
                     showDashboard: true,
@@ -53,7 +53,7 @@ class MainDashboard extends React.Component {
                         <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()} />
                         <div className="followers-graphs">
                             <UsersGraph data={this.mapUsersData()} />
-                            <PartyGraph data={this.state.partiesData} />
+                            {/*<PartyGraph data={this.state.partiesData} />*/}
                         </div>
                     </div>
                 :null}
@@ -128,7 +128,6 @@ class MainDashboard extends React.Component {
             ].sort(function() { return 0.5 - Math.random() });
 
             this.setState({ partiesDataLoaded: true, partiesData:partiesData });
-            return partiesData
         }
 
     }
