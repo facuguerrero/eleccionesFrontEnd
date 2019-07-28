@@ -6,8 +6,10 @@ from flask_cors import CORS
 from flask_restful import Api
 
 from src.api.DashboardResource import DashboardResource
+from src.api.HashtagUsageResource import HashtagUsageResource
 from src.api.HomeResource import HomeResource
 from src.api.IncreasesResource import IncreasesResource
+from src.api.TopicUsageResource import TopicUsageResource
 
 from src.api.TopicsResource import TopicsResource
 from src.api.WrongPathResource import WrongPathResource
@@ -29,6 +31,8 @@ api.add_resource(HomeResource, '/')
 api.add_resource(IncreasesResource, '/candidates')
 api.add_resource(TopicsResource, '/topics', '/topics/<topic_id>')
 api.add_resource(DashboardResource, '/dashboard')
+api.add_resource(HashtagUsageResource, '/hashtag_usage/<hashtag_name>')
+api.add_resource(TopicUsageResource, '/topic_usage/<topic_id>')
 api.add_resource(WrongPathResource, '/<path:path>')
 
 
