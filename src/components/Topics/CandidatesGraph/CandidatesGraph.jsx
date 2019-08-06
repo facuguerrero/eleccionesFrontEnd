@@ -78,17 +78,17 @@ class CandidatesGraphConnected extends React.Component {
     render() {
         return (
             <div>
-            { !this.state.showErrorMessage ?
-                <div className="followers-graph white-bc-color-light">
-                    <TopicTitleBar withPrevious={true}
-                                   showPrevious={this.changeToPreviousGraph}
-                                   title={"Grafo con Navegación"}/>
-                    <GenericTopic id={this.props.id}
-                                  data={this.processGraphData()}
-                                  onClickNode={this.changeGraph}/>
-                </div>
-            : <Error errorMessage={this.state.errorMessage}/>
-            }
+                { !this.state.showErrorMessage ?
+                    <div className="followers-graph white-bc-color-light">
+                        <TopicTitleBar withPrevious={true}
+                                       showPrevious={this.changeToPreviousGraph}
+                                       title={"Grafo con Navegación"}/>
+                        <GenericTopic id={this.props.id}
+                                      data={this.processGraphData()}
+                                      onClickNode={this.changeGraph}/>
+                    </div>
+                : <Error errorMessage={this.state.errorMessage}/>
+                }
             </div>
     )
     }

@@ -15,8 +15,6 @@ export function removeActiveCandidate(payload) {
 
 export function getCandidates() {
     return function(dispatch) {
-        // return axios.get('http://localhost:8080/candidates')
-        // 'http://0.0.0.0:9290/src/jsonsDummy/candidates_dummy.json',
         return axios.get(
             'http://elecciones2019.fi.uba.ar:9290/candidates',
             {
@@ -24,9 +22,10 @@ export function getCandidates() {
             })
             .then((response) => {
                 dispatch({ type: LOAD_CANDIDATES, payload: response.data });
+                return response.status
             })
             .catch((error) => {
-                return error;
+                return error.response.status;
             });
     };
 }
@@ -40,9 +39,10 @@ export function getGraphs() {
         return axios.get('http://elecciones2019.fi.uba.ar:9290/topics?start_date=2019-01-01&end_date=' + moment().subtract(1, 'days').format("YYYY-MM-DD").toString())
             .then((response) => {
                 dispatch({ type: LOAD_GRAPHS, payload: response.data });
+                return response.status
             })
             .catch((error) => {
-                return error;
+                return error.response.status;
             });
     };
 }

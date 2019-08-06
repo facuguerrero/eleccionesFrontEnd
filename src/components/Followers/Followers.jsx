@@ -10,6 +10,7 @@ import EmptySelection from "./EmptySelection/EmptySelection";
 import HistoricCumulativeFollowers from "./HistoricCumulativeFollowers/HistoricCumulativeFollowers";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
 import Loader from "../Loader/Loader";
+import Error from "../Error/Error";
 
 const CANDIDATES = [
     {
@@ -56,9 +57,10 @@ class HomeConnected extends React.Component {
         super(props);
         this.state = {
             showCandidates: false,
-            showError: false,
             areCandidatesActive: false,
-            openDates: false
+            openDates: false,
+            showErrorMessage: false,
+            errorMessage: "",
         };
     }
 
@@ -71,57 +73,71 @@ class HomeConnected extends React.Component {
     };
 
     componentDidMount() {
-        this.props.getCandidates().then(() => {
-            this.setState({ showCandidates: true, showError: false });
-        }, (error) => {
-            this.setState({ showCandidates: false, showError: true });
-            //TODO show error message and loading screen
+        this.props.getCandidates().then((response) => {
+            response === 200 ?
+                this.setState({ showCandidates: true, showErrorMessage: false })
+                : this.setState({
+                    showErrorMessage: true,
+                    showCandidates: false,
+                    errorMessage: "Hubo un error al cargar los datos, intentá nuevamente más tarde",
+                })
         });
     }
 
     render() {
         return (
             <main className="main">
-                { this.state.showCandidates ?
-                    <div>
-                        <div className="main-filters flex-column">
-                            <TopHeader
-                                candidates={CANDIDATES}
-                                areCandidatesActive={this.areCandidatesActive}
-                            />
-                            <div className="-filter-card-mg-pd dates-filter
-                             header-box white-bc-color-light">
-                                <div className="flex-row date-and-arrow">
-                                    <span className="filter-text font-xmd second-font-color-dark">Filtros Por Fecha</span>
-                                    {this.state.openDates ?
-                                        <KeyboardArrowLeft
-                                            className="date-button"
-                                            fontSize="large"
-                                            onClick={this.changeDateState}
-                                        /> :
-                                        <KeyboardArrowRight
-                                            className="date-button fifth-font-color-dark"
-                                            fontSize="large"
-                                            onClick={this.changeDateState}
-                                        />}
-                                </div>
-                                {this.state.openDates ? <DatesFilter/> : null}
-                            </div>
+                {
+                    !this.state.showErrorMessage ?
+
+                        <div>
+                            {
+                                this.state.showCandidates ?
+                                    <div>
+                                        <div className="main-filters flex-column">
+                                            <TopHeader
+                                                candidates={CANDIDATES}
+                                                areCandidatesActive={this.areCandidatesActive}
+                                            />
+                                            <div className="-filter-card-mg-pd dates-filter
+                                         header-box white-bc-color-light">
+                                                <div className="flex-row date-and-arrow">
+                                                    <span className="filter-text font-xmd second-font-color-dark">Filtros Por Fecha</span>
+                                                    {this.state.openDates ?
+                                                        <KeyboardArrowLeft
+                                                            className="date-button"
+                                                            fontSize="large"
+                                                            onClick={this.changeDateState}
+                                                        /> :
+                                                        <KeyboardArrowRight
+                                                            className="date-button fifth-font-color-dark"
+                                                            fontSize="large"
+                                                            onClick={this.changeDateState}
+                                                        />}
+                                                </div>
+                                                {this.state.openDates ? <DatesFilter/> : null}
+                                            </div>
+                                        </div>
+                                        {this.state.areCandidatesActive ?
+                                            <div>
+                                                <div className="followers-graphs">
+                                                    <FollowersEvolution/>
+                                                </div>
+                                                <div className="followers-graphs">
+                                                    <CumulativeFollowersEvolution/>
+                                                    <HistoricCumulativeFollowers/>
+                                                </div>
+                                            </div>
+                                            : <EmptySelection/>
+                                        }
+                                    </div>
+                                    : <Loader/>
+                            }
                         </div>
-                        {this.state.areCandidatesActive ?
-                            <div>
-                                <div className="followers-graphs">
-                                    <FollowersEvolution />
-                                </div>
-                                <div className="followers-graphs">
-                                    <CumulativeFollowersEvolution />
-                                    <HistoricCumulativeFollowers />
-                                </div>
-                            </div>
-                            : <EmptySelection />
-                        }
-                    </div>
-                : <Loader/>}
+
+                        : <Error errorMessage={this.state.errorMessage}/>
+                }
+
             </main>
         );
     }

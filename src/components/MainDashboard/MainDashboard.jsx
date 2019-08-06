@@ -5,6 +5,7 @@ import "./MainDashboard.scss"
 import UsersGraph from "./UsersGraph/UsersGraph";
 import PartyGraph from "./PartyGraph/PartyGraph";
 import Loader from "../Loader/Loader";
+import Error from "../Error/Error";
 
 class MainDashboard extends React.Component {
 
@@ -14,7 +15,9 @@ class MainDashboard extends React.Component {
             dashboardInfo: {},
             showDashboard: false,
             partiesDataLoaded: false,
-            partiesData:{}
+            partiesData:{},
+            showErrorMessage: false,
+            errorMessage: "",
         };
     }
 
@@ -40,7 +43,10 @@ class MainDashboard extends React.Component {
                 });
             })
             .catch((error) => {
-                //TODO handle error
+                this.setState({
+                    showErrorMessage: true,
+                    errorMessage: "Hubo un error al cargar los datos, intentá nuevamente más tarde",
+                })
             });
     }
 
@@ -48,15 +54,26 @@ class MainDashboard extends React.Component {
 
         return (
             <main className="main">
-                {this.state.showDashboard ?
+
+                {
+                    !this.state.showErrorMessage ?
+
                     <div>
-                        <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()} />
-                        <div className="followers-graphs">
-                            <UsersGraph data={this.mapUsersData()} />
-                            <PartyGraph data={this.state.partiesData} />
-                        </div>
+                        {this.state.showDashboard ?
+                                <div>
+                                    <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()}/>
+                                    <div className="followers-graphs">
+                                        <UsersGraph data={this.mapUsersData()}/>
+                                        <PartyGraph data={this.state.partiesData}/>
+                                    </div>
+                                </div>
+                                : <Loader/>
+                        }
                     </div>
-                : <Loader/>}
+
+                    : <Error errorMessage={this.state.errorMessage}/>
+                }
+
             </main>
         );
     }
