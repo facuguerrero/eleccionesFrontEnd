@@ -28,13 +28,12 @@ class MainDashboard extends React.Component {
 
     async getData(){
         axios.get(
-            //TODO change when deployed
             'http://elecciones2019.fi.uba.ar:9290/dashboard',
             {
                 proxy: false
             })
             .then((response) => {
-                // this.mapPartyData(response.data)
+                this.mapPartyData(response.data)
                 this.setState({
                     dashboardInfo: response.data,
                     showDashboard: true,
@@ -46,6 +45,7 @@ class MainDashboard extends React.Component {
     }
 
     render() {
+
         return (
             <main className="main">
                 {this.state.showDashboard ?
@@ -53,7 +53,7 @@ class MainDashboard extends React.Component {
                         <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()} />
                         <div className="followers-graphs">
                             <UsersGraph data={this.mapUsersData()} />
-                            {/*<PartyGraph data={this.state.partiesData} />*/}
+                            <PartyGraph data={this.state.partiesData} />
                         </div>
                     </div>
                 : <Loader/>}
