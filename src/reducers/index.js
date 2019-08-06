@@ -5,6 +5,7 @@ import {
     processCumulativeCandidates, processFilteredAllDatesActiveCandidates,
     processFilteredLastDateActiveCandidates
 } from "../utils/reduxUtils"
+import moment from "moment";
 
 const FollowersInitialState = {
     activeCandidates: [],
@@ -12,7 +13,7 @@ const FollowersInitialState = {
     processedCandidates:[],
     cumulativeCandidates:[],
     historicCumulativeCandidates:[],
-    activeDates:[null, null],
+    activeDates:[moment("07/01/2019"), moment("08/08/2019")],
     candidateGraphs: {},
 };
 
@@ -76,7 +77,7 @@ function rootReducer(state = FollowersInitialState, action) {
             processedCandidates:[],
             cumulativeCandidates:[],
             historicCumulativeCandidates:[],
-            activeDates:[null, null],
+            activeDates:[moment("07/02/2019"), moment("08/08/2019")],
         });
     }
     if (action.type === LOAD_GRAPHS) {
