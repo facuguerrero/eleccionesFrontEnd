@@ -9,6 +9,7 @@ import DatesFilter from "./DatesFilter/DatesFilter";
 import EmptySelection from "./EmptySelection/EmptySelection";
 import HistoricCumulativeFollowers from "./HistoricCumulativeFollowers/HistoricCumulativeFollowers";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
+import Loader from "../Loader/Loader";
 
 const CANDIDATES = [
     {
@@ -103,7 +104,6 @@ class HomeConnected extends React.Component {
                                             fontSize="large"
                                             onClick={this.changeDateState}
                                         />}
-
                                 </div>
                                 {this.state.openDates ? <DatesFilter/> : null}
                             </div>
@@ -121,7 +121,7 @@ class HomeConnected extends React.Component {
                             : <EmptySelection />
                         }
                     </div>
-                : null}
+                : <Loader/>}
             </main>
         );
     }

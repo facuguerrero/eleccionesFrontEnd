@@ -4,6 +4,7 @@ import DataContainer from "./DataContainer/DataContainer";
 import "./MainDashboard.scss"
 import UsersGraph from "./UsersGraph/UsersGraph";
 import PartyGraph from "./PartyGraph/PartyGraph";
+import Loader from "../Loader/Loader";
 
 class MainDashboard extends React.Component {
 
@@ -28,7 +29,6 @@ class MainDashboard extends React.Component {
     async getData(){
         axios.get(
             //TODO change when deployed
-            // 'http://elecciones2019.fi.uba.ar:9290/dashboard',
             'http://elecciones2019.fi.uba.ar:9290/dashboard',
             {
                 proxy: false
@@ -56,7 +56,7 @@ class MainDashboard extends React.Component {
                             {/*<PartyGraph data={this.state.partiesData} />*/}
                         </div>
                     </div>
-                :null}
+                : <Loader/>}
             </main>
         );
     }

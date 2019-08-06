@@ -3,6 +3,8 @@ import {connect} from "react-redux";
 import {getGraphs} from "../../actions";
 import CandidatesGraph from "./CandidatesGraph/CandidatesGraph";
 import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
+import "./Topics.scss"
+import Loader from "../Loader/Loader";
 
 class TopicHomeConnected extends React.Component {
 
@@ -26,13 +28,13 @@ class TopicHomeConnected extends React.Component {
     render() {
         return (
             <main className="main">
-                <div>
-                    <div className="main-filters header-box card-mg-pd white-bc-color-light">
-                    </div>
-                </div>
-                <div className="followers-graphs">
-                    { this.state.graphsAreLoaded ? <CandidatesGraph id="graph1" /> : null }
-                    { this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }
+                {/*<div>*/}
+                    {/*<div className="main-filters header-box card-mg-pd white-bc-color-light">*/}
+                    {/*</div>*/}
+                {/*</div>*/}
+                <div className="topic-graph">
+                    { this.state.graphsAreLoaded ? <CandidatesGraph id="graph1" /> : <Loader/> }
+                    {/*{ this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }*/}
                 </div>
             </main>
         );

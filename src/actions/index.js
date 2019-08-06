@@ -3,6 +3,7 @@ import {ADD_ACTIVE_CANDIDATE, LOAD_GRAPHS, RESET_CANDIDATES} from "../constants/
 import { REMOVE_ACTIVE_CANDIDATE } from "../constants/action-types";
 import { LOAD_CANDIDATES } from "../constants/action-types";
 import { UPDATE_DATES } from "../constants/action-types";
+import moment from "moment";
 
 export function addActiveCandidate(payload) {
     return { type: ADD_ACTIVE_CANDIDATE, payload };
@@ -36,7 +37,7 @@ export function resetCandidates() {
 
 export function getGraphs() {
     return function(dispatch) {
-        return axios.get('/static/graph-example.json')
+        return axios.get('http://elecciones2019.fi.uba.ar:9290/topics?start_date=2019-01-01&end_date=' + moment().subtract(1, 'days').format("YYYY-MM-DD").toString())
             .then((response) => {
                 dispatch({ type: LOAD_GRAPHS, payload: response.data });
             })

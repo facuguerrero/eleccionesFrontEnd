@@ -45,6 +45,7 @@
     "react-hot-loader": "^4.3.12",
     "react-moment-proptypes": "^1.6.0",
     "react-router-dom": "^5.0.1",
+    "react-spinners": "^0.5.13",
     "react-toolbox": "^2.0.0-beta.13",
     "react-vis": "^1.11.7",
     "react-vis-force": "^0.3.1",
@@ -56,7 +57,8 @@
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.4.1",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "@emotion/core": "latest"
   },
   "devDependencies": {
     "babel-loader": "^8.0.4",

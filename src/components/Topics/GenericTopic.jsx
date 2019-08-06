@@ -4,7 +4,7 @@ import { Graph } from 'react-d3-graph';
 
 
 function calculateWindowSize(){
-    return window.innerWidth > 1280 ? window.innerWidth/3 - 30 : window.innerWidth - 40
+    return window.innerWidth > 1280 ? 1240 : window.innerWidth - 40
 }
 
 const myConfig = {
@@ -18,7 +18,7 @@ const myConfig = {
     "highlightOpacity": 0.2,
     "linkHighlightBehavior": true,
     "maxZoom": 8,
-    "minZoom": 0.1,
+    "minZoom": 0,
     "nodeHighlightBehavior": true,
     "panAndZoom": false,
     "staticGraph": false,
@@ -26,11 +26,11 @@ const myConfig = {
     "d3": {
         "alphaTarget": 0.05,
         "gravity": -100,
-        "linkLength": 100,
-        "linkStrength": 1
+        "linkLength": 500,
+        "linkStrength": 2
     },
     "node": {
-        "color": "#d3d3d3",
+        "color": "#1c5876",
         "fontColor": "black",
         "fontSize": 12,
         "fontWeight": "normal",
@@ -43,10 +43,9 @@ const myConfig = {
         "mouseCursor": "pointer",
         "opacity": 1,
         "renderLabel": true,
-        "size": 450,
+        "size": 10,
         "strokeColor": "none",
         "strokeWidth": 1.5,
-        "svg": "",
         "symbolType": "circle"
     },
     "link": {
@@ -62,7 +61,7 @@ const myConfig = {
         "opacity": 1,
         "renderLabel": false,
         "semanticStrokeWidth": false,
-        "strokeWidth": 4
+        "strokeWidth": 4,
     }
 };
 
