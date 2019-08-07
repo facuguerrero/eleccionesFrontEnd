@@ -6,6 +6,7 @@ import {resetCandidates} from "../../actions/index";
 import './NavBar.scss'
 import {connect} from "react-redux";
 import MainDashboard from "../MainDashboard/MainDashboard";
+import GenericModal from "../Modal/GenericModal";
 
 class NavBarWrapperConnected extends React.Component {
     constructor(props) {
@@ -50,6 +51,7 @@ class NavBarWrapperConnected extends React.Component {
     render() {
         return (
             <div className="fifth-bc-color-light">
+                {/*<GenericModal/>*/}
                 <div className="flex-row main-nav white-bc-color-light">
                     <NavDrawer onSelected={this.changeWindow} selected={this.state}/>
                     <img className="logo" src="../../../../static/logo.png" />
