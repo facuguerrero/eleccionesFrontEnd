@@ -29,7 +29,7 @@ class CandidatesGraphConnected extends React.Component {
 
         this.state.mainGraph ?
             axios.get(
-                'http://elecciones2019.fi.uba.ar:9290/topics/' +
+                'http://elecciones2019.fi.uba.ar/topics/' +
                 nodeId +
                 '?start_date=2019-01-01&end_date=' + moment()
                     .subtract(1, 'days').format("YYYY-MM-DD").toString(),
