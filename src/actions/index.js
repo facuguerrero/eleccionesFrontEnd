@@ -16,7 +16,7 @@ export function removeActiveCandidate(payload) {
 export function getCandidates() {
     return function(dispatch) {
         return axios.get(
-            'http://elecciones2019.fi.uba.ar/candidates',
+            'http://elecciones2019.fi.uba.ar:9290/candidates',
             {
             proxy: false
             })
@@ -36,7 +36,7 @@ export function resetCandidates() {
 
 export function getGraphs() {
     return function(dispatch) {
-        return axios.get('http://elecciones2019.fi.uba.ar/topics?start_date=2019-01-01&end_date=' + moment().subtract(1, 'days').format("YYYY-MM-DD").toString())
+        return axios.get('http://elecciones2019.fi.uba.ar:9290/topics?start_date=2019-01-01&end_date=' + moment().subtract(1, 'days').format("YYYY-MM-DD").toString())
             .then((response) => {
                 dispatch({ type: LOAD_GRAPHS, payload: response.data });
                 return response.status
