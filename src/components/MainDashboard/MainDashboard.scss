@@ -8,15 +8,15 @@
 
 .data-box{
   border-radius: 5px;
-  border-width: thin;
-  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
   border-color: transparent;
+  padding: 20px;
   position: relative;
-  height: 55px;
   align-items: center;
   justify-content: space-between;
   -webkit-transition: box-shadow 0.3s;
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 
 @media (min-width: 700px) {

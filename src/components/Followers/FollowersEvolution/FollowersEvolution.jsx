@@ -15,10 +15,14 @@ class FollowersEvolutionConnected extends React.Component {
         return (
             <div className="followers-graph full-basis white-bc-color-light">
                 <GenericGraph
-                    title="Cantidad de seguidores agregados por día"
+                    title="Cantidad de seguidores ganados por día"
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
                     showLabels={true}
+                    showInfo={true}
+                    infoMessage={"En ésta visualización no se contemplan a los usuarios que dejaron de " +
+                    "seguir a los candidatos, solamente se ven sus nuevos seguidores."
+                    }
                     type={<SimpleLineGraph
                         data={this.props.processedCandidates}
                         activeCandidates={this.props.activeCandidates}

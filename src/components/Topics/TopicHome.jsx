@@ -36,10 +36,14 @@ class TopicHomeConnected extends React.Component {
                 {
                     !this.state.showErrorMessage ?
                         <div>
-                            {/*<div>*/}
-                                {/*<div className="main-filters header-box card-mg-pd white-bc-color-light">*/}
-                                {/*</div>*/}
-                            {/*</div>*/}
+                            <div>
+                                <div className="main-filters header-box graph-nav white-bc-color-light flex-column forth-br-color">
+                                    <span className="title-nav font-md fifth-font-color-dark">Navegación</span>
+                                    <span className="fifth-font-color-dark">-Clickear un nodo para acceder a su subgrafo</span>
+                                    <span className="fifth-font-color-dark">-Clickear la flecha contigua al título para volver al grafo anterior</span>
+                                    <span className="fifth-font-color-dark">-Utilizar el scroll para modificar el zoom</span>
+                                </div>
+                            </div>
                             <div className="topic-graph">
                             {this.state.graphsAreLoaded ? <CandidatesGraph id="graph1"/> : <Loader/>}
                             {/*{ this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }*/}

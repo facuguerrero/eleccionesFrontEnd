@@ -16,10 +16,14 @@ class CumulativeFollowersEvolutionConnected extends React.Component {
         return (
             <div className="followers-graph white-bc-color-light">
                 <GenericGraph
-                    title={"Cantidad de seguidores acumulados desde el " + this.props.cumulativeCandidates[0].date}
+                    title={"Cantidad de seguidores ganados y acumulados desde el " + this.props.cumulativeCandidates[0].date}
                     xLabel="Cantidad de seguidores"
                     yLabel="Tiempo"
                     showLabels={true}
+                    showInfo={true}
+                    infoMessage={"En ésta visualización no se contemplan a los usuarios que dejaron de " +
+                    "seguir a los candidatos, solamente se ven sus nuevos seguidores."
+                    }
                     type={<SimpleLineGraph
                         data={this.props.cumulativeCandidates}
                         activeCandidates={this.props.activeCandidates}

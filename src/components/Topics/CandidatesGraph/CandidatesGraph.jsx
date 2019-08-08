@@ -6,6 +6,7 @@ import TopicTitleBar from "../TopicTitleBar/TopicTitleBar";
 import axios from "axios";
 import moment from "moment";
 import Error from "../../Error/Error";
+import GenericGraph from "../../Followers/HistoricCumulativeFollowers/HistoricCumulativeFollowers";
 
 const mapStateToProps = state => {
     return {
@@ -31,8 +32,9 @@ class CandidatesGraphConnected extends React.Component {
             axios.get(
                 'http://elecciones2019.fi.uba.ar/topics/' +
                 nodeId +
-                '?start_date=2019-01-01&end_date=' + moment()
-                    .subtract(1, 'days').format("YYYY-MM-DD").toString(),
+                '?start_date=2019-01-01&end_date=' + "2019-08-07",
+                    //TODO update to actual date
+                    // .subtract(1, 'days').format("YYYY-MM-DD").toString(),
                 {
                     proxy: false
                 })
@@ -82,7 +84,11 @@ class CandidatesGraphConnected extends React.Component {
                     <div className="followers-graph white-bc-color-light">
                         <TopicTitleBar withPrevious={true}
                                        showPrevious={this.changeToPreviousGraph}
-                                       title={"Grafo con Navegación"}/>
+                                       title={"Grafo de Tópicos"}
+                                       showInfo={true}
+                                       infoMessage={"Los tópicos representan un conjunto " +
+                                       "de hashtags agrupados según su contenido."}
+                        />
                         <GenericTopic id={this.props.id}
                                       data={this.processGraphData()}
                                       onClickNode={this.changeGraph}/>

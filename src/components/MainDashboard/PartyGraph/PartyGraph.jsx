@@ -53,6 +53,7 @@ export default class PartyGraph extends React.Component {
                 <GenericGraph
                     title="Seguidores Totales Por Partido"
                     showLabels={false}
+                    showInfo={this.props.showInfo}
                     type={<SimpleStackedBarGraph data={this.props.data} labels={CANDIDATES_COLORS}/>}
                 />
             </div>

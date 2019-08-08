@@ -1,11 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
 
-const data = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-];
-
 const renderActiveShape = (props) => {
     const RADIAN = Math.PI / 180;
     const {
@@ -78,8 +73,6 @@ export default class SimplePieGraph extends React.Component {
                             activeIndex={this.state.activeIndex}
                             activeShape={renderActiveShape}
                             data={this.props.data}
-                            // cx={200}
-                            // cy={200}
                             innerRadius={80}
                             // outerRadius={80}
                             fill="#5e91b1"

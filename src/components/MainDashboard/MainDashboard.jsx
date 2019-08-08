@@ -63,8 +63,17 @@ class MainDashboard extends React.Component {
                                 <div>
                                     <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()}/>
                                     <div className="followers-graphs">
-                                        <UsersGraph data={this.mapUsersData()}/>
-                                        <PartyGraph data={this.state.partiesData}/>
+                                        <UsersGraph
+                                            data={this.mapUsersData()}
+                                            showInfo={true}
+                                            infoMessage={"A partir de los usuarios de Twitter capturados, " +
+                                            "determinamos a uno como \"activo\" si éste tiene más de una " +
+                                            "publicación desde el 01/01/2019"
+                                            }/>
+                                        <PartyGraph
+                                            data={this.state.partiesData}
+                                            showInfo={false}
+                                        />
                                     </div>
                                 </div>
                                 : <Loader/>

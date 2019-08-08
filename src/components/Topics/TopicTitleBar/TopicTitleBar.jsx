@@ -1,7 +1,7 @@
 import React from 'react';
 import "./TopicTitleBar.scss"
 import {NavigateBefore} from "@material-ui/icons";
-import Information from "../../Followers/Graphs/GenericGraph";
+import Information from "../../Information/Information";
 
 
 class TopicTitleBar extends React.Component {
@@ -16,7 +16,7 @@ class TopicTitleBar extends React.Component {
                     }
                     <span className="graph-title font-lg">{this.props.title}</span>
                 </div>
-                <Information />
+                {this.props.showInfo ? <Information infoMessage={this.props.infoMessage}/> : null}
             </div>
         );
     }

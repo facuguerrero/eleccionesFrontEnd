@@ -100,7 +100,7 @@ class HomeConnected extends React.Component {
                                                 areCandidatesActive={this.areCandidatesActive}
                                             />
                                             <div className="-filter-card-mg-pd dates-filter
-                                         header-box white-bc-color-light">
+                                                header-box white-bc-color-light">
                                                 <div className="flex-row date-and-arrow">
                                                     <span className="filter-text font-xmd second-font-color-dark">Filtros Por Fecha</span>
                                                     {this.state.openDates ?
