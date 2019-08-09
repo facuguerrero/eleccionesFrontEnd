@@ -2,7 +2,6 @@ import * as moment from "moment";
 
 export function processFilteredLastDateActiveCandidates(candidates, activeCandidates, activeDates) {
 
-    console.log(activeDates)
     //filter by dates
     const filteredCandidates = candidates.filter(candidate => {
 
