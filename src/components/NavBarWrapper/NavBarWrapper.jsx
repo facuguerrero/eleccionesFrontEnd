@@ -12,9 +12,9 @@ class NavBarWrapperConnected extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showDashboardWindow: false,
+            showDashboardWindow: true,
             showFollowersWindow: false,
-            showTopicsWindow: true
+            showTopicsWindow: false
         };
     }
 
