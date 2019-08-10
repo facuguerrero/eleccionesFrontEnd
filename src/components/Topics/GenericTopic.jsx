@@ -4,7 +4,7 @@ import { Graph } from 'react-d3-graph';
 
 
 function calculateWindowSize(){
-    return window.innerWidth > 1280 ? 1230 : window.innerWidth - 50
+    return window.innerWidth > 1280 ? window.innerWidth / 2 : window.innerWidth - 50
 }
 
 const myConfig = {
@@ -34,7 +34,7 @@ const myConfig = {
         "fontColor": "black",
         "fontSize": 12,
         "fontWeight": "normal",
-        "highlightColor": "red",
+        "highlightColor": "#1c5876",
         "highlightFontSize": 12,
         "highlightFontWeight": "bold",
         "highlightStrokeColor": "SAME",
@@ -53,7 +53,7 @@ const myConfig = {
         "fontColor": "black",
         "fontSize": 8,
         "fontWeight": "normal",
-        "highlightColor": "blue",
+        "highlightColor": "#8FC1E3",
         "highlightFontSize": 8,
         "highlightFontWeight": "normal",
         "labelProperty": "label",

@@ -12,9 +12,9 @@ class NavBarWrapperConnected extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showDashboardWindow: true,
+            showDashboardWindow: false,
             showFollowersWindow: false,
-            showTopicsWindow: false
+            showTopicsWindow: true
         };
     }
 
@@ -61,8 +61,8 @@ class NavBarWrapperConnected extends React.Component {
                         pero las visualizaciones sólo se alimentarán con datos de hasta el 08/08/2019."
                 />
                 {this.state.showDashboardWindow ? <MainDashboard /> : null}
-                {this.state.showFollowersWindow ? <Followers /> : null}
                 {this.state.showTopicsWindow ? <TopicHome /> : null}
+                {this.state.showFollowersWindow ? <Followers /> : null}
             </div>
         );
     }

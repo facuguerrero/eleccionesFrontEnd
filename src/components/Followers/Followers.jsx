@@ -6,7 +6,7 @@ import TopHeader from "./TopHeader/TopHeader";
 import FollowersEvolution from "./FollowersEvolution/FollowersEvolution";
 import CumulativeFollowersEvolution from "./CumulativeFollowersEvolution/CumulativeFollowersEvolution";
 import DatesFilter from "./DatesFilter/DatesFilter";
-import EmptySelection from "./EmptySelection/EmptySelection";
+import EmptySelection from "../EmptySelection/EmptySelection";
 import HistoricCumulativeFollowers from "./HistoricCumulativeFollowers/HistoricCumulativeFollowers";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
 import Loader from "../Loader/Loader";
@@ -125,10 +125,10 @@ class HomeConnected extends React.Component {
                                                 </div>
                                                 <div className="followers-graphs">
                                                     <CumulativeFollowersEvolution/>
-                                                    <HistoricCumulativeFollowers/>
+                                                    {/*<HistoricCumulativeFollowers/>*/}
                                                 </div>
                                             </div>
-                                            : <EmptySelection/>
+                                            : <EmptySelection message="Seleccioná un candidato para visualizar sus estadísticas"/>
                                         }
                                     </div>
                                     : <Loader/>

@@ -6,6 +6,10 @@ import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
 import "./Topics.scss"
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
+import EmptySelection from "../EmptySelection/EmptySelection";
+
+const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
+const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
 
 class TopicHomeConnected extends React.Component {
 
@@ -15,6 +19,7 @@ class TopicHomeConnected extends React.Component {
             graphsAreLoaded: false,
             showErrorMessage: false,
             errorMessage: "",
+            selectionMessage: topicMessage,
         };
     }
 
@@ -30,22 +35,28 @@ class TopicHomeConnected extends React.Component {
         });
     }
 
+    changeMessage = (type) => {
+        const message = type === "topic" ? topicMessage : hashtagMessage;
+        this.setState({selectionMessage: message})
+    };
+
     render() {
         return (
             <main className="main">
                 {
                     !this.state.showErrorMessage ?
                         <div>
-                            <div>
-                                <div className="main-filters header-box graph-nav white-bc-color-light flex-column forth-br-color">
-                                    <span className="title-nav font-md fifth-font-color-dark">Navegación</span>
-                                    <span className="fifth-font-color-dark">-Clickear un nodo para acceder a su subgrafo</span>
-                                    <span className="fifth-font-color-dark">-Clickear la flecha contigua al título para volver al grafo anterior</span>
-                                    <span className="fifth-font-color-dark">-Utilizar el scroll para modificar el zoom</span>
-                                </div>
-                            </div>
-                            <div className="topic-graph">
-                            {this.state.graphsAreLoaded ? <CandidatesGraph id="graph1"/> : <Loader/>}
+                            <EmptySelection message={this.state.selectionMessage} />
+                            {/*<div>*/}
+                                {/*<div className="main-filters header-box graph-nav white-bc-color-light flex-column forth-br-color">*/}
+                                    {/*/!*<span className="title-nav font-md fifth-font-color-dark">Navegación</span>*!/*/}
+                                    {/*/!*<span className="fifth-font-color-dark">-Clickear un nodo para acceder a su subgrafo</span>*!/*/}
+                                    {/*/!*<span className="fifth-font-color-dark">-Clickear la flecha contigua al título para volver al grafo anterior</span>*!/*/}
+                                    {/*/!*<span className="fifth-font-color-dark">-Utilizar el scroll para modificar el zoom</span>*!/*/}
+                                {/*</div>*/}
+                            {/*</div>*/}
+                            <div className="topics">
+                            {this.state.graphsAreLoaded ? <CandidatesGraph id="graph1" changeMessage={this.changeMessage}/> : <Loader/>}
                             {/*{ this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }*/}
                             </div>
                         </div>

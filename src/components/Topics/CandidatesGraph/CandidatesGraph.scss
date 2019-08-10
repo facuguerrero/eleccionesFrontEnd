@@ -1,4 +1,46 @@
-.graph-back-button:hover{
+.top-topics{
+  //flex-basis: 25%;
+}
+
+.topic-graph{
+  //flex-basis: 80%;
+}
+
+.main-topics{
+  display: flex;
+  flex-direction: column;
+}
+
+.bullets{
+  margin-top: 10px;
+  max-height: 130px;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+
+.bullet{
+  margin-bottom: 5px;
+}
+
+.bullet:hover{
+  font-weight: bold;
   color: var(--second-color-dark);
   cursor: pointer;
+}
+
+.bullet-text{
+  padding-right: 5px;
+}
+
+@media (min-width: 1280px) {
+  .main-topics{
+    flex-direction: row;
+  }
+
+  .bullets{
+    overflow-y: scroll;
+    overflow-x: unset;
+    flex-wrap: unset;
+    max-height: 400px;
+  }
 }

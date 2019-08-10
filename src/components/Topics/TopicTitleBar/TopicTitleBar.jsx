@@ -1,7 +1,7 @@
 import React from 'react';
 import "./TopicTitleBar.scss"
-import {NavigateBefore} from "@material-ui/icons";
 import Information from "../../Information/Information";
+import GenericButton from "../../Button/GenericButton";
 
 
 class TopicTitleBar extends React.Component {
@@ -10,11 +10,11 @@ class TopicTitleBar extends React.Component {
         return (
             <div className="flex-row title-and-info">
                 <div className="flex-row">
+                    <span className={"graph-title graph-basis" + this.props.titleSize}>{this.props.title}</span>
                     {this.props.withPrevious ?
-                        <NavigateBefore className="graph-back-button" fontSize="large" onClick={this.props.showPrevious}/> :
-                        null
+                        <GenericButton onClick={this.props.showPrevious} text="Grafo Anterior" disabled={this.props.disabled}/>
+                        : null
                     }
-                    <span className="graph-title font-lg">{this.props.title}</span>
                 </div>
                 {this.props.showInfo ? <Information infoMessage={this.props.infoMessage}/> : null}
             </div>
