@@ -1,6 +1,8 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
 
+const COLORS = { Activos: "#649ebe", Inactivos: "#1c5876"};
+
 const renderActiveShape = (props) => {
     const RADIAN = Math.PI / 180;
     const {
@@ -13,13 +15,13 @@ const renderActiveShape = (props) => {
     const sy = cy + (outerRadius + 10) * sin;
     const mx = cx + (outerRadius + 30) * cos;
     const my = cy + (outerRadius + 30) * sin;
-    const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+    const ex = mx + (cos >= 0 ? 1 : -1);
     const ey = my;
     const textAnchor = cos >= 0 ? 'start' : 'end';
 
     return (
         <g>
-            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>{payload.name}</text>
+            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={"#1c5876"}>{payload.name}</text>
             <Sector
                 cx={cx}
                 cy={cy}
@@ -27,7 +29,7 @@ const renderActiveShape = (props) => {
                 outerRadius={outerRadius}
                 startAngle={startAngle}
                 endAngle={endAngle}
-                fill={fill}
+                fill={"#1c5876"}
             />
             <Sector
                 cx={cx}
@@ -36,14 +38,18 @@ const renderActiveShape = (props) => {
                 endAngle={endAngle}
                 innerRadius={outerRadius + 6}
                 outerRadius={outerRadius + 10}
-                fill={fill}
+                fill={"#1c5876"}
             />
-            <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />
-            <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-            <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`${value}`}</text>
-            <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">
-                {`(${(percent * 100).toFixed(2)}%)`}
+            {/*<path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />*/}
+            {/*<circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />*/}
+            <text
+                x={ex + (cos >= 0 ? -70 : +70)} y={ey + (cos >= 0 ? +60 : -60)}
+                textAnchor={textAnchor}
+                fill="white">{`${(percent * 100).toFixed(2)}%`}
             </text>
+            {/*<text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">*/}
+                {/*{`(${(percent * 100).toFixed(2)}%)`}*/}
+            {/*</text>*/}
         </g>
     );
 };

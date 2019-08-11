@@ -115,8 +115,8 @@ class MainDashboard extends React.Component {
 
     mapUsersData() {
         return [
-            { name: 'Activos', value: this.state.dashboardInfo.active_users },
-            { name: 'Inactivos', value:
+            { name: 'Activos', value: this.state.dashboardInfo.active_users, color:"#1c5876" },
+            { name: 'Inactivos', color:"#649ebe", value:
                 this.state.dashboardInfo.total_users - this.state.dashboardInfo.active_users
             },
         ];

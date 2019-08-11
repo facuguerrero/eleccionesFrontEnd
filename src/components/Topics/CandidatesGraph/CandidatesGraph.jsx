@@ -35,9 +35,10 @@ class CandidatesGraphConnected extends React.Component {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topics/' +
             topicId +
-            '?start_date=2019-01-01&end_date=' + "2019-08-07"
-            //TODO update to actual date
-            // .subtract(1, 'days').format("YYYY-MM-DD").toString(),
+            '?start_date=2019-01-01&end_date=' +
+            //"2019-08-07"
+            //TODO veda
+            moment() .subtract(1, 'days').format("YYYY-MM-DD").toString()
             )
             .then((response) => {
                 this.props.changeMessage("hashtag");
@@ -58,9 +59,10 @@ class CandidatesGraphConnected extends React.Component {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topic_usage/' +
             topicId +
-            '?start_date=2019-01-01&end_date=' + "2019-08-07"
-            //TODO update to actual date
-            // .subtract(1, 'days').format("YYYY-MM-DD").toString(),
+            '?start_date=2019-01-01&end_date=' +
+            // "2019-08-07"
+            //TODO veda
+            moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
             )
             .then((response) => {
                 this.setState({
@@ -77,11 +79,37 @@ class CandidatesGraphConnected extends React.Component {
             })
     };
 
+    getHashtagEvolution = (hashtagId) => {
+        axios.get(
+            'http://elecciones2019.fi.uba.ar/hashtag_usage/' +
+            hashtagId +
+            '?start_date=2019-01-01&end_date=' +
+            // "2019-08-07"
+            //TODO veda
+            moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
+        )
+            .then((response) => {
+                this.setState({
+                    showEvolution: true,
+                    evolutionData: this.processEvolutionData(response.data, hashtagId),
+                    activeNode: hashtagId,
+                })
+            })
+            .catch((error) => {
+                this.setState({
+                    showErrorMessage: true,
+                    errorMessage: "Hubo un error al cargar la información del hashtag, intentá nuevamente más tarde",
+                })
+            })
+    };
+
     changeGraph = (nodeId) => {
 
         if(this.state.mainGraph){
             this.getTopicGraph(nodeId);
             this.getTopicEvolution(nodeId);
+        } else {
+            this.getHashtagEvolution(nodeId);
         }
 
     };
@@ -158,7 +186,7 @@ class CandidatesGraphConnected extends React.Component {
                         {this.state.showEvolution ?
                             <div className="followers-graph full-basis white-bc-color-light">
                                 <GenericGraph
-                                    title="Cantidad de tweets en los que aparece el tópico por día"
+                                    title="Cantidad de tweets en los que aparece por día"
                                     showLabels={false}
                                     showInfo={false}
                                     infoMessage={"En ésta visualización no se contemplan a los usuarios que dejaron de " +

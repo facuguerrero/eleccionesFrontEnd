@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts';
-import {mFormatter} from "../../../utils/graphFunctions";
+import {gFormatter, mFormatter} from "../../../utils/graphFunctions";
 
 export default class SimpleStackedBarGraph extends PureComponent {
 
@@ -27,8 +27,7 @@ export default class SimpleStackedBarGraph extends PureComponent {
                             height={120}
                         />
                         <YAxis tickFormatter={(tick) => mFormatter(tick)} />
-                        <Tooltip />
-                        {/*<Legend />*/}
+                        <Tooltip formatter={(value) => gFormatter(value)}/>
                         {this.props.labels.map((candidate, index) =>
                             <Bar key={index} dataKey={candidate.name} stackId="a" fill={candidate.color} />
                         )}

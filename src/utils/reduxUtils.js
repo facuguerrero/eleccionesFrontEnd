@@ -21,9 +21,8 @@ export function processFilteredAllDatesActiveCandidates(candidates, activeCandid
     const filteredCandidates = candidates.filter(candidate => {
 
         const date = moment.unix(candidate.date);
-        // return date >= moment("07/01/2019") &&
-            return (activeDates[0] === null || date >= activeDates[0].startOf("day")) &&
-            (activeDates[1] === null || date <= activeDates[1].startOf("day"));
+        return (activeDates[0] === null || date >= activeDates[0].startOf("day")) &&
+        (activeDates[1] === null || date <= activeDates[1].startOf("day"));
 
     });
 

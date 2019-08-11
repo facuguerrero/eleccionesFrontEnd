@@ -55,11 +55,11 @@ class NavBarWrapperConnected extends React.Component {
                     <NavDrawer onSelected={this.changeWindow} selected={this.state}/>
                     <img className="logo" src="../../../../static/logo.png" />
                 </div>
-                <GenericDialog
-                    title="Elecciones Primarias, Abiertas, Simultáneas y Obligatorias"
-                    description="Debido a la veda electoral continuaremos recopilando información
-                        pero las visualizaciones sólo se alimentarán con datos de hasta el 08/08/2019."
-                />
+                {/*<GenericDialog*/}
+                    {/*title="Elecciones Primarias, Abiertas, Simultáneas y Obligatorias"*/}
+                    {/*description="Debido a la veda electoral continuaremos recopilando información*/}
+                        {/*pero las visualizaciones sólo se alimentarán con datos de hasta el 08/08/2019."*/}
+                {/*/>*/}
                 {this.state.showDashboardWindow ? <MainDashboard /> : null}
                 {this.state.showTopicsWindow ? <TopicHome /> : null}
                 {this.state.showFollowersWindow ? <Followers /> : null}

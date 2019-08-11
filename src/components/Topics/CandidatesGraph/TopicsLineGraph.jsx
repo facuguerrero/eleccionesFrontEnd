@@ -2,7 +2,7 @@ import React from 'react';
 import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
-import {kFormatter} from "../../../utils/graphFunctions";
+import {gFormatter, kFormatter} from "../../../utils/graphFunctions";
 
 class TopicsLineGraph extends React.Component {
 
@@ -20,9 +20,12 @@ class TopicsLineGraph extends React.Component {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="date"
                                tickFormatter={(tick) => tick.replace("/2019","")}
+                               angle={-45}
+                               textAnchor="end"
+                               height={80}
                         />
                         <YAxis tickFormatter={(tick) => kFormatter(tick)} />
-                        <Tooltip />
+                        <Tooltip formatter={(value) => gFormatter(value)}/>
                         <Legend />
                         <Line type="monotone" dataKey={this.props.name} stroke={"#31708E"} />
                     </LineChart>

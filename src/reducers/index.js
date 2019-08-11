@@ -13,7 +13,7 @@ const FollowersInitialState = {
     processedCandidates:[],
     cumulativeCandidates:[],
     historicCumulativeCandidates:[],
-    activeDates:[moment("07/01/2019"), moment("08/08/2019")],
+    activeDates:[moment("07/01/2019"), moment],
     candidateGraphs: {},
 };
 
@@ -77,7 +77,7 @@ function rootReducer(state = FollowersInitialState, action) {
             processedCandidates:[],
             cumulativeCandidates:[],
             historicCumulativeCandidates:[],
-            activeDates:[moment("07/02/2019"), moment("08/08/2019")],
+            activeDates:[moment("07/02/2019"), moment()],
         });
     }
     if (action.type === LOAD_GRAPHS) {

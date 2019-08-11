@@ -3,7 +3,7 @@ import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import './Graphs.scss';
-import {kFormatter} from "../../../utils/graphFunctions";
+import {gFormatter, kFormatter} from "../../../utils/graphFunctions";
 
 const COLORS = {
     "mauriciomacri": "#b3a712",
@@ -39,9 +39,12 @@ class SimpleLineGraph extends React.Component {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="date"
                                tickFormatter={(tick) => tick.replace("/2019","")}
+                               angle={-45}
+                               textAnchor="end"
+                               height={80}
                         />
                         <YAxis tickFormatter={(tick) => kFormatter(tick)} />
-                        <Tooltip />
+                        <Tooltip formatter={(value) => gFormatter(value)}/>
                         <Legend />
                         {this.generateLines()}
                     </LineChart>

@@ -94,6 +94,9 @@ class HomeConnected extends React.Component {
                             {
                                 this.state.showCandidates ?
                                     <div>
+                                        <EmptySelection
+                                            message="Seleccioná multiples candidatos para visualizar sus estadísticas"
+                                        />
                                         <div className="main-filters flex-column">
                                             <TopHeader
                                                 candidates={CANDIDATES}
@@ -128,7 +131,7 @@ class HomeConnected extends React.Component {
                                                     {/*<HistoricCumulativeFollowers/>*/}
                                                 </div>
                                             </div>
-                                            : <EmptySelection message="Seleccioná un candidato para visualizar sus estadísticas"/>
+                                            : null
                                         }
                                     </div>
                                     : <Loader/>
