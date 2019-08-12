@@ -186,7 +186,7 @@ class CandidatesGraphConnected extends React.Component {
                         {this.state.showEvolution ?
                             <div className="followers-graph full-basis white-bc-color-light">
                                 <GenericGraph
-                                    title="Cantidad de tweets en los que aparece por día"
+                                    title="Cantidad de usuarios únicos que lo usaron por día"
                                     showLabels={false}
                                     showInfo={false}
                                     infoMessage={"En ésta visualización no se contemplan a los usuarios que dejaron de " +

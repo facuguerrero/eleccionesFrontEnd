@@ -4,7 +4,7 @@ import { Graph } from 'react-d3-graph';
 
 
 function calculateWindowSize(){
-    return window.innerWidth > 1280 ? window.innerWidth / 2 : window.innerWidth - 50
+    return window.innerWidth > 1280 ? window.innerWidth / 2.5 : window.innerWidth - 50
 }
 
 const myConfig = {

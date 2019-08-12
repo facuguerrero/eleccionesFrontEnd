@@ -1,5 +1,5 @@
 .top-topics{
-  //flex-basis: 25%;
+  min-width: 320px;
 }
 
 .topic-graph{
@@ -23,6 +23,7 @@
 }
 
 .bullet:hover{
+  font-weight: bold;
   color: var(--second-color-dark);
   cursor: pointer;
 }
