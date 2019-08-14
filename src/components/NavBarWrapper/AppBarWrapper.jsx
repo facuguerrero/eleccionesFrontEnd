@@ -39,8 +39,8 @@ class AppBarWrapper extends React.Component {
                         aria-label="scrollable force tabs example"
                     >
                         <Tab label="General" icon={<Home />} {...a11yProps(0)} />
-                        <Tab label="Tópicos" icon={<Timeline />} {...a11yProps(1)} />
-                        <Tab label="Seguidores" icon={<TrendingUp />} {...a11yProps(2)} />
+                        <Tab label="Seguidores" icon={<TrendingUp />} {...a11yProps(1)} />
+                        <Tab label="Tópicos" icon={<Timeline />} {...a11yProps(2)} />
                     </Tabs>
                 </AppBar>
             </div>
