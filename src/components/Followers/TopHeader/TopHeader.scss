@@ -5,10 +5,7 @@
 }
 
 .logo{
-  margin-left: 10px;
-  height: 83px;
-  width: 207px;
-  margin-bottom: 10px;
+  display: none;
 }
 
 .candidates{
@@ -24,6 +21,15 @@
 }
 
 @media (min-width: 930px) {
+
+  .logo{
+    display: unset;
+    position: absolute;
+    right: 10px;
+    z-index: 10000;
+    height: 70px;
+    width: 196px;
+  }
 
   .candidate-header{
     justify-content: space-between;
