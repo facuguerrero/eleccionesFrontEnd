@@ -14,7 +14,7 @@ class CumulativeFollowersEvolutionConnected extends React.Component {
 
     render() {
         return (
-            <div className="followers-graph white-bc-color-light">
+            <div className="followers-graph full-basis white-bc-color-light">
                 <GenericGraph
                     title={"Cantidad de seguidores ganados y acumulados"}
                     xLabel="Cantidad de seguidores"
