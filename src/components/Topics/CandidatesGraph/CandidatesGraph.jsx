@@ -161,7 +161,8 @@ class CandidatesGraphConnected extends React.Component {
                         <div className="main-topics">
                             <div className="top-topics flex-column followers-graph white-bc-color-light">
                                 <TopicTitleBar withPrevious={false}
-                                               title={"Tópicos En Orden de Importancia"}
+                                               title={(this.props.topicsShowing ? "Tópicos" : "Hashtags") +
+                                                   " En Orden de Importancia"}
                                                showInfo={false}
                                                titleSize={"font-xmd"}
                                 />
@@ -171,11 +172,12 @@ class CandidatesGraphConnected extends React.Component {
                                 <TopicTitleBar withPrevious={true}
                                                disabled={this.state.mainGraph}
                                                showPrevious={this.changeToPreviousGraph}
-                                               title={"Grafo de Tópicos"}
+                                               title={"Grafo de " + (this.props.topicsShowing ? "Tópicos" : "Hashtags")}
                                                titleSize={"font-md"}
                                                showInfo={true}
-                                               infoMessage={"Los tópicos representan un conjunto " +
-                                               "de hashtags agrupados según su contenido."}
+                                               infoMessage={"Los tópicos representan un conjunto de " +
+                                               (this.props.topicsShowing ? "Tópicos" : "Hashtags") +
+                                               " agrupados según su contenido."}
                                 />
                                 <GenericTopic id={this.props.id}
                                               data={this.state.processedGraph}
@@ -189,9 +191,6 @@ class CandidatesGraphConnected extends React.Component {
                                     title="Cantidad de usuarios únicos que lo usaron por día"
                                     showLabels={false}
                                     showInfo={false}
-                                    infoMessage={"En ésta visualización no se contemplan a los usuarios que dejaron de " +
-                                    "seguir a los candidatos, solamente se ven sus nuevos seguidores."
-                                    }
                                     type={<TopicsLineGraph
                                         data={this.state.evolutionData}
                                         name={this.state.activeNode}

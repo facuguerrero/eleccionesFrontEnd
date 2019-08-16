@@ -20,6 +20,7 @@ class TopicHomeConnected extends React.Component {
             showErrorMessage: false,
             errorMessage: "",
             selectionMessage: topicMessage,
+            topicsShowing: true,
         };
     }
 
@@ -37,7 +38,10 @@ class TopicHomeConnected extends React.Component {
 
     changeMessage = (type) => {
         const message = type === "topic" ? topicMessage : hashtagMessage;
-        this.setState({selectionMessage: message})
+        this.setState({
+            selectionMessage: message,
+            topicsShowing: !this.state.topicsShowing,
+        })
     };
 
     render() {
@@ -56,7 +60,13 @@ class TopicHomeConnected extends React.Component {
                                 {/*</div>*/}
                             {/*</div>*/}
                             <div className="topics">
-                            {this.state.graphsAreLoaded ? <CandidatesGraph id="graph1" changeMessage={this.changeMessage}/> : <Loader/>}
+                            {this.state.graphsAreLoaded ? <CandidatesGraph
+                                    id="graph1"
+                                    changeMessage={this.changeMessage}
+                                    topicsShowing={this.state.topicsShowing}
+                                />
+                                : <Loader/>
+                            }
                             {/*{ this.state.graphsAreLoaded ? <AllTopicsGraph id="graph2" /> : null }*/}
                             </div>
                         </div>

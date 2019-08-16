@@ -21,7 +21,7 @@ const renderActiveShape = (props) => {
 
     return (
         <g>
-            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={"#1c5876"}>{payload.name}</text>
+            <text x={cx} y={cy} dy={8} fontWeight="bold" textAnchor="middle" fill={payload.color}>{payload.name}</text>
             <Sector
                 cx={cx}
                 cy={cy}
@@ -29,7 +29,7 @@ const renderActiveShape = (props) => {
                 outerRadius={outerRadius}
                 startAngle={startAngle}
                 endAngle={endAngle}
-                fill={"#1c5876"}
+                fill={payload.color}
             />
             <Sector
                 cx={cx}
@@ -38,11 +38,12 @@ const renderActiveShape = (props) => {
                 endAngle={endAngle}
                 innerRadius={outerRadius + 6}
                 outerRadius={outerRadius + 10}
-                fill={"#1c5876"}
+                fill={payload.color}
             />
             {/*<path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />*/}
             {/*<circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />*/}
             <text
+                fontWeight="bold"
                 x={ex + (cos >= 0 ? -70 : +70)} y={ey + (cos >= 0 ? +60 : -60)}
                 textAnchor={textAnchor}
                 fill="white">{`${(percent * 100).toFixed(2)}%`}
@@ -61,12 +62,15 @@ export default class SimplePieGraph extends React.Component {
         super(props);
         this.state = {
             activeIndex: 0,
+            color: "#649ebe"
         };
     }
 
     onPieEnter = (data, index) => {
+        console.log(data)
         this.setState({
             activeIndex: index,
+            color: COLORS[data.name]
         });
     };
 
@@ -81,7 +85,7 @@ export default class SimplePieGraph extends React.Component {
                             data={this.props.data}
                             innerRadius={80}
                             // outerRadius={80}
-                            fill="#5e91b1"
+                            fill={this.state.color}
                             dataKey="value"
                             onMouseEnter={this.onPieEnter}
                         />

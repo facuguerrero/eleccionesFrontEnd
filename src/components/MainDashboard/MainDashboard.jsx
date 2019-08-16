@@ -128,28 +128,48 @@ class MainDashboard extends React.Component {
             const partiesData = [
                 {
                     name: 'Frente De Todos',
-                    'Alberto Fernández': data.followers_by_candidate.alferdez.followers,
-                    'Cristina Kirchner': data.followers_by_candidate.CFKArgentina.followers
+                    'Usuarios Activos': this.getActiveAmount(
+                        data.followers_by_candidate.alferdez,
+                        data.followers_by_candidate.CFKArgentina),
+                    'Usuarios Inactivos': this.getInactiveAmount(
+                        data.followers_by_candidate.alferdez,
+                        data.followers_by_candidate.CFKArgentina)
                 },
                 {
                     name: 'Juntos por el Cambio',
-                    'Mauricio Macri': data.followers_by_candidate.mauriciomacri.followers,
-                    'Miguel Ángel Pichetto': data.followers_by_candidate.MiguelPichetto.followers
+                    'Usuarios Activos': this.getActiveAmount(
+                        data.followers_by_candidate.mauriciomacri,
+                        data.followers_by_candidate.MiguelPichetto),
+                    'Usuarios Inactivos': this.getInactiveAmount(
+                        data.followers_by_candidate.mauriciomacri,
+                        data.followers_by_candidate.MiguelPichetto)
                 },
                 {
                     name: 'Consenso Federal',
-                    'Roberto Lavagna': data.followers_by_candidate.rlavagna.followers,
-                    'Juan Manuel Urtubey': data.followers_by_candidate.urtubeyjm.followers
+                    'Usuarios Activos': this.getActiveAmount(
+                        data.followers_by_candidate.rlavagna,
+                        data.followers_by_candidate.urtubeyjm),
+                    'Usuarios Inactivos': this.getInactiveAmount(
+                        data.followers_by_candidate.rlavagna,
+                        data.followers_by_candidate.urtubeyjm)
                 },
                 {
                     name: 'Frente De Izquierda',
-                    'Nicolas del Caño': data.followers_by_candidate.NicolasdelCano.followers,
-                    'Romina Del Plá': data.followers_by_candidate.RominaDelPla.followers
+                    'Usuarios Activos': this.getActiveAmount(
+                        data.followers_by_candidate.NicolasdelCano,
+                        data.followers_by_candidate.RominaDelPla),
+                    'Usuarios Inactivos': this.getInactiveAmount(
+                        data.followers_by_candidate.NicolasdelCano,
+                        data.followers_by_candidate.RominaDelPla)
                 },
                 {
                     name: 'Frente Despertar',
-                    'Jose Luis Espert': data.followers_by_candidate.jlespert.followers,
-                    'Luis Rosales': data.followers_by_candidate.luisrosalesARG.followers
+                    'Usuarios Activos': this.getActiveAmount(
+                        data.followers_by_candidate.jlespert,
+                        data.followers_by_candidate.luisrosalesARG),
+                    'Usuarios Inactivos': this.getInactiveAmount(
+                        data.followers_by_candidate.jlespert,
+                        data.followers_by_candidate.luisrosalesARG)
                 },
             ].sort(function() { return 0.5 - Math.random() });
 
@@ -157,6 +177,15 @@ class MainDashboard extends React.Component {
         }
 
     }
+
+    getActiveAmount(candidateA, candidateB){
+        return candidateA.active_followers + candidateB.active_followers;
+    }
+
+    getInactiveAmount(candidateA, candidateB){
+        return candidateA.followers + candidateB.followers - this.getActiveAmount(candidateA, candidateB);
+    }
+
 }
 
 export default MainDashboard;

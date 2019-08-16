@@ -24,9 +24,10 @@ export default class SimpleStackedBarGraph extends PureComponent {
                             interval={0}
                             angle={-45}
                             textAnchor="end"
-                            height={120}
+                            height={140}
                         />
                         <YAxis tickFormatter={(tick) => mFormatter(tick)} />
+                        <Legend />
                         <Tooltip formatter={(value) => gFormatter(value)}/>
                         {this.props.labels.map((candidate, index) =>
                             <Bar key={index} dataKey={candidate.name} stackId="a" fill={candidate.color} />

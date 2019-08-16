@@ -7,7 +7,6 @@ import {gFormatter, kFormatter} from "../../../utils/graphFunctions";
 class TopicsLineGraph extends React.Component {
 
     render() {
-        console.log(this.props.data)
         return (
             <div style={{ width: '100%', height: 500 }}>
                 <ResponsiveContainer>
