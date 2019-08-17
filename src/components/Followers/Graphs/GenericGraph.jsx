@@ -8,7 +8,7 @@ class GenericGraph extends React.Component {
         return (
             <div>
                 <div className="flex-row title-and-info">
-                    <span className="graph-title font-lg">{this.props.title}</span>
+                    <span className="graph-title font-md">{this.props.title}</span>
                     {this.props.showInfo ? <Information infoMessage={this.props.infoMessage}/> : null}
                 </div>
                 <div className="flex-row graph">

@@ -60,11 +60,12 @@ export default class PartyGraph extends React.Component {
 
     render() {
         return (
-            <div className="followers-graph white-bc-color-light">
+            <div className="followers-graph full-basis white-bc-color-light">
                 <GenericGraph
-                    title="Seguidores Totales Por Partido"
+                    title={this.props.title}
                     showLabels={false}
                     showInfo={this.props.showInfo}
+                    infoMessage={this.props.infoMessage}
                     type={<SimpleStackedBarGraph data={this.props.data} labels={ACTIVE_COLORS}/>}
                 />
             </div>

@@ -16,6 +16,7 @@ class MainDashboard extends React.Component {
             showDashboard: false,
             partiesDataLoaded: false,
             partiesData:{},
+            candidatesData:{},
             showErrorMessage: false,
             errorMessage: "",
         };
@@ -71,8 +72,20 @@ class MainDashboard extends React.Component {
                                             "publicación desde el 01/01/2019"
                                             }/>
                                         <PartyGraph
+                                            title={"Seguidores Totales Por Partido"}
                                             data={this.state.partiesData}
-                                            showInfo={false}
+                                            showInfo={true}
+                                            infoMessage={"Los usuarios por partido se pueden repetir ya que es " +
+                                            "posible que un usuario siga a candidatos de más de un partido"}
+                                        />
+                                    </div>
+                                    <div className="followers-graphs full-basis">
+                                        <PartyGraph
+                                            title={"Seguidores Totales Por Candidato a Presidente y Vicepresidente"}
+                                            data={this.state.candidatesData}
+                                            showInfo={true}
+                                            infoMessage={"Los usuarios por partido se pueden repetir ya que es " +
+                                            "posible que un usuario siga a candidatos de más de un partido"}
                                         />
                                     </div>
                                 </div>
@@ -173,7 +186,75 @@ class MainDashboard extends React.Component {
                 },
             ].sort(function() { return 0.5 - Math.random() });
 
-            this.setState({ partiesDataLoaded: true, partiesData:partiesData });
+            const candidatesData = [
+                {
+                    name: 'Alberto Fernández',
+                    'Usuarios Activos': data.followers_by_candidate.alferdez.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.alferdez.followers -
+                        data.followers_by_candidate.alferdez.active_followers,
+                },
+                {
+                    name: 'Mauricio Macri',
+                    'Usuarios Activos': data.followers_by_candidate.mauriciomacri.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.mauriciomacri.followers -
+                        data.followers_by_candidate.mauriciomacri.active_followers,
+                },
+                {
+                    name: 'Roberto Lavagna',
+                    'Usuarios Activos': data.followers_by_candidate.rlavagna.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.rlavagna.followers -
+                        data.followers_by_candidate.rlavagna.active_followers,
+                },
+                {
+                    name: 'Nicolas del Caño',
+                    'Usuarios Activos': data.followers_by_candidate.NicolasdelCano.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.NicolasdelCano.followers -
+                        data.followers_by_candidate.NicolasdelCano.active_followers,
+                },
+                {
+                    name: 'Jose Luis Espert',
+                    'Usuarios Activos': data.followers_by_candidate.jlespert.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.jlespert.followers -
+                        data.followers_by_candidate.jlespert.active_followers,
+                },
+                {
+                    name: 'Cristina Kirchner',
+                    'Usuarios Activos': data.followers_by_candidate.CFKArgentina.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.CFKArgentina.followers -
+                        data.followers_by_candidate.CFKArgentina.active_followers,
+                },
+                {
+                    name: 'Juan Manuel Urtubey',
+                    'Usuarios Activos': data.followers_by_candidate.urtubeyjm.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.urtubeyjm.followers -
+                        data.followers_by_candidate.urtubeyjm.active_followers,
+                },
+                {
+                    name: 'Miguel Ángel Pichetto',
+                    'Usuarios Activos': data.followers_by_candidate.MiguelPichetto.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.MiguelPichetto.followers -
+                        data.followers_by_candidate.MiguelPichetto.active_followers,
+                },
+                {
+                    name: 'Romina Del Plá',
+                    'Usuarios Activos': data.followers_by_candidate.RominaDelPla.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.RominaDelPla.followers -
+                        data.followers_by_candidate.RominaDelPla.active_followers,
+                },
+                {
+                    name: 'Luis Rosales',
+                    'Usuarios Activos': data.followers_by_candidate.luisrosalesARG.active_followers,
+                    'Usuarios Inactivos': data.followers_by_candidate.luisrosalesARG.followers -
+                        data.followers_by_candidate.luisrosalesARG.active_followers,
+                },
+
+            ].sort(function() { return 0.5 - Math.random() });
+
+            this.setState({
+                partiesDataLoaded: true,
+                partiesData:partiesData,
+                candidatesData: candidatesData
+            });
         }
 
     }

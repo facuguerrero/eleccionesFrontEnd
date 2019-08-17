@@ -9,6 +9,8 @@ import TopOptions from "./TopOptions/TopOptions";
 import TopicsLineGraph from "./TopicsLineGraph";
 import moment from "moment";
 import GenericGraph from "../../Followers/Graphs/GenericGraph";
+import TweetEmbed from "react-tweet-embed/dist/tweet-embed";
+import {gFormatter} from "../../../utils/graphFunctions";
 
 const mapStateToProps = state => {
     return {
@@ -186,16 +188,34 @@ class CandidatesGraphConnected extends React.Component {
                             </div>
                         </div>
                         {this.state.showEvolution ?
-                            <div className="followers-graph full-basis white-bc-color-light">
-                                <GenericGraph
-                                    title="Cantidad de usuarios únicos que lo usaron por día"
-                                    showLabels={false}
-                                    showInfo={false}
-                                    type={<TopicsLineGraph
-                                        data={this.state.evolutionData}
-                                        name={this.state.activeNode}
-                                    />}
-                                />
+                            <div className="main-topics">
+                                {/*//TODO cambiar full basis por evolution-basis*/}
+                                <div className="followers-graph full-basis white-bc-color-light">
+                                    <GenericGraph
+                                        title="Cantidad de usuarios únicos que lo usaron por día"
+                                        showLabels={false}
+                                        showInfo={false}
+                                        type={<TopicsLineGraph
+                                            data={this.state.evolutionData}
+                                            name={this.state.activeNode}
+                                        />}
+                                    />
+                                </div>
+                                {/*{!this.props.topicsShowing ?*/}
+                                    {/*<div className="flex-column tweet-wrapper">*/}
+                                        {/*<div className="tweet-title white-bc-color-light">*/}
+                                            {/*<span className="bold-text font-md">*/}
+                                                {/*{"Tweet donde se originó el hashtag #" + this.state.activeNode}*/}
+                                            {/*</span>*/}
+                                        {/*</div>*/}
+                                        {/*<TweetEmbed*/}
+                                            {/*id="692527862369357824"*/}
+                                            {/*// placeholder={'loading'}*/}
+                                            {/*options={{dnt: true, lang: "es"}}*/}
+                                        {/*/>*/}
+                                    {/*</div>*/}
+                                    {/*:null*/}
+                                {/*}*/}
                             </div>
                             : null
                         }

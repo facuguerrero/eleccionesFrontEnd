@@ -1,6 +1,10 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
 
+function calculateWindowSize(){
+    return window.innerWidth >= 1280 ? 70 : 50
+}
+
 const COLORS = { Activos: "#649ebe", Inactivos: "#1c5876"};
 
 const renderActiveShape = (props) => {
@@ -67,7 +71,6 @@ export default class SimplePieGraph extends React.Component {
     }
 
     onPieEnter = (data, index) => {
-        console.log(data)
         this.setState({
             activeIndex: index,
             color: COLORS[data.name]
@@ -83,7 +86,7 @@ export default class SimplePieGraph extends React.Component {
                             activeIndex={this.state.activeIndex}
                             activeShape={renderActiveShape}
                             data={this.props.data}
-                            innerRadius={80}
+                            innerRadius={calculateWindowSize()}
                             // outerRadius={80}
                             fill={this.state.color}
                             dataKey="value"
