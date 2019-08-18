@@ -6,9 +6,7 @@ class InfoCard extends React.Component {
             <div className={
                 this.props.show ? "info-card forth-bc-color-light font-color-super-light" : "info-card-no-show"
             }>
-                <p>Info sobre el gráfico Info sobre el gráfico Info
-                    sobre el gráfico Info sobre el gráfico
-                    Info sobre el gráfico Info sobre el gráfico </p>
+                <p className="info-text">{this.props.infoMessage}</p>
             </div>
         );
     }

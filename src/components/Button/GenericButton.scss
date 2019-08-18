@@ -1,0 +1,22 @@
+.generic-button{
+  align-items: center;
+  padding: 5px;
+  height: 30px;
+  margin-top: -10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border-width: 2px;
+  background-color: var(--color-intense);
+  position: relative;
+  text-transform: uppercase;
+}
+
+.not-disabled-button:hover{
+  background-color: var(--color-intense-pressed);
+  cursor: pointer;
+}
+
+.disabled-button{
+  background-color: var(--fifth-color-light);
+  color: var(--fifth-color-dark);
+}

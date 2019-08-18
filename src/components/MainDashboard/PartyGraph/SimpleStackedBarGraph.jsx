@@ -2,16 +2,7 @@ import React, { PureComponent } from 'react';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts';
-import {mFormatter} from "../../../utils/graphFunctions";
-
-const data = [
-    {
-        name: 'Juntos por el Cambio', macri: 4000, picheto: 2400,
-    },
-    {
-        name: 'Somos', cristina: 3000, fernandez: 1398,
-    },
-];
+import {gFormatter, mFormatter} from "../../../utils/graphFunctions";
 
 export default class SimpleStackedBarGraph extends PureComponent {
 
@@ -21,17 +12,23 @@ export default class SimpleStackedBarGraph extends PureComponent {
                 <ResponsiveContainer>
                     <BarChart
                         width={500}
-                        height={300}
+                        height={400}
                         data={this.props.data}
                         margin={{
                             top: 20, right: 30, left: 20, bottom: 5,
                         }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
+                        <XAxis
+                            dataKey="name"
+                            interval={0}
+                            angle={-45}
+                            textAnchor="end"
+                            height={140}
+                        />
                         <YAxis tickFormatter={(tick) => mFormatter(tick)} />
-                        <Tooltip />
                         <Legend />
+                        <Tooltip formatter={(value) => gFormatter(value)}/>
                         {this.props.labels.map((candidate, index) =>
                             <Bar key={index} dataKey={candidate.name} stackId="a" fill={candidate.color} />
                         )}

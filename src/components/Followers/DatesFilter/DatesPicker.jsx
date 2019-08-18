@@ -179,6 +179,8 @@ class DateRangePickerWrapper extends React.Component {
                     startDate={startDate}
                     endDate={endDate}
                     hideKeyboardShortcutsPanel={true}
+                    enableOutsideDays={true}
+                    isOutsideRange={date => date.isBefore(moment("07/01/2019"), 'day') || date.isAfter(moment(), 'day')}
                 />
             </div>
         );

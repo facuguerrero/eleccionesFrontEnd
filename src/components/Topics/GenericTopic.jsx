@@ -4,7 +4,7 @@ import { Graph } from 'react-d3-graph';
 
 
 function calculateWindowSize(){
-    return window.innerWidth > 1280 ? window.innerWidth/3 - 30 : window.innerWidth - 40
+    return window.innerWidth > 1280 ? window.innerWidth / 2.5 : window.innerWidth - 50
 }
 
 const myConfig = {
@@ -18,7 +18,7 @@ const myConfig = {
     "highlightOpacity": 0.2,
     "linkHighlightBehavior": true,
     "maxZoom": 8,
-    "minZoom": 0.1,
+    "minZoom": 0,
     "nodeHighlightBehavior": true,
     "panAndZoom": false,
     "staticGraph": false,
@@ -26,15 +26,15 @@ const myConfig = {
     "d3": {
         "alphaTarget": 0.05,
         "gravity": -100,
-        "linkLength": 100,
-        "linkStrength": 1
+        "linkLength": 500,
+        "linkStrength": 2
     },
     "node": {
-        "color": "#d3d3d3",
+        "color": "#1c5876",
         "fontColor": "black",
         "fontSize": 12,
         "fontWeight": "normal",
-        "highlightColor": "red",
+        "highlightColor": "#1c5876",
         "highlightFontSize": 12,
         "highlightFontWeight": "bold",
         "highlightStrokeColor": "SAME",
@@ -43,10 +43,9 @@ const myConfig = {
         "mouseCursor": "pointer",
         "opacity": 1,
         "renderLabel": true,
-        "size": 450,
+        "size": 10,
         "strokeColor": "none",
         "strokeWidth": 1.5,
-        "svg": "",
         "symbolType": "circle"
     },
     "link": {
@@ -54,7 +53,7 @@ const myConfig = {
         "fontColor": "black",
         "fontSize": 8,
         "fontWeight": "normal",
-        "highlightColor": "blue",
+        "highlightColor": "#8FC1E3",
         "highlightFontSize": 8,
         "highlightFontWeight": "normal",
         "labelProperty": "label",
@@ -62,7 +61,7 @@ const myConfig = {
         "opacity": 1,
         "renderLabel": false,
         "semanticStrokeWidth": false,
-        "strokeWidth": 4
+        "strokeWidth": 4,
     }
 };
 

@@ -14,6 +14,10 @@ class NavDrawer extends React.Component {
     open = () => {
         this.setState({ open: true });
     };
+    handleClick = (windowName) => {
+        this.close();
+        this.props.onSelected(windowName);
+    };
     render() {
         return (
             <div className="drawer__sample">
@@ -22,21 +26,21 @@ class NavDrawer extends React.Component {
                         name="dashboard"
                         text="Información General"
                         icon="Home"
-                        onClick={this.props.onSelected}
+                        onClick={this.handleClick}
                         isSelected={this.props.selected.showDashboardWindow}
                     />
                     <NavButton
                         name="followers"
                         text="Análisis de Seguidores"
                         icon="TrendingUp"
-                        onClick={this.props.onSelected}
+                        onClick={this.handleClick}
                         isSelected={this.props.selected.showFollowersWindow}
                     />
                     <NavButton
                         name="topics"
                         text="Análisis de Tópicos"
                         icon="Timeline"
-                        onClick={this.props.onSelected}
+                        onClick={this.handleClick}
                         isSelected={this.props.selected.showTopicsWindow}
                     />
                 </TemporaryDrawer>

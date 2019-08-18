@@ -19,7 +19,7 @@ class Information extends React.Component {
     render() {
         return (
             <div>
-                <InfoCard show={this.state.showInfoCard}/>
+                <InfoCard show={this.state.showInfoCard} infoMessage={this.props.infoMessage}/>
                 <Info
                     className="info-button"
                     fontSize="large"

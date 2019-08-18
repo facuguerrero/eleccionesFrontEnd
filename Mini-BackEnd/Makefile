@@ -8,7 +8,7 @@ prepare:
 run:
 	. venv/bin/activate; \
 	export PYTHONPATH=$PYTHONPATH:$(pwd); \
-	gunicorn -b 0.0.0.0:9290 wsgi:app
+	gunicorn -b 0.0.0.0:80 wsgi:app
 
 test:
 	. venv/bin/activate; \

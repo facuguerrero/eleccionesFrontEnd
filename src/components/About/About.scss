@@ -1,0 +1,30 @@
+.main-about{
+  background-color: white;
+  width: 100%;
+}
+
+.text-container:first-child{
+  margin-top: 160px;
+}
+
+.text-container{
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 1280px;
+}
+
+.h{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ececec;
+  margin: 3em 0;
+  padding: 0;
+}
+
+.margin-about{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

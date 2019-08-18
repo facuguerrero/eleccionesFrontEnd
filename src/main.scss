@@ -23,11 +23,20 @@ html *
   flex-direction: row;
 }
 
+.bold-text{
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .no-margin{
   margin: 0;
 }
 
 .main{
+  margin-top:90px;
   min-height: 100vh;
 }
 
@@ -85,6 +94,14 @@ html *
 
 .white-bc-color-light{
   background-color: white;
+}
+
+.white-font-color-light{
+  color: white;
+}
+
+.black-font-color-light{
+  color: #282c34;
 }
 
 // Backgroud colors dark
@@ -255,6 +272,9 @@ html *
 .font-lg{
   font-size: 30px;
 }
+.font-xlg{
+  font-size: 60px;
+}
 
 //Candidates fonts Colors
 .mauriciomacri-font-color{
@@ -358,7 +378,9 @@ html *
   --first-color-dark: #3d4c3a;
   --second-color-dark: #004560;
   --third-color-dark: #1c5876;
-  --forth-color-dark: #5e91b1;
+  --color-intense: #2f2076;
+  --color-intense-pressed: #3a2aa6;
+  --forth-color-dark: #542ced;
   --fifth-color-dark: #5a5b5c;
   --mauriciomacri: #b3a712;
   --CFKArgentina: #1ea6bb;

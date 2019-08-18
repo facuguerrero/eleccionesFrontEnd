@@ -11,6 +11,8 @@ export default class UsersGraph extends React.Component {
                     title="Usuarios Obtenidos"
                     showLabels={false}
                     type={<SimplePieGraph data={this.props.data}/>}
+                    showInfo={this.props.showInfo}
+                    infoMessage={this.props.infoMessage}
                 />
             </div>
         );
