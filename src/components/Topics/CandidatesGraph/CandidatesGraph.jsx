@@ -10,7 +10,7 @@ import TopicsLineGraph from "./TopicsLineGraph";
 import moment from "moment";
 import GenericGraph from "../../Followers/Graphs/GenericGraph";
 import TweetEmbed from "react-tweet-embed/dist/tweet-embed";
-import {gFormatter} from "../../../utils/graphFunctions";
+import EmptySelection from "../../EmptySelection/EmptySelection";
 
 const mapStateToProps = state => {
     return {
@@ -29,6 +29,7 @@ class CandidatesGraphConnected extends React.Component {
             errorMessage: "",
             evolutionData: [],
             showEvolution: false,
+            showEvolutionError: false,
             activeNode: ""
         };
     }
@@ -71,12 +72,12 @@ class CandidatesGraphConnected extends React.Component {
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, topicId),
                     activeNode: topicId,
+                    showEvolutionError: false,
                 })
             })
             .catch((error) => {
                 this.setState({
-                    showErrorMessage: true,
-                    errorMessage: "Hubo un error al cargar la información del tópico, intentá nuevamente más tarde",
+                    showEvolutionError: true,
                 })
             })
     };
@@ -95,12 +96,12 @@ class CandidatesGraphConnected extends React.Component {
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, hashtagId),
                     activeNode: hashtagId,
+                    showEvolutionError: false,
                 })
             })
             .catch((error) => {
                 this.setState({
-                    showErrorMessage: true,
-                    errorMessage: "Hubo un error al cargar la información del hashtag, intentá nuevamente más tarde",
+                    showEvolutionError: true,
                 })
             })
     };
@@ -122,6 +123,7 @@ class CandidatesGraphConnected extends React.Component {
             this.setState({
                 mainGraph: true,
                 processedGraph: this.processGraphData(this.props.candidateGraphs),
+                showEvolutionError: false,
             })
         }
     };
@@ -160,6 +162,7 @@ class CandidatesGraphConnected extends React.Component {
             <div>
                 { !this.state.showErrorMessage ?
                     <div>
+                        <EmptySelection message={this.props.selectionMessage} />
                         <div className="main-topics">
                             <div className="top-topics flex-column followers-graph white-bc-color-light">
                                 <TopicTitleBar withPrevious={false}
@@ -187,37 +190,43 @@ class CandidatesGraphConnected extends React.Component {
                                 />
                             </div>
                         </div>
-                        {this.state.showEvolution ?
-                            <div className="main-topics">
-                                {/*//TODO cambiar full basis por evolution-basis*/}
-                                <div className="followers-graph evolution-basis white-bc-color-light">
-                                    <GenericGraph
-                                        title="Cantidad de usuarios únicos que lo usaron por día"
-                                        showLabels={false}
-                                        showInfo={false}
-                                        type={<TopicsLineGraph
-                                            data={this.state.evolutionData}
-                                            name={this.state.activeNode}
-                                        />}
-                                    />
-                                </div>
-                                {!this.props.topicsShowing ?
-                                    <div className="flex-column tweet-wrapper">
-                                        <div className="tweet-title white-bc-color-light">
-                                            <span className="bold-text font-md">
-                                                {"Tweet donde se originó el hashtag #" + this.state.activeNode}
-                                            </span>
+                        {!this.state.showEvolutionError ?
+                            <div>
+                                {
+                                    this.state.showEvolution ?
+                                        <div className="main-topics">
+                                            {/*//TODO cambiar full basis por evolution-basis*/}
+                                            <div className="followers-graph evolution-basis white-bc-color-light">
+                                                <GenericGraph
+                                                    title="Cantidad de usuarios únicos que lo usaron por día"
+                                                    showLabels={false}
+                                                    showInfo={false}
+                                                    type={<TopicsLineGraph
+                                                        data={this.state.evolutionData}
+                                                        name={this.state.activeNode}
+                                                    />}
+                                                />
+                                            </div>
+                                            {!this.props.topicsShowing ?
+                                                <div className="flex-column tweet-wrapper">
+                                                    <div className="tweet-title white-bc-color-light">
+                                                    <span className="bold-text font-md">
+                                                        {"Tweet donde se originó el hashtag #" + this.state.activeNode}
+                                                    </span>
+                                                    </div>
+                                                    <TweetEmbed
+                                                        id="692527862369357824"
+                                                        // placeholder={'loading'}
+                                                        options={{dnt: true, lang: "es"}}
+                                                    />
+                                                </div>
+                                                : null
+                                            }
                                         </div>
-                                        <TweetEmbed
-                                            id="692527862369357824"
-                                            // placeholder={'loading'}
-                                            options={{dnt: true, lang: "es"}}
-                                        />
-                                    </div>
-                                    :null
+                                        : null
                                 }
                             </div>
-                            : null
+                            : <Error noMargin={true} errorMessage="Entrá más tarde para ver la evolución histórica"/>
                         }
                     </div>
                 : <Error errorMessage={this.state.errorMessage}/>

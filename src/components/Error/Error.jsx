@@ -11,7 +11,7 @@ class Error extends React.Component {
     }
     render() {
         return (
-            <div className="error">
+            <div className={"error " + (this.props.noMargin ? "error-small-margin" : "")}>
                 <Info fontSize="large" htmlColor="#878889" className="error-icon"/>
                 <span className="error-message font-lg fifth-font-color">
                     {this.props.errorMessage}
