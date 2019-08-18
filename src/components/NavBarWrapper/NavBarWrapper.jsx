@@ -8,6 +8,7 @@ import {connect} from "react-redux";
 import MainDashboard from "../MainDashboard/MainDashboard";
 import GenericDialog from "../Modal/GenericDialog";
 import AppBarWrapper from "./AppBarWrapper";
+import About from "../About/About";
 
 class NavBarWrapperConnected extends React.Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class NavBarWrapperConnected extends React.Component {
             showDashboardWindow: true,
             showFollowersWindow: false,
             showTopicsWindow: false,
+            showInfoWindow: false,
             showing: 0,
         };
     }
@@ -27,6 +29,7 @@ class NavBarWrapperConnected extends React.Component {
                     showDashboardWindow: true,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
+                    showInfoWindow: false,
                     showing: 0,
                 });
             case 1:
@@ -35,6 +38,7 @@ class NavBarWrapperConnected extends React.Component {
                     showDashboardWindow: false,
                     showFollowersWindow : true,
                     showTopicsWindow : false,
+                    showInfoWindow: false,
                     showing: 1,
                 });
             case 2:
@@ -42,13 +46,23 @@ class NavBarWrapperConnected extends React.Component {
                     showDashboardWindow: false,
                     showFollowersWindow : false,
                     showTopicsWindow : true,
+                    showInfoWindow: false,
                     showing: 2,
+                });
+            case 3:
+                return this.setState({
+                    showDashboardWindow: false,
+                    showFollowersWindow : false,
+                    showTopicsWindow : false,
+                    showInfoWindow: true,
+                    showing: 3,
                 });
             default:
                 return this.setState({
                     showDashboardWindow: true,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
+                    showInfoWindow: false,
                     showing: 0,
                 });
         }
@@ -71,6 +85,7 @@ class NavBarWrapperConnected extends React.Component {
                 {this.state.showDashboardWindow ? <MainDashboard /> : null}
                 {this.state.showTopicsWindow ? <TopicHome /> : null}
                 {this.state.showFollowersWindow ? <Followers /> : null}
+                {this.state.showInfoWindow ? <About /> : null}
             </div>
         );
     }

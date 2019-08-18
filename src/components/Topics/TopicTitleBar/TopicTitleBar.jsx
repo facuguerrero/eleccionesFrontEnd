@@ -10,9 +10,14 @@ class TopicTitleBar extends React.Component {
         return (
             <div className="flex-row title-and-info">
                 <div className="flex-row">
-                    <span className={"graph-title graph-basis" + this.props.titleSize}>{this.props.title}</span>
+                    <span className={"graph-title black-font-color-light graph-basis" + this.props.titleSize}>
+                        {this.props.title}</span>
                     {this.props.withPrevious ?
-                        <GenericButton onClick={this.props.showPrevious} text="Grafo Anterior" disabled={this.props.disabled}/>
+                        <GenericButton
+                            onClick={this.props.showPrevious}
+                            text="Grafo Anterior"
+                            disabled={this.props.disabled}
+                        />
                         : null
                     }
                 </div>
