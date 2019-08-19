@@ -30,7 +30,8 @@ class CandidatesGraphConnected extends React.Component {
             evolutionData: [],
             showEvolution: false,
             showEvolutionError: false,
-            activeNode: ""
+            activeNode: "",
+            tweetId: "",
         };
     }
 
@@ -73,6 +74,7 @@ class CandidatesGraphConnected extends React.Component {
                     evolutionData: this.processEvolutionData(response.data, topicId),
                     activeNode: topicId,
                     showEvolutionError: false,
+                    tweetId: response.data.tweet_id
                 })
             })
             .catch((error) => {
@@ -97,6 +99,7 @@ class CandidatesGraphConnected extends React.Component {
                     evolutionData: this.processEvolutionData(response.data, hashtagId),
                     activeNode: hashtagId,
                     showEvolutionError: false,
+                    tweetId: response.data.tweet_id
                 })
             })
             .catch((error) => {
@@ -195,8 +198,7 @@ class CandidatesGraphConnected extends React.Component {
                                 {
                                     this.state.showEvolution ?
                                         <div className="main-topics">
-                                            {/*//TODO cambiar full basis por evolution-basis*/}
-                                            <div className="followers-graph full-basis white-bc-color-light">
+                                            <div className="followers-graph evolution-basis white-bc-color-light">
                                                 <GenericGraph
                                                     title="Cantidad de usuarios únicos que lo usaron por día"
                                                     showLabels={false}
@@ -207,21 +209,21 @@ class CandidatesGraphConnected extends React.Component {
                                                     />}
                                                 />
                                             </div>
-                                            {/*{!this.props.topicsShowing ?*/}
-                                                {/*<div className="flex-column tweet-wrapper">*/}
-                                                    {/*<div className="tweet-title white-bc-color-light">*/}
-                                                    {/*<span className="bold-text font-md">*/}
-                                                        {/*{"Tweet donde se originó el hashtag #" + this.state.activeNode}*/}
-                                                    {/*</span>*/}
-                                                    {/*</div>*/}
-                                                    {/*<TweetEmbed*/}
-                                                        {/*id="692527862369357824"*/}
-                                                        {/*// placeholder={'loading'}*/}
-                                                        {/*options={{dnt: true, lang: "es"}}*/}
-                                                    {/*/>*/}
-                                                {/*</div>*/}
-                                                {/*: null*/}
-                                            {/*}*/}
+                                            {!this.props.topicsShowing ?
+                                                <div className="flex-column tweet-wrapper">
+                                                    <div className="tweet-title white-bc-color-light">
+                                                    <span className="bold-text font-md">
+                                                        {"Tweet donde se originó el hashtag #" + this.state.activeNode}
+                                                    </span>
+                                                    </div>
+                                                    <TweetEmbed
+                                                        id={this.state.tweetId}
+                                                        // placeholder={'loading'}
+                                                        options={{dnt: true, lang: "es"}}
+                                                    />
+                                                </div>
+                                                : null
+                                            }
                                         </div>
                                         : null
                                 }
@@ -233,6 +235,10 @@ class CandidatesGraphConnected extends React.Component {
                 }
             </div>
     )
+    }
+
+    tweetLoadError = (error) => {
+        console.log(error)
     }
 }
 
