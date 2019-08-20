@@ -131,9 +131,11 @@ class CandidatesGraphConnected extends React.Component {
         if(!this.state.mainGraph) {
             this.props.changeMessage("topic");
             this.setState({
+                showEvolution: false,
                 mainGraph: true,
                 processedGraph: this.processGraphData(this.props.candidateGraphs),
                 showEvolutionError: false,
+                tweetId: "",
             })
         }
     };
@@ -168,7 +170,6 @@ class CandidatesGraphConnected extends React.Component {
     };
 
     render() {
-        console.log(this.state.showTweet)
         return (
             <div>
                 { !this.state.showErrorMessage ?
