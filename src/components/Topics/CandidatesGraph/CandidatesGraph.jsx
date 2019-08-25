@@ -11,6 +11,7 @@ import moment from "moment";
 import GenericGraph from "../../Followers/Graphs/GenericGraph";
 import TweetEmbed from "react-tweet-embed/dist/tweet-embed";
 import EmptySelection from "../../EmptySelection/EmptySelection";
+import Loader from "../../Loader/Loader";
 
 const mapStateToProps = state => {
     return {
@@ -30,7 +31,10 @@ class CandidatesGraphConnected extends React.Component {
             evolutionData: [],
             showEvolution: false,
             showEvolutionError: false,
-            activeNode: ""
+            activeNode: "",
+            tweetId: "",
+            showTweet: false,
+            showTweetError: false,
         };
     }
 
@@ -73,6 +77,9 @@ class CandidatesGraphConnected extends React.Component {
                     evolutionData: this.processEvolutionData(response.data, topicId),
                     activeNode: topicId,
                     showEvolutionError: false,
+                    tweetId: response.data.tweet_id,
+                    showTweet: false,
+                    showTweetError:false
                 })
             })
             .catch((error) => {
@@ -97,6 +104,9 @@ class CandidatesGraphConnected extends React.Component {
                     evolutionData: this.processEvolutionData(response.data, hashtagId),
                     activeNode: hashtagId,
                     showEvolutionError: false,
+                    tweetId: response.data.tweet_id,
+                    showTweet: false,
+                    showTweetError:false
                 })
             })
             .catch((error) => {
@@ -121,9 +131,11 @@ class CandidatesGraphConnected extends React.Component {
         if(!this.state.mainGraph) {
             this.props.changeMessage("topic");
             this.setState({
+                showEvolution: false,
                 mainGraph: true,
                 processedGraph: this.processGraphData(this.props.candidateGraphs),
                 showEvolutionError: false,
+                tweetId: "",
             })
         }
     };
@@ -195,8 +207,7 @@ class CandidatesGraphConnected extends React.Component {
                                 {
                                     this.state.showEvolution ?
                                         <div className="main-topics">
-                                            {/*//TODO cambiar full basis por evolution-basis*/}
-                                            <div className="followers-graph full-basis white-bc-color-light">
+                                            <div className="followers-graph evolution-basis white-bc-color-light">
                                                 <GenericGraph
                                                     title="Cantidad de usuarios únicos que lo usaron por día"
                                                     showLabels={false}
@@ -207,21 +218,33 @@ class CandidatesGraphConnected extends React.Component {
                                                     />}
                                                 />
                                             </div>
-                                            {/*{!this.props.topicsShowing ?*/}
-                                                {/*<div className="flex-column tweet-wrapper">*/}
-                                                    {/*<div className="tweet-title white-bc-color-light">*/}
-                                                    {/*<span className="bold-text font-md">*/}
-                                                        {/*{"Tweet donde se originó el hashtag #" + this.state.activeNode}*/}
-                                                    {/*</span>*/}
-                                                    {/*</div>*/}
-                                                    {/*<TweetEmbed*/}
-                                                        {/*id="692527862369357824"*/}
-                                                        {/*// placeholder={'loading'}*/}
-                                                        {/*options={{dnt: true, lang: "es"}}*/}
-                                                    {/*/>*/}
-                                                {/*</div>*/}
-                                                {/*: null*/}
-                                            {/*}*/}
+                                            {!this.state.showTweetError ?
+                                                <div>
+                                                    {!this.props.topicsShowing ?
+                                                        <div>
+                                                            <div className="flex-column tweet-wrapper">
+                                                                <div className="tweet-title white-bc-color-light">
+                                                                    <span className="bold-text font-md">
+                                                                        {"Tweet donde se originó el hashtag #" + this.state.activeNode}
+                                                                    </span>
+                                                                </div>
+                                                                <TweetEmbed
+                                                                    className={!this.state.showTweet ? "no-display" : ""}
+                                                                    id={this.state.tweetId}
+                                                                    options={{dnt: true, lang: "es"}}
+                                                                    onTweetLoadSuccess={this.tweetSuccess}
+                                                                />
+                                                            </div>
+                                                            {!this.state.showTweet ? <Loader smallMargin={true} /> : null}
+                                                        </div>
+                                                        : null
+                                                    }
+                                                </div>
+                                                : <Error noMargin={true}
+                                                    errorMessage={"No se encontró el tweet que " +
+                                                "originó el hashtag #" + this.state.activeNode}
+                                                />
+                                            }
                                         </div>
                                         : null
                                 }
@@ -233,6 +256,11 @@ class CandidatesGraphConnected extends React.Component {
                 }
             </div>
     )
+    }
+
+    tweetSuccess = (success) => {
+        success === undefined ? this.setState({showTweet: false, showTweetError:true})
+            : this.setState({showTweet: true, showTweetError:false});
     }
 }
 

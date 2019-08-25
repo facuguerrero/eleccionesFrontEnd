@@ -13,8 +13,8 @@ class About extends React.Component {
                     </p>
                     <p className="font-xmd black-font-color-light">
                         Se busca analizar el comportamiento de los usuarios en la red social Twitter
-                        y calcular, a través del análisis del contenido publicado por dichos usuarios, métri-
-                        cas que nos permitan determinar la afinidad de los mismos hacia ciertos candidatos a
+                        y calcular, a través del análisis del contenido publicado por dichos usuarios, métricas que
+                        nos permitan determinar la afinidad de los mismos hacia ciertos candidatos a
                         presidente y vicepresidente de la República Argentina y la similitud entre el contenido
                         que comparten.
                     </p>
@@ -24,16 +24,16 @@ class About extends React.Component {
                         la evolución temporal de las mismas.
                     </p>
                     <p className="font-xmd black-font-color-light">
-                        A través del análisis de las métricas generadas se propone entender las similitu-
-                        des y diferencias entre los usuarios que muestran afinidad hacia un candidato u otro,
+                        A través del análisis de las métricas generadas se propone entender las similitudes
+                        y diferencias entre los usuarios que muestran afinidad hacia un candidato u otro,
                         como así también las tendencias y flujos de opinión entre los usuarios que muestran
                         afinidad hacia uno u otro candidato.
                     </p>
                     <div className="h"/>
-                    <span className="black-font-color-light font-lg bold-text">Involucrados</span>
+                    <span className="black-font-color-light font-lg bold-text">Autores</span>
                     <p className="font-md fifth-font-color">
-                        El proyecto se desarrolla por los alumnos de la carrera Ingeniería en Informática de
-                        la Universidad de Buenos Aires
+                        El proyecto está siendo desarrollado por los siguientes alumnos de la carrera Ingeniería
+                        en Informática de la Universidad de Buenos Aires
                     </p>
                     <ul>
                     <li className="margin-about font-xmd black-font-color-light list-item-about">
@@ -52,6 +52,21 @@ class About extends React.Component {
                         <li className="margin-about font-xmd black-font-color-light list-item-about">
                             Dr. Mariano Gastón BEIRÓ</li>
                     </ul>
+                    <p className="font-md fifth-font-color">
+                        Grupo
+                    </p>
+                    <ul>
+                        <li className="margin-about font-xmd black-font-color-light list-item-about">
+                            <a href="https://cnet.fi.uba.ar/">
+                            Grupo de redes complejas y comunicación de datos (CoNexDait)
+                            </a>
+                        </li>
+                        <li className="margin-about font-xmd black-font-color-light list-item-about">
+                            <a href="http://www.fi.uba.ar/">
+                                Facultad de ingeniería, Universidad de Buenos Aires
+                            </a>
+                        </li>
+                    </ul>
                     <div className="h"/>
                     <span className="black-font-color-light font-lg bold-text">
                         Estado del desarrollo</span>
@@ -61,6 +76,12 @@ class About extends React.Component {
                     <p className="font-xmd black-font-color-light">
                         El proyecto se encuentra en una etapa de desarrollo constante en la que se
                         agregará contenido y modificará el mismo diariamente.
+                    </p>
+                    <div className="h"/>
+                    <span className="black-font-color-light font-lg bold-text">
+                        Contacto</span>
+                    <p className="font-xmd black-font-color-light">
+                        <a href = "mailto:elecciones2019@cnet.fi.uba.ar">elecciones2019@cnet.fi.uba.ar</a>
                     </p>
                 </div>
             </div>
