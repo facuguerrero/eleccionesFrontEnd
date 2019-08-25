@@ -19,7 +19,7 @@ class TopicUsageResource(Resource):
             return ResponseBuilder.build_exception(wpe.message, 400)
         # Do function
         try:
-            graph = HashtagUsageService().find_topic(topic_id, start_date, end_date)
+            graph = HashtagUsageService().find_hashtag(topic_id, start_date, end_date)
             return ResponseBuilder.build(graph, 200)
         except NoDocumentsFoundError:
             return ResponseBuilder.build_exception('Requested data not found.', 404)
