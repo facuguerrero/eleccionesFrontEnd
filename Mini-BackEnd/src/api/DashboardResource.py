@@ -12,7 +12,7 @@ class DashboardResource(Resource):
     @staticmethod
     def get():
         # Get count of analyzed tweets
-        tweets = RawTweetDAO().get_count({}) + 473308900  # Count of deleted tweets
+        tweets = RawTweetDAO().get_count({}) + 481267890  # Count of deleted tweets
         # Get count of known hashtags
         hashtags = HashtagDAO().get_count({})
         # Get count of hashtag cooccurrences
