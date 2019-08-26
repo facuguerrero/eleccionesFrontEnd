@@ -16,4 +16,6 @@ class HashtagUsageDAO(GenericDAO, metaclass=Singleton):
         document = self.get_first({'hashtag_name': hashtag_name, 'start_date': start_date, 'end_date': end_date})
         if not document:
             raise NoDocumentsFoundError(hashtag_name, None)
-        return {'date_axis': document['date_axis'], 'count_axis': document['count_axis']}
+        return {'date_axis': document['date_axis'],
+                'count_axis': document['count_axis'],
+                'parties_vectors': document['parties_vectors']}

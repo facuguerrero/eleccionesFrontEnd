@@ -16,4 +16,6 @@ class TopicUsageDAO(GenericDAO, metaclass=Singleton):
         document = self.get_first({'topic_id': topic_id, 'start_date': start_date, 'end_date': end_date})
         if not document:
             raise NoDocumentsFoundError(topic_id, None)
-        return {'date_axis': document['date_axis'], 'count_axis': document['count_axis']}
+        return {'date_axis': document['date_axis'],
+                'count_axis': document['count_axis'],
+                'parties_vectors': document['parties_proportions']}
