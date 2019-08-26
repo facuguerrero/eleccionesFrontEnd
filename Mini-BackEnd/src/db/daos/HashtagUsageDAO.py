@@ -18,4 +18,4 @@ class HashtagUsageDAO(GenericDAO, metaclass=Singleton):
             raise NoDocumentsFoundError(hashtag_name, None)
         return {'date_axis': document['date_axis'],
                 'count_axis': document['count_axis'],
-                'parties_vectors': document['parties_vectors']}
+                'parties_vectors': document.get('parties_vectors', {})}

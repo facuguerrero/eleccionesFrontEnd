@@ -18,4 +18,4 @@ class TopicUsageDAO(GenericDAO, metaclass=Singleton):
             raise NoDocumentsFoundError(topic_id, None)
         return {'date_axis': document['date_axis'],
                 'count_axis': document['count_axis'],
-                'parties_vectors': document['parties_proportions']}
+                'parties_vectors': document.get('parties_proportions', {})}
