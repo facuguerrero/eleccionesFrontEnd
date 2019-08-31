@@ -12,6 +12,7 @@ import GenericGraph from "../../Followers/Graphs/GenericGraph";
 import TweetEmbed from "react-tweet-embed/dist/tweet-embed";
 import EmptySelection from "../../EmptySelection/EmptySelection";
 import Loader from "../../Loader/Loader";
+import PartyLineGraphSelection from "../../Similarities/PartyLineGraphSelection/PartyLineGraphSelection";
 
 const mapStateToProps = state => {
     return {
@@ -42,8 +43,10 @@ class CandidatesGraphConnected extends React.Component {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topics/' +
             topicId +
-            '?start_date=2019-01-01&end_date=' +
-            //"2019-08-07"
+            '?start_date=' +
+            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            '&end_date=' +
+            // "2019-08-07"
             //TODO veda
             moment() .subtract(1, 'days').format("YYYY-MM-DD").toString()
             )
@@ -66,7 +69,9 @@ class CandidatesGraphConnected extends React.Component {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topic_usage/' +
             topicId +
-            '?start_date=2019-01-01&end_date=' +
+            '?start_date=' +
+            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            '&end_date=' +
             // "2019-08-07"
             //TODO veda
             moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
@@ -93,7 +98,9 @@ class CandidatesGraphConnected extends React.Component {
         axios.get(
             'http://elecciones2019.fi.uba.ar/hashtag_usage/' +
             hashtagId +
-            '?start_date=2019-01-01&end_date=' +
+            '?start_date=' +
+            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            '&end_date=' +
             // "2019-08-07"
             //TODO veda
             moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
@@ -157,15 +164,21 @@ class CandidatesGraphConnected extends React.Component {
         return newProcessedGraph;
     };
 
-    processEvolutionData = (evolutionData, nodeId) => {
+    processEvolutionData = (data, nodeId) => {
         let processedData = [];
 
-        evolutionData.count_axis.forEach((point, index) => {
-            let data = {};
-            data["date"] = moment(evolutionData.date_axis[index] * 1000).format("DD/MM/YYYY");
-            data[nodeId] = point;
-            processedData.push(data);
+        data["frentedetodos"].forEach((point, index) => {
+            let newData = {};
+            newData["date"] = moment(data.date_axis[index] * 1000).format("DD/MM/YYYY");
+            newData["Frente De Todos"] = data["frentedetodos"][index];
+            newData["Consenso Federal"] = data["consensofederal"][index];
+            newData["Frente De Izquierda"] = data["frentedeizquierda"][index];
+            newData["Juntos Por El Cambio"] = data["juntosporelcambio"][index];
+            newData["Frente Despertar"] = data["frentedespertar"][index];
+            newData[nodeId] = data["count_axis"][index];
+            processedData.push(newData);
         });
+
         return processedData;
     };
 
@@ -206,45 +219,52 @@ class CandidatesGraphConnected extends React.Component {
                             <div>
                                 {
                                     this.state.showEvolution ?
-                                        <div className="main-topics">
-                                            <div className="followers-graph evolution-basis white-bc-color-light">
-                                                <GenericGraph
-                                                    title="Cantidad de usuarios únicos que lo usaron por día"
-                                                    showLabels={false}
-                                                    showInfo={false}
-                                                    type={<TopicsLineGraph
-                                                        data={this.state.evolutionData}
-                                                        name={this.state.activeNode}
-                                                    />}
-                                                />
-                                            </div>
-                                            {!this.state.showTweetError ?
-                                                <div>
-                                                    {!this.props.topicsShowing ?
-                                                        <div>
-                                                            <div className="flex-column tweet-wrapper">
-                                                                <div className="tweet-title white-bc-color-light">
-                                                                    <span className="bold-text font-md">
-                                                                        {"Tweet donde se originó el hashtag #" + this.state.activeNode}
-                                                                    </span>
-                                                                </div>
-                                                                <TweetEmbed
-                                                                    className={!this.state.showTweet ? "no-display" : ""}
-                                                                    id={this.state.tweetId}
-                                                                    options={{dnt: true, lang: "es"}}
-                                                                    onTweetLoadSuccess={this.tweetSuccess}
-                                                                />
-                                                            </div>
-                                                            {!this.state.showTweet ? <Loader smallMargin={true} /> : null}
-                                                        </div>
-                                                        : null
-                                                    }
+                                        <div>
+                                            <EmptySelection
+                                                message={"Seleccioná múltiples partidos para ver sus relaciones con: " +
+                                                this.state.activeNode}
+                                            />
+                                            <PartyLineGraphSelection data={this.state.evolutionData}/>
+                                            <div className="main-topics">
+                                                <div className="followers-graph evolution-basis white-bc-color-light">
+                                                    <GenericGraph
+                                                        title="Cantidad de usuarios únicos que lo usaron por día"
+                                                        showLabels={false}
+                                                        showInfo={false}
+                                                        type={<TopicsLineGraph
+                                                            data={this.state.evolutionData}
+                                                            name={this.state.activeNode}
+                                                        />}
+                                                    />
                                                 </div>
-                                                : <Error noMargin={true}
-                                                    errorMessage={"No se encontró el tweet que " +
-                                                "originó el hashtag #" + this.state.activeNode}
-                                                />
-                                            }
+                                                {!this.state.showTweetError ?
+                                                    <div>
+                                                        {!this.props.topicsShowing ?
+                                                            <div>
+                                                                <div className="flex-column tweet-wrapper">
+                                                                    <div className="tweet-title white-bc-color-light">
+                                                                        <span className="bold-text font-md">
+                                                                            {"Primer uso conocido del hashtag #" + this.state.activeNode}
+                                                                        </span>
+                                                                    </div>
+                                                                    <TweetEmbed
+                                                                        className={!this.state.showTweet ? "no-display" : ""}
+                                                                        id={this.state.tweetId}
+                                                                        options={{dnt: true, lang: "es"}}
+                                                                        onTweetLoadSuccess={this.tweetSuccess}
+                                                                    />
+                                                                </div>
+                                                                {!this.state.showTweet ? <Loader smallMargin={true} /> : null}
+                                                            </div>
+                                                            : null
+                                                        }
+                                                    </div>
+                                                    : <Error noMargin={true}
+                                                        errorMessage={"No se encontró el tweet que " +
+                                                    "originó el hashtag #" + this.state.activeNode}
+                                                    />
+                                                }
+                                            </div>
                                         </div>
                                         : null
                                 }

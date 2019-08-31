@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from "axios";
-import DataContainer from "./DataContainer/DataContainer";
 import "./MainDashboard.scss"
 import UsersGraph from "./UsersGraph/UsersGraph";
 import PartyGraph from "./PartyGraph/PartyGraph";
@@ -62,7 +61,6 @@ class MainDashboard extends React.Component {
                     <div>
                         {this.state.showDashboard ?
                                 <div>
-                                    <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()}/>
                                     <div className="followers-graphs">
                                         <UsersGraph
                                             data={this.mapUsersData()}
@@ -98,32 +96,6 @@ class MainDashboard extends React.Component {
 
             </main>
         );
-    }
-
-    mapTwitterRawData() {
-        return [
-            {
-                title: "Tweets Totales",
-                value: this.state.dashboardInfo.tweets
-            },
-            {
-                title: "Usuarios Totales",
-                value: this.state.dashboardInfo.total_users
-            },
-            {
-                title: "Hashtags Encontrados",
-                value: this.state.dashboardInfo.hashtag_count
-            },
-            {
-                title: "Tópicos Calculados",
-                value: this.state.dashboardInfo.topic_count
-            },
-            // {
-            //     title: "Coocurrencias Encontradas",
-            //     value: this.state.dashboardInfo.cooccurrences_count
-            // }
-        ];
-
     }
 
     mapUsersData() {

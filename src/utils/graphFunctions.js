@@ -9,3 +9,7 @@ export function mFormatter(num) {
 export function gFormatter(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
 }
+
+export function g3Formatter(num) {
+    return num.toString().slice(0,5)
+}

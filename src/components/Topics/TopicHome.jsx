@@ -6,7 +6,6 @@ import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
 import "./Topics.scss"
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
-import EmptySelection from "../EmptySelection/EmptySelection";
 
 const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
 const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
