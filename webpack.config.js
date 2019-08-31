@@ -75,10 +75,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.scss', '.css'],
   },
-  watch: true,
-  watchOptions: {
-  poll: true,
-  },
+  // watch: true,
+  // watchOptions: {
+  // poll: true,
+  // },
   entry: {
     main: [
       ...(
