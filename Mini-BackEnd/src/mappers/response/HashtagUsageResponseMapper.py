@@ -7,5 +7,6 @@ class HashtagUsageResponseMapper:
         document['tweet_id'] = tweet_id
         # Extract vectors from map
         for party, vector in document['parties_vectors'].items():
-            document[party] = vector
+            # Map to percentages
+            document[party] = [v*100 for v in vector]
         return document
