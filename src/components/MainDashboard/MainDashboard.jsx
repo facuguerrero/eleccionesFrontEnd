@@ -5,6 +5,7 @@ import UsersGraph from "./UsersGraph/UsersGraph";
 import PartyGraph from "./PartyGraph/PartyGraph";
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
+import Particles from "react-particles-js";
 
 class MainDashboard extends React.Component {
 
@@ -58,7 +59,7 @@ class MainDashboard extends React.Component {
                 {
                     !this.state.showErrorMessage ?
 
-                    <div>
+                    <div className="z-index-top">
                         {this.state.showDashboard ?
                                 <div>
                                     <div className="followers-graphs">
@@ -93,6 +94,19 @@ class MainDashboard extends React.Component {
 
                     : <Error errorMessage={this.state.errorMessage}/>
                 }
+
+                <Particles
+                    className="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        }
+                    }} />
 
             </main>
         );

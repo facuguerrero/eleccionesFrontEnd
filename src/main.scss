@@ -35,9 +35,15 @@ html *
   margin: 0;
 }
 
+.z-index-top{
+  position: relative;
+  z-index: 10;
+}
+
 .main{
   margin-top:90px;
   min-height: 100vh;
+  background-color: var(--third-color-light);
 }
 
 .card-mg-pd{

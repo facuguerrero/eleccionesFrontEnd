@@ -11,6 +11,7 @@ import HistoricCumulativeFollowers from "./HistoricCumulativeFollowers/HistoricC
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
+import Particles from "react-particles-js";
 
 const CANDIDATES = [
     {
@@ -90,7 +91,7 @@ class HomeConnected extends React.Component {
                 {
                     !this.state.showErrorMessage ?
 
-                        <div>
+                        <div className="z-index-top">
                             {
                                 this.state.showCandidates ?
                                     <div>
@@ -140,6 +141,19 @@ class HomeConnected extends React.Component {
 
                         : <Error errorMessage={this.state.errorMessage}/>
                 }
+
+                <Particles
+                    className="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        }
+                    }} />
 
             </main>
         );

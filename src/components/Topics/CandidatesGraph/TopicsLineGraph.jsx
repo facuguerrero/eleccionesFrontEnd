@@ -26,7 +26,7 @@ class TopicsLineGraph extends React.Component {
                         <YAxis tickFormatter={(tick) => kFormatter(tick)} />
                         <Tooltip formatter={(value) => gFormatter(value)}/>
                         <Legend />
-                        <Line type="monotone" dataKey={this.props.name} stroke={"#31708E"} />
+                        <Line type="monotone" dataKey={this.props.name} stroke={"#282c34"} />
                     </LineChart>
                 </ResponsiveContainer>
             </div>

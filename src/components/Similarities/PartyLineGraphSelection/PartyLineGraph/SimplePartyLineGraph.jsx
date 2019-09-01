@@ -15,7 +15,6 @@ const COLORS = {
 class SimplePartyLineGraph extends React.Component {
 
     generateLines = () => {
-        console.log(this.props.activeParties)
         return this.props.activeParties.map((party, index) =>
             <Line key={index} type="monotone" dataKey={party} stroke={COLORS[party]}/>);
     };
@@ -37,8 +36,8 @@ class SimplePartyLineGraph extends React.Component {
                                textAnchor="end"
                                height={80}
                         />
-                        <YAxis />
-                        <Tooltip formatter={(value) => g3Formatter(value)}/>
+                        <YAxis type="number" domain={[0, Math.ceil(this.props.max)]}/>
+                        <Tooltip/>
                         <Legend />
                         {this.generateLines()}
                     </LineChart>

@@ -11,5 +11,5 @@ export function gFormatter(num) {
 }
 
 export function g3Formatter(num) {
-    return num.toString().slice(0,5)
+    return parseInt((num * 100).toString().slice(0,6))
 }

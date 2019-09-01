@@ -56,7 +56,7 @@ class Summary extends React.Component {
                 {
                     !this.state.showErrorMessage ?
 
-                        <div className="summary-index">
+                        <div className="z-index-top">
                             {this.state.showDashboard ?
                                 <div>
                                     <div className="summary-text">

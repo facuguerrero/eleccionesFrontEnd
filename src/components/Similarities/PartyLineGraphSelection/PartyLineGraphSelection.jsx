@@ -33,6 +33,7 @@ class PartyLineGraphSelection extends React.Component {
                         showInfo={false}
                         infoMessage="info"
                         data={this.props.data}
+                        max={this.props.max}
                         activeParties={this.state.activeParties}
                     />
                     : null

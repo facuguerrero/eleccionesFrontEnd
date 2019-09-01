@@ -5,13 +5,14 @@ import SimplePartyLineGraph from "./SimplePartyLineGraph";
 class PartyLineGraph extends React.Component {
     render() {
         return (
-            <div className="followers-graph full-basis white-bc-color-light">
+            <div className="full-basis white-bc-color-light">
                 <GenericGraph
                     title={this.props.title}
                     showLabels={false}
                     showInfo={this.props.showInfo}
                     infoMessage={this.props.infoMessage}
                     type={<SimplePartyLineGraph
+                        max={this.props.max}
                         data={this.props.data}
                         activeParties={this.props.activeParties}
                     />}

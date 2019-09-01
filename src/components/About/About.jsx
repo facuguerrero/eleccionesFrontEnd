@@ -53,7 +53,7 @@ class About extends React.Component {
                             Dr. Mariano Gastón BEIRÓ</li>
                     </ul>
                     <p className="font-md fifth-font-color">
-                        Grupos
+                        Grupos Involucrados
                     </p>
                     <ul>
                         <li className="margin-about font-xmd black-font-color-light list-item-about">
