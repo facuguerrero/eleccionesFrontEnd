@@ -74,8 +74,8 @@ class MainDashboard extends React.Component {
                                             title={"Seguidores Totales Por Partido"}
                                             data={this.state.partiesData}
                                             showInfo={true}
-                                            infoMessage={"Los usuarios por partido se pueden repetir ya que es " +
-                                            "posible que un usuario siga a candidatos de más de un partido"}
+                                            infoMessage={"Los usuarios por candidato pueden repetirse ya que es posible" +
+                                            " que un usuario siga a más de un candidato"}
                                         />
                                     </div>
                                     <div className="followers-graphs full-basis">

@@ -29,9 +29,9 @@ class PartyLineGraphSelection extends React.Component {
                 />
                 {this.state.activeParties.length > 0 ?
                     <PartyLineGraph
-                        title="Proporción de uso por partido"
-                        showInfo={false}
-                        infoMessage="info"
+                        title="Proporción de uso por partido (%)"
+                        showInfo={true}
+                        infoMessage="Porcentaje de seguidores del partido que lo utilizó en cada día."
                         data={this.props.data}
                         max={this.props.max}
                         activeParties={this.state.activeParties}

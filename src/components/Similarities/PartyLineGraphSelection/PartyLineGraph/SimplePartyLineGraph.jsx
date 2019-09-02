@@ -36,7 +36,7 @@ class SimplePartyLineGraph extends React.Component {
                                textAnchor="end"
                                height={80}
                         />
-                        <YAxis type="number" domain={[0, Math.ceil(this.props.max)]}/>
+                        <YAxis domain={[0, parseFloat(g3Formatter(this.props.max))]}/>
                         <Tooltip/>
                         <Legend />
                         {this.generateLines()}

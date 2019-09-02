@@ -190,9 +190,9 @@ class CandidatesGraphConnected extends React.Component {
     };
 
     getEvolutionMax = (data) => {
-        return(Math.max(Math.max.apply(Math, data.frentedetodos), Math.max.apply(Math, data.consensofederal),
+        return Math.max(Math.max.apply(Math, data.frentedetodos), Math.max.apply(Math, data.consensofederal),
             Math.max.apply(Math, data.frentedeizquierda), Math.max.apply(Math, data.juntosporelcambio),
-            Math.max.apply(Math, data.frentedespertar))) * 100;
+            Math.max.apply(Math, data.frentedespertar));
     };
 
     render() {
@@ -255,7 +255,9 @@ class CandidatesGraphConnected extends React.Component {
                                             <div className="main-topics">
                                                 <div className="followers-graph evolution-basis white-bc-color-light">
                                                     <GenericGraph
-                                                        title="Cantidad de usuarios únicos que lo usaron por día"
+                                                        title={(this.state.activeNode === this.state.topicName ?
+                                                            "Cantidad de usuarios únicos que hablaron del tópico por día"
+                                                            : "Cantidad de usuarios únicos usaron el hashtag por día")}
                                                         showLabels={false}
                                                         showInfo={false}
                                                         type={<TopicsLineGraph

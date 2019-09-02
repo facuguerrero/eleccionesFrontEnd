@@ -79,8 +79,8 @@ class Summary extends React.Component {
                                                     Seguidores
                                                 </span>
                                                 <span className="fifth-font-color-dark font-xmd">
-                                                    ¿Cómo evolucionan los seguidores de cada candidato a Presidente y
-                                                    Vicepresidente?
+                                                    ¿Cómo evoluciona la cantidad de seguidores de cada candidato a
+                                                    Presidente y Vicepresidente?
                                                 </span>
                                             </div>
                                         </div>
@@ -94,7 +94,8 @@ class Summary extends React.Component {
                                                     Tópicos
                                                 </span>
                                                 <span className="fifth-font-color-dark font-xmd">
-                                                    ¿Cómo se alinean los seguidores de cada partido a distintos hashtags?
+                                                    ¿Cómo se alinean los seguidores de cada partido a distintos hashtags
+                                                    y temas de discusión?
                                                 </span>
                                             </div>
                                         </div>
@@ -108,7 +109,7 @@ class Summary extends React.Component {
                                                     Actividad
                                                 </span>
                                                 <span className="fifth-font-color-dark font-xmd">
-                                                    ¿Qué tanto influyen los usarios activos e inactivos a cada partido?
+                                                    ¿Qué tanto influyen los usuarios activos e inactivos a cada partido?
                                                 </span>
                                             </div>
                                         </div>
