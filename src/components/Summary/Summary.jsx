@@ -6,6 +6,7 @@ import DataContainer from "../MainDashboard/DataContainer/DataContainer";
 import "./Summary.scss"
 import {PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
 import Particles from "react-particles-js";
+import GenericButton from "../Button/GenericButton";
 
 class Summary extends React.Component {
 
@@ -64,6 +65,10 @@ class Summary extends React.Component {
                                         <p className="font-md white-font-color-light">
                                             Análisis en tiempo real de las elecciones presidenciales argentinas del 2019 en Twitter
                                             realizado por alumnos de la Facultad de Ingeniería de la Universidad de Buenos Aires.
+                                            Puede encontrar información más detallada
+                                            <span> </span>
+                                            <span className="text-pointer" onClick={() => this.props.changeWindow(4)} >aquí</span>
+                                            <span>.</span>
                                         </p>
                                         <span className="summary-subtitle white-font-color-light font-lg bold-text">Información Recolectada</span>
                                     </div>

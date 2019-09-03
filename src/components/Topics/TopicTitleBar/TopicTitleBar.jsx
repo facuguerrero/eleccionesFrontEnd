@@ -17,6 +17,7 @@ class TopicTitleBar extends React.Component {
                             onClick={this.props.showPrevious}
                             text="Grafo de Tópicos"
                             disabled={this.props.disabled}
+                            showArrow={true}
                         />
                         : null
                     }

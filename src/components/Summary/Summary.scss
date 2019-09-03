@@ -24,6 +24,16 @@
   box-shadow: 5px 5px 15px dimgray;
 }
 
+.text-pointer{
+  color: #0645AD;
+}
+
+.text-pointer:hover{
+  cursor: pointer;
+  color: #063f96;
+  text-decoration: underline;
+}
+
 .summary-subtitle{
   margin-top: 40px;
   display: flex;
