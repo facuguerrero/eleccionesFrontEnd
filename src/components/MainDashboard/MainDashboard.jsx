@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from "axios";
-import DataContainer from "./DataContainer/DataContainer";
 import "./MainDashboard.scss"
 import UsersGraph from "./UsersGraph/UsersGraph";
 import PartyGraph from "./PartyGraph/PartyGraph";
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
+import Particles from "react-particles-js";
 
 class MainDashboard extends React.Component {
 
@@ -59,10 +59,9 @@ class MainDashboard extends React.Component {
                 {
                     !this.state.showErrorMessage ?
 
-                    <div>
+                    <div className="z-index-top">
                         {this.state.showDashboard ?
                                 <div>
-                                    <DataContainer title="Valores Totales obtenidos" data={this.mapTwitterRawData()}/>
                                     <div className="followers-graphs">
                                         <UsersGraph
                                             data={this.mapUsersData()}
@@ -75,8 +74,8 @@ class MainDashboard extends React.Component {
                                             title={"Seguidores Totales Por Partido"}
                                             data={this.state.partiesData}
                                             showInfo={true}
-                                            infoMessage={"Los usuarios por partido se pueden repetir ya que es " +
-                                            "posible que un usuario siga a candidatos de más de un partido"}
+                                            infoMessage={"Los usuarios por candidato pueden repetirse ya que es posible" +
+                                            " que un usuario siga a más de un candidato"}
                                         />
                                     </div>
                                     <div className="followers-graphs full-basis">
@@ -96,34 +95,21 @@ class MainDashboard extends React.Component {
                     : <Error errorMessage={this.state.errorMessage}/>
                 }
 
+                <Particles
+                    className="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        }
+                    }} />
+
             </main>
         );
-    }
-
-    mapTwitterRawData() {
-        return [
-            {
-                title: "Tweets Totales",
-                value: this.state.dashboardInfo.tweets
-            },
-            {
-                title: "Usuarios Totales",
-                value: this.state.dashboardInfo.total_users
-            },
-            {
-                title: "Hashtags Encontrados",
-                value: this.state.dashboardInfo.hashtag_count
-            },
-            {
-                title: "Tópicos Calculados",
-                value: this.state.dashboardInfo.topic_count
-            },
-            // {
-            //     title: "Coocurrencias Encontradas",
-            //     value: this.state.dashboardInfo.cooccurrences_count
-            // }
-        ];
-
     }
 
     mapUsersData() {

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import {Home, Timeline, TrendingUp, InfoOutlined} from "@material-ui/icons";
+import {Home, Timeline, TrendingUp, InfoOutlined, Assessment, PermIdentity} from "@material-ui/icons";
 
 function a11yProps(index) {
     return {
@@ -41,7 +41,9 @@ class AppBarWrapper extends React.Component {
                         <Tab label="General" icon={<Home />} {...a11yProps(0)} />
                         <Tab label="Seguidores" icon={<TrendingUp />} {...a11yProps(1)} />
                         <Tab label="Tópicos" icon={<Timeline />} {...a11yProps(2)} />
-                        <Tab label="Información" icon={<InfoOutlined />} {...a11yProps(3)} />
+                        {/*<Tab label="Partidos" icon={<Assessment />} {...a11yProps(3)} />*/}
+                        <Tab label="Actividad" icon={<PermIdentity />} {...a11yProps(3)} />
+                        <Tab label="Información" icon={<InfoOutlined />} {...a11yProps(4)} />
                     </Tabs>
                 </AppBar>
             </div>

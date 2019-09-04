@@ -2,13 +2,26 @@ import React from 'react';
 import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
-import {gFormatter, kFormatter} from "../../../utils/graphFunctions";
+import {g3Formatter} from "../../../../utils/graphFunctions";
 
-class TopicsLineGraph extends React.Component {
+const COLORS = {
+    "Frente De Todos": "#188bb6",
+    "Consenso Federal": "#9f2099",
+    "Frente De Izquierda": "#b02f38",
+    "Frente Despertar": "#4449ad",
+    "Juntos Por El Cambio": "#b9b939"
+};
+
+class SimplePartyLineGraph extends React.Component {
+
+    generateLines = () => {
+        return this.props.activeParties.map((party, index) =>
+            <Line key={index} type="monotone" dataKey={party} stroke={COLORS[party]}/>);
+    };
 
     render() {
         return (
-            <div style={{ width: '100%', height: 500 }}>
+            <div style={{ width: '100%', height: 400 }}>
                 <ResponsiveContainer>
                     <LineChart
                         data={this.props.data}
@@ -23,10 +36,10 @@ class TopicsLineGraph extends React.Component {
                                textAnchor="end"
                                height={80}
                         />
-                        <YAxis tickFormatter={(tick) => kFormatter(tick)} />
-                        <Tooltip formatter={(value) => gFormatter(value)}/>
+                        <YAxis domain={[0, parseFloat(g3Formatter(this.props.max))]}/>
+                        <Tooltip/>
                         <Legend />
-                        <Line type="monotone" dataKey={this.props.name} stroke={"#282c34"} />
+                        {this.generateLines()}
                     </LineChart>
                 </ResponsiveContainer>
             </div>
@@ -34,4 +47,4 @@ class TopicsLineGraph extends React.Component {
     }
 }
 
-export default TopicsLineGraph;
+export default SimplePartyLineGraph;

@@ -16,6 +16,22 @@
   margin-top: 10px;
 }
 
+.topic-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic-title-text{
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .bullets{
   margin-top: 10px;
   max-height: 130px;
@@ -53,6 +69,23 @@
 }
 
 @media (min-width: 1280px) {
+  .topic-title{
+    flex-direction: row;
+    //justify-content: center;
+    //margin-left: 5px;
+    //margin-right: 5px;
+  }
+
+  .topic-title-text{
+    margin-right: 65px;
+    flex-basis: 35.5%;
+  }
+
+  .party-selection-text{
+    display: flex;
+    justify-content: center;
+  }
+
   .main-topics{
     flex-direction: row;
   }

@@ -6,7 +6,7 @@ import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
 import "./Topics.scss"
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
-import EmptySelection from "../EmptySelection/EmptySelection";
+import Particles from "react-particles-js";
 
 const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
 const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
@@ -49,7 +49,7 @@ class TopicHomeConnected extends React.Component {
             <main className="main">
                 {
                     !this.state.showErrorMessage ?
-                        <div className="topics">
+                        <div className="topics z-index-top">
                         {this.state.graphsAreLoaded ? <CandidatesGraph
                                 id="graph1"
                                 changeMessage={this.changeMessage}
@@ -62,6 +62,18 @@ class TopicHomeConnected extends React.Component {
                         </div>
                     : <Error errorMessage={this.state.errorMessage}/>
                 }
+                <Particles
+                    className="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        }
+                    }} />
             </main>
         );
     }

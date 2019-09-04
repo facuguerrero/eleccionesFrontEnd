@@ -9,15 +9,19 @@ import MainDashboard from "../MainDashboard/MainDashboard";
 import GenericDialog from "../Modal/GenericDialog";
 import AppBarWrapper from "./AppBarWrapper";
 import About from "../About/About";
+import Similarities from "../Similarities/Similarities";
+import Summary from "../Summary/Summary";
 
 class NavBarWrapperConnected extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showDashboardWindow: true,
+            showSummaryWindow: true,
+            showDashboardWindow: false,
             showFollowersWindow: false,
             showTopicsWindow: false,
             showInfoWindow: false,
+            showSimilarities: false,
             showing: 0,
         };
     }
@@ -26,43 +30,72 @@ class NavBarWrapperConnected extends React.Component {
         switch (windowName) {
             case 0:
                 return this.setState({
-                    showDashboardWindow: true,
-                    showFollowersWindow : false,
-                    showTopicsWindow : false,
+                    showSummaryWindow: true,
+                    showDashboardWindow: false,
+                    showFollowersWindow: false,
+                    showTopicsWindow: false,
                     showInfoWindow: false,
+                    showSimilarities: false,
                     showing: 0,
                 });
             case 1:
                 this.props.resetCandidates();
                 return this.setState({
+                    showSummaryWindow: false,
                     showDashboardWindow: false,
                     showFollowersWindow : true,
                     showTopicsWindow : false,
                     showInfoWindow: false,
+                    showSimilarities: false,
                     showing: 1,
                 });
             case 2:
                 return this.setState({
+                    showSummaryWindow: false,
                     showDashboardWindow: false,
                     showFollowersWindow : false,
                     showTopicsWindow : true,
                     showInfoWindow: false,
+                    showSimilarities: false,
                     showing: 2,
                 });
             case 3:
                 return this.setState({
-                    showDashboardWindow: false,
-                    showFollowersWindow : false,
-                    showTopicsWindow : false,
-                    showInfoWindow: true,
-                    showing: 3,
-                });
-            default:
-                return this.setState({
+                    showSummaryWindow: false,
                     showDashboardWindow: true,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
                     showInfoWindow: false,
+                    showSimilarities: false,
+                    showing: 3,
+                });
+            case 4:
+                return this.setState({
+                    showSummaryWindow: false,
+                    showDashboardWindow: false,
+                    showFollowersWindow : false,
+                    showTopicsWindow : false,
+                    showInfoWindow: true,
+                    showSimilarities: false,
+                    showing: 4,
+                });
+            case 5:
+                return this.setState({
+                    showDashboardWindow: false,
+                    showFollowersWindow : false,
+                    showTopicsWindow : false,
+                    showInfoWindow: false,
+                    showSimilarities: true,
+                    showing: 5,
+                });
+            default:
+                return this.setState({
+                    showSummaryWindow: true,
+                    showDashboardWindow: false,
+                    showFollowersWindow: false,
+                    showTopicsWindow: false,
+                    showInfoWindow: false,
+                    showSimilarities: false,
                     showing: 0,
                 });
         }
@@ -82,10 +115,13 @@ class NavBarWrapperConnected extends React.Component {
                     {/*description="Debido a la veda electoral continuaremos recopilando información*/}
                         {/*pero las visualizaciones sólo se alimentarán con datos de hasta el 08/08/2019."*/}
                 {/*/>*/}
+                {this.state.showSummaryWindow ? <Summary changeWindow={this.changeWindow} /> : null}
                 {this.state.showDashboardWindow ? <MainDashboard /> : null}
                 {this.state.showTopicsWindow ? <TopicHome /> : null}
                 {this.state.showFollowersWindow ? <Followers /> : null}
+                {/*{this.state.showSimilarities ? <Similarities /> : null}*/}
                 {this.state.showInfoWindow ? <About /> : null}
+
             </div>
         );
     }

@@ -53,12 +53,12 @@ class About extends React.Component {
                             Dr. Mariano Gastón BEIRÓ</li>
                     </ul>
                     <p className="font-md fifth-font-color">
-                        Grupo
+                        Grupos Involucrados
                     </p>
                     <ul>
                         <li className="margin-about font-xmd black-font-color-light list-item-about">
                             <a href="https://cnet.fi.uba.ar/">
-                            Grupo de redes complejas y comunicación de datos (CoNexDait)
+                            Grupo de redes complejas y comunicación de datos (CoNexDat)
                             </a>
                         </li>
                         <li className="margin-about font-xmd black-font-color-light list-item-about">

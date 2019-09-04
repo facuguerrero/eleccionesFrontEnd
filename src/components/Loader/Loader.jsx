@@ -16,14 +16,13 @@ class Loader extends React.Component {
         }
     }
     render() {
-        console.log()
         return (
             <div className={this.props.smallMargin ? "loader-small-margin" : "loader"}>
                 <HashLoader
                     css={override}
                     sizeUnit={"px"}
                     size={100}
-                    color={'#96a792'}
+                    color={'#002232'}
                     loading={this.state.loading}
                 />
             </div>
