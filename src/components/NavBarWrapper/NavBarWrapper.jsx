@@ -81,6 +81,7 @@ class NavBarWrapperConnected extends React.Component {
                 });
             case 5:
                 return this.setState({
+                    showSummaryWindow: false,
                     showDashboardWindow: false,
                     showFollowersWindow : false,
                     showTopicsWindow : false,

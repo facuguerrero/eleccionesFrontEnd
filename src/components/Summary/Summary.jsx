@@ -6,7 +6,6 @@ import DataContainer from "../MainDashboard/DataContainer/DataContainer";
 import "./Summary.scss"
 import {PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
 import Particles from "react-particles-js";
-import GenericButton from "../Button/GenericButton";
 
 class Summary extends React.Component {
 
@@ -30,7 +29,7 @@ class Summary extends React.Component {
 
     async getData(){
         axios.get(
-            'http://elecciones2019.fi.uba.ar/dashboard')
+            'http://elecciones2019.fi.uba.ar/dashboard?data=graphics')
             .then((response) => {
                 this.setState({
                     dashboardInfo: this.mapTwitterRawData(response.data),

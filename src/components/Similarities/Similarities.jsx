@@ -3,6 +3,9 @@ import PartyLineGraphSelection from "./PartyLineGraphSelection/PartyLineGraphSel
 import './Similarities.scss'
 import axios from "axios";
 import moment from "moment";
+import Error from "../Error/Error";
+import Loader from "../Loader/Loader";
+import Particles from "react-particles-js";
 
 
 class Similarities extends React.Component {
@@ -10,7 +13,10 @@ class Similarities extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data : []
+            data : [],
+            showData: false,
+            showErrorMessage: false
+
         };
     }
 
@@ -21,12 +27,15 @@ class Similarities extends React.Component {
             .then((response) => {
                 this.setState({
                     data: this.processData(response.data),
+                    showData: true,
+                    showErrorMessage: false
                 })
             })
             .catch((error) => {
-                // this.setState({
-                //     showEvolutionError: true,
-                // })
+                this.setState({
+                    showData: false,
+                    showErrorMessage: true
+                })
             })
     };
 
@@ -54,7 +63,33 @@ class Similarities extends React.Component {
     render() {
         return (
             <main className="main similarities">
-                <PartyLineGraphSelection data={this.state.data}/>
+
+                {
+                    !this.state.showErrorMessage ?
+
+                        <div className="z-index-top">
+                            {
+                                this.state.showData ?
+                                    <PartyLineGraphSelection data={this.state.data}/>
+                                    : <Loader/>
+                            }
+                        </div>
+
+                        : <Error errorMessage={this.state.errorMessage}/>
+                }
+
+                <Particles
+                    className="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        }
+                    }} />
             </main>
         );
     }

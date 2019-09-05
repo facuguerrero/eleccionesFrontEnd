@@ -32,7 +32,7 @@ class MainDashboard extends React.Component {
 
     async getData(){
         axios.get(
-            'http://elecciones2019.fi.uba.ar/dashboard',
+            'http://elecciones2019.fi.uba.ar/dashboard?data=numbers',
             {
                 proxy: false
             })
