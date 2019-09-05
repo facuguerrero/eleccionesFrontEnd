@@ -144,7 +144,6 @@ class Summary extends React.Component {
     }
 
     mapTwitterRawData = (data) => {
-        console.log(data)
         return [
             {
                 title: "Tweets Totales",

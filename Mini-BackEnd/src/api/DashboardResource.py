@@ -31,17 +31,20 @@ class DashboardResource(Resource):
         hashtags = HashtagDAO().get_count({})
         # Get count of hashtag cooccurrences
         cooccurrences = CooccurrenceDAO().get_count({})
-        return {'total_users': RawFollowerDAO().get_count({}),
+        # Dashboard data for users and topics
+        dashboard_data = DashboardDAO().dashboard_data()
+        return {'total_users': dashboard_data['users'],
                 'tweets': tweets,
                 'hashtag_count': hashtags,
-                'cooccurrences_count': cooccurrences}
+                'cooccurrences_count': cooccurrences,
+                'topic_count': dashboard_data['topics']}
 
     @staticmethod
     def graphics():
         # Retrieve dashboard data from database
         dashboard_data = DashboardDAO().dashboard_data()
         # Build response object
-        return {'active_users': dashboard_data['active_users'],
+        return {'total_users': dashboard_data['users'],
+                'active_users': dashboard_data['active_users'],
                 'active_proportion': dashboard_data['active_proportion'],
-                'followers_by_candidate': dashboard_data['followers_by_candidate'],
-                'topic_count': dashboard_data['topics']}
+                'followers_by_candidate': dashboard_data['followers_by_candidate']}
