@@ -29,7 +29,7 @@ class Summary extends React.Component {
 
     async getData(){
         axios.get(
-            'http://elecciones2019.fi.uba.ar/dashboard?data=graphics')
+            'http://elecciones2019.fi.uba.ar/dashboard?data=numbers')
             .then((response) => {
                 this.setState({
                     dashboardInfo: this.mapTwitterRawData(response.data),
@@ -144,6 +144,7 @@ class Summary extends React.Component {
     }
 
     mapTwitterRawData = (data) => {
+        console.log(data)
         return [
             {
                 title: "Tweets Totales",

@@ -4,6 +4,7 @@ from flask_restful import Resource
 from src.db.daos.CooccurrenceDAO import CooccurrenceDAO
 from src.db.daos.DashboardDAO import DashboardDAO
 from src.db.daos.HashtagDAO import HashtagDAO
+from src.db.daos.RawFollowerDAO import RawFollowerDAO
 from src.db.daos.RawTweetDAO import RawTweetDAO
 from src.util.ResponseBuilder import ResponseBuilder
 
@@ -30,7 +31,8 @@ class DashboardResource(Resource):
         hashtags = HashtagDAO().get_count({})
         # Get count of hashtag cooccurrences
         cooccurrences = CooccurrenceDAO().get_count({})
-        return {'tweets': tweets,
+        return {'total_users': RawFollowerDAO().get_count({}),
+                'tweets': tweets,
                 'hashtag_count': hashtags,
                 'cooccurrences_count': cooccurrences}
 
@@ -39,8 +41,7 @@ class DashboardResource(Resource):
         # Retrieve dashboard data from database
         dashboard_data = DashboardDAO().dashboard_data()
         # Build response object
-        return {'total_users': dashboard_data['users'],
-                'active_users': dashboard_data['active_users'],
+        return {'active_users': dashboard_data['active_users'],
                 'active_proportion': dashboard_data['active_proportion'],
                 'followers_by_candidate': dashboard_data['followers_by_candidate'],
                 'topic_count': dashboard_data['topics']}
