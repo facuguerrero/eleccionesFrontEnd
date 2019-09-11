@@ -12,12 +12,10 @@ class SimilarityDAO(GenericDAO, metaclass=Singleton):
 
     def find(self, start_date, end_date):
         """ Return all similarities between received dates. """
-        query = {'$and': [{'date': {'$gte': start_date}}, {'date': {'$lte': end_date}}]}
         similarities = []
-        documents = self.get_all(query)
-        self.logger.info('Documents retrieved')
+        documents = self.get_all({'$and': [{'date': {'$gte': start_date}}, {'date': {'$lte': end_date}}]})
         for document in documents:
-            self.logger.info(document)
             result = {'date': document['date']}
-            similarities.append(result.update(document['similarities_without_random']))
+            result.update(document['similarities_without_random'])
+            similarities.append(result)
         return similarities
