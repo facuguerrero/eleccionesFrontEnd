@@ -15,7 +15,7 @@ class SimilarityDAO(GenericDAO, metaclass=Singleton):
         similarities = []
         documents = self.get_all({'$and': [{'date': {'$gte': start_date}}, {'date': {'$lte': end_date}}]})
         for document in documents:
-            result = {'date': document['date']}
+            result = {'date': str(document['date'])}
             result.update(document['similarities_without_random'])
             similarities.append(result)
         return similarities
