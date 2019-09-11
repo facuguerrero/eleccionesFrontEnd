@@ -9,6 +9,11 @@ class DateUtils:
         return value + timedelta(days=1) - timedelta(seconds=1)
 
     @staticmethod
+    def date_at_first_hour(value):
+        """ Returns a new datetime object at 00:00:00 of given date. """
+        return value.replace(hour=0, minute=0, second=0)
+
+    @staticmethod
     def date_to_timestamp(date):
         return datetime.combine(date, datetime.min.time()).timestamp()
 
