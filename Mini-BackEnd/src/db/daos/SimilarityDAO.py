@@ -11,6 +11,7 @@ class SimilarityDAO(GenericDAO, metaclass=Singleton):
         self.logger = Logger(self.__class__.__name__)
 
     def find(self, start_date, end_date):
+        """ Return all similarities between received dates. """
         query = {'date': {'$and': [{'$gte': start_date}, {'$lte': end_date}]}}
         similarities = []
         for document in self.get_all(query):

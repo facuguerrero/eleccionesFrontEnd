@@ -16,5 +16,8 @@ class SimilaritiesResource(Resource):
         except WrongParametersError as wpe:
             return ResponseBuilder.build_exception(wpe.message, 400)
         # Do function
-        similarities = SimilarityService.getSimilarities(start_date, end_date)
-        return ResponseBuilder.build(similarities, 200)
+        try:
+            similarities = SimilarityService.getSimilarities(start_date, end_date)
+            return ResponseBuilder.build(similarities, 200)
+        except Exception as e:
+            return ResponseBuilder.build(e, 500)
