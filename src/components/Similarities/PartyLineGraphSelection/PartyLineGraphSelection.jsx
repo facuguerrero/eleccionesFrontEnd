@@ -2,6 +2,7 @@ import React from 'react';
 import './PartyLineGraphSelection.scss'
 import PartySelection from "./PartySelection/PartySelection";
 import PartyLineGraph from "./PartyLineGraph/PartyLineGraph";
+import PartyRadarGraph from "./PartyRadarGraph/PartyRadarGraph";
 
 class PartyLineGraphSelection extends React.Component {
 
@@ -28,17 +29,33 @@ class PartyLineGraphSelection extends React.Component {
                     onClick={this.handleParty}
                 />
                 {this.state.activeParties.length > 0 ?
-                    <PartyLineGraph
-                        title="Proporción de uso por partido (%)"
-                        showInfo={true}
-                        infoMessage="Porcentaje de seguidores del partido que lo utilizó en cada día."
-                        data={this.props.data}
-                        max={this.props.max}
-                        activeParties={this.state.activeParties}
-                    />
+                    <div>
+                        <PartyLineGraph
+                            title={this.props.title}
+                            showInfo={true}
+                            infoMessage={this.props.infoMessage}
+                            data={this.props.data}
+                            max={this.props.max}
+                            activeParties={this.state.activeParties}
+                        />
+                        {this.props.showRadar ?
+                            <div>
+                                <div className="h"/>
+                                <PartyRadarGraph
+                                    title={this.props.radarTitle}
+                                    showInfo={true}
+                                    infoMessage={this.props.radarInfoMessage}
+                                    data={this.props.radarData}
+                                    activeParties={this.state.activeParties}
+                                    max={this.props.maxRadar}
+                                    min={this.props.minRadar}
+                                />
+                            </div>
+                            : null
+                        }
+                    </div>
                     : null
                 }
-
             </div>
         );
     }

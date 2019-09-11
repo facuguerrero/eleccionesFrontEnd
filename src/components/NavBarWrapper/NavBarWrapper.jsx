@@ -75,8 +75,8 @@ class NavBarWrapperConnected extends React.Component {
                     showDashboardWindow: false,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
-                    showInfoWindow: true,
-                    showSimilarities: false,
+                    showInfoWindow: false,
+                    showSimilarities: true,
                     showing: 4,
                 });
             case 5:
@@ -85,8 +85,8 @@ class NavBarWrapperConnected extends React.Component {
                     showDashboardWindow: false,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
-                    showInfoWindow: false,
-                    showSimilarities: true,
+                    showInfoWindow: true,
+                    showSimilarities: false,
                     showing: 5,
                 });
             default:
@@ -120,7 +120,7 @@ class NavBarWrapperConnected extends React.Component {
                 {this.state.showDashboardWindow ? <MainDashboard /> : null}
                 {this.state.showTopicsWindow ? <TopicHome /> : null}
                 {this.state.showFollowersWindow ? <Followers /> : null}
-                {/*{this.state.showSimilarities ? <Similarities /> : null}*/}
+                {this.state.showSimilarities ? <Similarities /> : null}
                 {this.state.showInfoWindow ? <About /> : null}
 
             </div>

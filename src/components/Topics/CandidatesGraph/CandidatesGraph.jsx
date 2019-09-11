@@ -185,7 +185,6 @@ class CandidatesGraphConnected extends React.Component {
             newData[nodeId] = data["count_axis"][index];
             processedData.push(newData);
         });
-
         return processedData;
     };
 
@@ -250,6 +249,8 @@ class CandidatesGraphConnected extends React.Component {
                                                 <PartyLineGraphSelection
                                                     data={this.state.evolutionData}
                                                     max={this.state.evolutionMax}
+                                                    infoMessage={"Porcentaje de seguidores del partido que lo utilizó en cada día."}
+                                                    title={"Proporción de uso por partido (%)"}
                                                 />
                                             </div>
                                             <div className="main-topics">

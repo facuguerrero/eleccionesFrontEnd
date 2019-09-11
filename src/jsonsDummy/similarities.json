@@ -2,7 +2,7 @@
   {
     "date": 1557706438.479,
     "juntosporelcambio-juntosporelcambio": 0.1,
-    "juntosporelcambio-frentedetodos": 0.1,
+    "frentedetodos-juntosporelcambio": 0.1,
     "juntosporelcambio-consensofederal": 0.2,
     "juntosporelcambio-frentedespertar": 0.002,
     "juntosporelcambio-frentedeizquierda": 0.02,
@@ -20,7 +20,7 @@
   {
     "date": 1557851031.441,
     "juntosporelcambio-juntosporelcambio": 0.112,
-    "juntosporelcambio-frentedetodos": 0.112,
+    "frentedetodos-juntosporelcambio": 0.112,
     "juntosporelcambio-consensofederal": 0.2324,
     "juntosporelcambio-frentedespertar": 0.01021,
     "juntosporelcambio-frentedeizquierda": 0.1202,
