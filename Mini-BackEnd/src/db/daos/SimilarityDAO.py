@@ -17,6 +17,7 @@ class SimilarityDAO(GenericDAO, metaclass=Singleton):
         documents = self.get_all(query)
         self.logger.info('Documents retrieved')
         for document in documents:
+            self.logger.info(document)
             result = {'date': document['date']}
             similarities.append(result.update(document['similarities_without_random']))
         return similarities
