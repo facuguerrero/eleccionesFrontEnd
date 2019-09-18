@@ -4,7 +4,7 @@ import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 import DataContainer from "../MainDashboard/DataContainer/DataContainer";
 import "./Summary.scss"
-import {PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
+import {Assessment, PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
 import Particles from "react-particles-js";
 
 class Summary extends React.Component {
@@ -114,6 +114,20 @@ class Summary extends React.Component {
                                                 </span>
                                                 <span className="fifth-font-color-dark font-xmd">
                                                     ¿Qué tanto influyen los usuarios activos e inactivos a cada partido?
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            className="summary-box flex-row white-bc-color-light"
+                                            onClick={() => this.props.changeWindow(4)}
+                                        >
+                                            <Assessment fontSize="large" htmlColor="#004560"/>
+                                            <div className="flex-column summary-box-text">
+                                                <span className="summary-box-title second-font-color-dark black-font-color-light font-lg bold-text">
+                                                    Partidos
+                                                </span>
+                                                <span className="fifth-font-color-dark font-xmd">
+                                                    ¿Qué tanto se parecen los partidos entre si?
                                                 </span>
                                             </div>
                                         </div>
