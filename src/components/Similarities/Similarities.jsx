@@ -177,16 +177,16 @@ class Similarities extends React.Component {
                                 this.state.showData ?
                                     <div className="followers-graph white-bc-color-light">
                                         <span className="bold-text party-selection-text font-lg text-center second-font-color-dark">
-                                        Seleccioná múltiples partidos para ver las similitudes entre ellos
+                                        Seleccioná múltiples partidos para ver sus similitudes
                                         </span>
                                             <PartyLineGraphSelection
                                                 data={this.state.data}
                                                 max={this.state.maxData}
-                                                title={"Similaridad por partido"}
-                                                infoMessage={"Las similaridades ilustradas son las de cada partido contra si mismo"}
+                                                title={"Similitud de cada partido"}
+                                                infoMessage={"Cada curva muestra la similitud entre los seguidores de cada partido"}
                                                 showRadar={true}
-                                                radarTitle={"Grafico radial de similitudes"}
-                                                radarInfoMessage={"Las similaridades ilustradas son las de cada partido contra si mismo"}
+                                                radarTitle={"Gráfico de similitudes entre partidos"}
+                                                radarInfoMessage={"Cada polígono representa la similitud de un partido contra los demás"}
                                                 radarData={this.state.radarData}
                                                 maxRadar={this.state.radarMax}
                                                 minRadar={this.state.radarMin}

@@ -47,7 +47,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/topics/' +
             topicId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
@@ -74,7 +74,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/topic_usage/' +
             topicId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
@@ -104,7 +104,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/hashtag_usage/' +
             hashtagId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda

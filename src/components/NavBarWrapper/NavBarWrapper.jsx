@@ -43,8 +43,8 @@ class NavBarWrapperConnected extends React.Component {
                 return this.setState({
                     showSummaryWindow: false,
                     showDashboardWindow: false,
-                    showFollowersWindow : true,
-                    showTopicsWindow : false,
+                    showFollowersWindow : false,
+                    showTopicsWindow : true,
                     showInfoWindow: false,
                     showSimilarities: false,
                     showing: 1,
@@ -54,16 +54,16 @@ class NavBarWrapperConnected extends React.Component {
                     showSummaryWindow: false,
                     showDashboardWindow: false,
                     showFollowersWindow : false,
-                    showTopicsWindow : true,
+                    showTopicsWindow : false,
                     showInfoWindow: false,
-                    showSimilarities: false,
+                    showSimilarities: true,
                     showing: 2,
                 });
             case 3:
                 return this.setState({
                     showSummaryWindow: false,
-                    showDashboardWindow: true,
-                    showFollowersWindow : false,
+                    showDashboardWindow: false,
+                    showFollowersWindow : true,
                     showTopicsWindow : false,
                     showInfoWindow: false,
                     showSimilarities: false,
@@ -72,11 +72,11 @@ class NavBarWrapperConnected extends React.Component {
             case 4:
                 return this.setState({
                     showSummaryWindow: false,
-                    showDashboardWindow: false,
+                    showDashboardWindow: true,
                     showFollowersWindow : false,
                     showTopicsWindow : false,
                     showInfoWindow: false,
-                    showSimilarities: true,
+                    showSimilarities: false,
                     showing: 4,
                 });
             case 5:
