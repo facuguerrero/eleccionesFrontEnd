@@ -26,5 +26,5 @@ class TopicService:
         min_size = min(sizes)
         max_size = max(sizes)
         for node in nodes:
-            node['size'] = ((node['size'] - min_size)/max_size)*cls.MAX_SIZE + cls.MIN_SIZE
+            node['size'] = ((node['size'] - min_size)/max_size)*(cls.MAX_SIZE - cls.MIN_SIZE) + cls.MIN_SIZE
         return graph
