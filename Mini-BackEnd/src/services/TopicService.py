@@ -16,15 +16,15 @@ class TopicService:
         graph = ShowableGraphDAO().find(topic_id, start_date, end_date)
         # Normalize node size
         nodes = graph['nodes']
-        sizes = map(lambda node: node['size'], nodes)
+        sizes = list(map(lambda node: node['size'], nodes))
         max_size = max(sizes)
         # Normalize to a (0,1] vector
         for node in nodes:
             node['size'] = (node['size'] / max_size)
         # Subtract minimum value to get effective [0,1) vector and transform to wanted interval
-        sizes = map(lambda node: node['size'], nodes)
+        sizes = list(map(lambda node: node['size'], nodes))
         min_size = min(sizes)
-        max_size = max(sizes)
+        max_size = max(sizes) - min_size
         for node in nodes:
             node['size'] = ((node['size'] - min_size)/max_size)*(cls.MAX_SIZE - cls.MIN_SIZE) + cls.MIN_SIZE
         return graph
