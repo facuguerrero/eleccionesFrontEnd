@@ -4,7 +4,7 @@ import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 import DataContainer from "../MainDashboard/DataContainer/DataContainer";
 import "./Summary.scss"
-import {PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
+import {Assessment, PermIdentity, Timeline, TrendingUp} from "@material-ui/icons";
 import Particles from "react-particles-js";
 
 class Summary extends React.Component {
@@ -66,31 +66,17 @@ class Summary extends React.Component {
                                             realizado por alumnos de la Facultad de Ingeniería de la Universidad de Buenos Aires.
                                             Puede encontrar información más detallada
                                             <span> </span>
-                                            <span className="text-pointer" onClick={() => this.props.changeWindow(4)} >aquí</span>
+                                            <span className="text-pointer" onClick={() => this.props.changeWindow(5)} >aquí</span>
                                             <span>.</span>
                                         </p>
                                         <span className="summary-subtitle white-font-color-light font-lg bold-text">Información Recolectada</span>
                                     </div>
                                     <DataContainer title="Valores Totales obtenidos" data={this.state.dashboardInfo}/>
                                     <div className="summary-boxes">
+
                                         <div
                                             className="summary-box flex-row white-bc-color-light"
                                             onClick={() => this.props.changeWindow(1)}
-                                        >
-                                            <TrendingUp fontSize="large" htmlColor="#004560"/>
-                                            <div className="flex-column summary-box-text">
-                                                <span className="summary-box-title second-font-color-dark black-font-color-light font-lg bold-text">
-                                                    Seguidores
-                                                </span>
-                                                <span className="fifth-font-color-dark font-xmd">
-                                                    ¿Cómo evoluciona la cantidad de seguidores de cada candidato a
-                                                    Presidente y Vicepresidente?
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className="summary-box flex-row white-bc-color-light"
-                                            onClick={() => this.props.changeWindow(2)}
                                         >
                                             <Timeline fontSize="large" htmlColor="#004560"/>
                                             <div className="flex-column summary-box-text">
@@ -103,9 +89,41 @@ class Summary extends React.Component {
                                                 </span>
                                             </div>
                                         </div>
+
+                                        <div
+                                            className="summary-box flex-row white-bc-color-light"
+                                            onClick={() => this.props.changeWindow(2)}
+                                        >
+                                            <Assessment fontSize="large" htmlColor="#004560"/>
+                                            <div className="flex-column summary-box-text">
+                                                <span className="summary-box-title second-font-color-dark black-font-color-light font-lg bold-text">
+                                                    Partidos
+                                                </span>
+                                                <span className="fifth-font-color-dark font-xmd">
+                                                    ¿Qué tanto se parecen los usuarios alineados a cada partido entre si?
+                                                </span>
+                                            </div>
+                                        </div>
+
                                         <div
                                             className="summary-box flex-row white-bc-color-light"
                                             onClick={() => this.props.changeWindow(3)}
+                                        >
+                                            <TrendingUp fontSize="large" htmlColor="#004560"/>
+                                            <div className="flex-column summary-box-text">
+                                                <span className="summary-box-title second-font-color-dark black-font-color-light font-lg bold-text">
+                                                    Seguidores
+                                                </span>
+                                                <span className="fifth-font-color-dark font-xmd">
+                                                    ¿Cómo evoluciona la cantidad de seguidores de cada candidato a
+                                                    Presidente y Vicepresidente?
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="summary-box flex-row white-bc-color-light"
+                                            onClick={() => this.props.changeWindow(4)}
                                         >
                                             <PermIdentity fontSize="large" htmlColor="#004560"/>
                                             <div className="flex-column summary-box-text">
@@ -113,10 +131,11 @@ class Summary extends React.Component {
                                                     Actividad
                                                 </span>
                                                 <span className="fifth-font-color-dark font-xmd">
-                                                    ¿Qué tanto influyen los usuarios activos e inactivos a cada partido?
+                                                    ¿Qué tanto impactan los usuarios activos e inactivos a cada partido?
                                                 </span>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                                 : <Loader/>
@@ -146,11 +165,11 @@ class Summary extends React.Component {
     mapTwitterRawData = (data) => {
         return [
             {
-                title: "Tweets Totales",
+                title: "Tweets Procesados",
                 value: data.tweets
             },
             {
-                title: "Usuarios Totales",
+                title: "Usuarios Analizados",
                 value: data.total_users
             },
             {

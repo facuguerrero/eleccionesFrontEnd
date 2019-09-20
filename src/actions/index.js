@@ -38,7 +38,7 @@ export function getGraphs() {
     return function(dispatch) {
         return axios.get('http://elecciones2019.fi.uba.ar/topics' +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // '2019-08-07')
             //TODO veda

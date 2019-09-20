@@ -18,7 +18,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime-corejs2": "^7.1.5",
     "@emotion/core": "latest",
-    "@material-ui/core": "^4.0.2",
+    "@material-ui/core": "^4.4.2",
     "@material-ui/icons": "^4.0.1",
     "@material/theme": "^1.1.0",
     "@materialr/drawer": "^2.0.2",

@@ -47,7 +47,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/topics/' +
             topicId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
@@ -74,7 +74,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/topic_usage/' +
             topicId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
@@ -104,7 +104,7 @@ class CandidatesGraphConnected extends React.Component {
             'http://elecciones2019.fi.uba.ar/hashtag_usage/' +
             hashtagId +
             '?start_date=' +
-            moment().subtract(8, 'days').format("YYYY-MM-DD").toString() +
+            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
@@ -185,7 +185,6 @@ class CandidatesGraphConnected extends React.Component {
             newData[nodeId] = data["count_axis"][index];
             processedData.push(newData);
         });
-
         return processedData;
     };
 
@@ -250,6 +249,8 @@ class CandidatesGraphConnected extends React.Component {
                                                 <PartyLineGraphSelection
                                                     data={this.state.evolutionData}
                                                     max={this.state.evolutionMax}
+                                                    infoMessage={"Porcentaje de seguidores del partido que lo utilizó en cada día."}
+                                                    title={"Proporción de uso por partido (%)"}
                                                 />
                                             </div>
                                             <div className="main-topics">
