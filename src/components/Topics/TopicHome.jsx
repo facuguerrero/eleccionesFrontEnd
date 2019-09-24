@@ -1,17 +1,17 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {getGraphs} from "../../actions";
 import CandidatesGraph from "./CandidatesGraph/CandidatesGraph";
 import AllTopicsGraph from "./AllTopicsGraph/AllTopicsGraph";
 import "./Topics.scss"
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 import Particles from "react-particles-js";
+import axios from "axios";
+import moment from "moment";
 
 const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
 const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
 
-class TopicHomeConnected extends React.Component {
+class TopicHome extends React.Component {
 
     constructor(props) {
         super(props);
@@ -21,20 +21,40 @@ class TopicHomeConnected extends React.Component {
             errorMessage: "",
             selectionMessage: topicMessage,
             topicsShowing: true,
+            data: [],
+            date: moment().subtract(1, 'days')
         };
     }
 
-    componentDidMount() {
-        this.props.getGraphs().then((response) => {
-            response === 200 ?
-                this.setState({ graphsAreLoaded: true, showErrorMessage: false })
-                : this.setState({
+    getMainGraphData = (date) => {
+        axios.get('http://elecciones2019.fi.uba.ar/topics' +
+            '?start_date=' +
+            date.clone().subtract(28, 'days').format("YYYY-MM-DD").toString() +
+            '&end_date=' +
+            // '2019-08-07')
+            //TODO veda
+            date.format("YYYY-MM-DD").toString())
+            .then((response) => {
+                this.setState({
+                    graphsAreLoaded: true,
+                    showErrorMessage: false,
+                    data: response.data,
+                    date:date
+                });
+                this.forceUpdate();
+            })
+            .catch((error) => {
+                this.setState({
                     showErrorMessage: true,
                     graphsAreLoaded: false,
                     errorMessage: "Hubo un error al cargar los datos, intentá nuevamente más tarde",
                 })
-        });
-    }
+            });
+    };
+
+    componentDidMount = () => {
+        this.getMainGraphData(moment().subtract(1, 'days'));
+    };
 
     changeMessage = (type) => {
         const message = type === "topic" ? topicMessage : hashtagMessage;
@@ -55,6 +75,8 @@ class TopicHomeConnected extends React.Component {
                                 changeMessage={this.changeMessage}
                                 topicsShowing={this.state.topicsShowing}
                                 selectionMessage={this.state.selectionMessage}
+                                data={this.state.data}
+                                date={this.state.date}
                             />
                             : <Loader/>
                         }
@@ -79,7 +101,6 @@ class TopicHomeConnected extends React.Component {
     }
 }
 
-const TopicHome = connect(null, {getGraphs})(TopicHomeConnected);
 export default TopicHome;
 
 // NAV TUTORIAL

@@ -5,7 +5,7 @@ import RadarGraph from "./RadarGraph";
 class PartyRadarGraph extends React.Component {
     render() {
         return (
-            <div className="full-basis white-bc-color-light">
+            <div className="radar-basis white-bc-color-light">
                 <GenericGraph
                     title={this.props.title}
                     showLabels={false}

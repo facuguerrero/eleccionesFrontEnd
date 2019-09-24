@@ -13,6 +13,7 @@ class PartyLineGraph extends React.Component {
                     infoMessage={this.props.infoMessage}
                     type={<SimplePartyLineGraph
                         max={this.props.max}
+                        min={this.props.min}
                         data={this.props.data}
                         activeParties={this.props.activeParties}
                     />}

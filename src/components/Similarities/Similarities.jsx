@@ -18,10 +18,14 @@ class Similarities extends React.Component {
             showData: false,
             showErrorMessage: false,
             maxData: 0,
+            minData: 0,
             errorMessage: "",
-            radarData: [],
-            radarMax:1,
-            radarMin:-1
+            radarData1: [],
+            radarMax1:1,
+            radarMin1:-1,
+            radarData2: [],
+            radarMax2:1,
+            radarMin2:-1
         };
     }
 
@@ -33,9 +37,13 @@ class Similarities extends React.Component {
                 this.setState({
                     data: this.processData(response.data),
                     maxData: this.getMaxData(response.data),
-                    radarData: this.processRadarData(response.data),
-                    radarMax: this.processRadarMax(response.data),
-                    radarMin: this.processRadarMin(response.data),
+                    minData: this.getMinData(response.data),
+                    radarData1: this.processRadarData(response.data, 1),
+                    radarMax1: this.processRadarMax(response.data, 1),
+                    radarMin1: this.processRadarMin(response.data, 1),
+                    radarData2: this.processRadarData(response.data, 8),
+                    radarMax2: this.processRadarMax(response.data, 8),
+                    radarMin2: this.processRadarMin(response.data, 8),
                     showData: true,
                     showErrorMessage: false
                 })
@@ -79,12 +87,29 @@ class Similarities extends React.Component {
         return max;
     };
 
-    processRadarData = (data) => {
+    getMinData = (data) => {
+
+        let min = 0;
+
+        data.forEach(point => {
+            min = Math.min(min, Math.min(
+                point["frentedetodos-frentedetodos"],
+                point["consensofederal-consensofederal"],
+                point["frentedeizquierda-frentedeizquierda"],
+                point["juntosporelcambio-juntosporelcambio"],
+                point["frentedespertar-frentedespertar"]
+            ))
+        });
+
+        return min;
+    };
+
+    processRadarData = (data, day) => {
         const radarData = [];
-        const point = data[data.length - 1];
+        const point = data[data.length - day];
 
         radarData.push({
-            party:"Frente De Todos",
+            party:"Frente De \n Todos",
             "Frente De Todos": parseFloat(g3Formatter(point["frentedetodos-frentedetodos"])),
             "Consenso Federal": parseFloat(g3Formatter(point["frentedetodos-consensofederal"])),
             "Frente De Izquierda": parseFloat(g3Formatter(point["frentedetodos-frentedeizquierda"])),
@@ -136,9 +161,9 @@ class Similarities extends React.Component {
         return radarData;
     };
 
-    processRadarMax = (data) => {
+    processRadarMax = (data, day) => {
 
-        const point = data[data.length - 1];
+        const point = data[data.length - day];
 
         return Math.max(
                 point["frentedetodos-frentedetodos"],
@@ -149,8 +174,8 @@ class Similarities extends React.Component {
         );
     };
 
-    processRadarMin = (data) => {
-        const point = data[data.length - 1];
+    processRadarMin = (data, day) => {
+        const point = data[data.length - day];
 
         return Math.min(
             point["frentedetodos-frentedetodos"],
@@ -182,14 +207,18 @@ class Similarities extends React.Component {
                                             <PartyLineGraphSelection
                                                 data={this.state.data}
                                                 max={this.state.maxData}
+                                                min={this.state.minData}
                                                 title={"Similitud de cada partido"}
                                                 infoMessage={"Cada curva muestra la similitud entre los seguidores de cada partido"}
                                                 showRadar={true}
                                                 radarTitle={"Gráfico de similitudes entre partidos"}
                                                 radarInfoMessage={"Cada polígono representa la similitud de un partido contra los demás"}
-                                                radarData={this.state.radarData}
-                                                maxRadar={this.state.radarMax}
-                                                minRadar={this.state.radarMin}
+                                                radarData1={this.state.radarData1}
+                                                maxRadar1={this.state.radarMax1}
+                                                minRadar1={this.state.radarMin1}
+                                                radarData2={this.state.radarData2}
+                                                maxRadar2={this.state.radarMax2}
+                                                minRadar2={this.state.radarMin2}
                                             />
                                     </div>
                                     : <Loader/>
