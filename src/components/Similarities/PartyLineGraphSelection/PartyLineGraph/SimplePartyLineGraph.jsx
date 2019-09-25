@@ -39,7 +39,10 @@ class SimplePartyLineGraph extends React.Component {
                         />
                         <YAxis domain={[parseFloat(g3Formatter(this.props.min)), parseFloat(g3Formatter(this.props.max))]}/>
                         <ReferenceLine x="11/08/2019" stroke="orange" strokeDasharray="3 3" label="PASO" />
-                        <ReferenceLine y={0} label="Similitud media de la sociedad" stroke="orange" strokeDasharray="3 3" />
+                        {this.props.showHorizontalLine
+                            ? <ReferenceLine y={0} label="Similitud media de la sociedad" stroke="orange" strokeDasharray="3 3" />
+                            : null}
+
                         <Tooltip/>
                         <Legend />
                         {this.generateLines()}

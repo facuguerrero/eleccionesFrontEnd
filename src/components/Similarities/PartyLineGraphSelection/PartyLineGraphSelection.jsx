@@ -4,6 +4,7 @@ import PartySelection from "./PartySelection/PartySelection";
 import PartyLineGraph from "./PartyLineGraph/PartyLineGraph";
 import PartyRadarGraph from "./PartyRadarGraph/PartyRadarGraph";
 import moment from "moment";
+import SingleDatePickerWrapper from "../../Topics/SingleDatePickerWrapper/SingleDatePickerWrapper";
 
 class PartyLineGraphSelection extends React.Component {
 
@@ -23,6 +24,7 @@ class PartyLineGraphSelection extends React.Component {
     };
 
     render() {
+        console.log(this.props.data)
         return (
             <div>
                 <PartySelection
@@ -39,10 +41,20 @@ class PartyLineGraphSelection extends React.Component {
                             max={this.props.max}
                             min={this.props.min}
                             activeParties={this.state.activeParties}
+                            showHorizontalLine={this.props.showRadar}
                         />
                         {this.props.showRadar ?
                             <div>
                                 <div className="h"/>
+                                {/*<div className="-filter-card-mg-pd dates-filter header-box white-bc-color-light">*/}
+                                    {/*<div className="flex-row date-and-arrow">*/}
+                                        {/*<span className="filter-text font-xmd second-font-color-dark">Elegí una fecha</span>*/}
+                                        {/*<SingleDatePickerWrapper*/}
+                                            {/*date={this.props.date1}*/}
+                                            {/*updateDate={(newDate) => this.props.updateDates(1, newDate)}*/}
+                                        {/*/>*/}
+                                    {/*</div>*/}
+                                {/*</div>*/}
                                 <PartyRadarGraph
                                     title={this.props.radarTitle + " de la fecha: " + moment().format("YYYY-MM-DD").toString()}
                                     showInfo={true}
@@ -53,6 +65,15 @@ class PartyLineGraphSelection extends React.Component {
                                     min={this.props.minRadar1}
                                 />
                                 <div className="h"/>
+                                {/*<div className="-filter-card-mg-pd dates-filter header-box white-bc-color-light">*/}
+                                    {/*<div className="flex-row date-and-arrow">*/}
+                                        {/*<span className="filter-text font-xmd second-font-color-dark">Elegí una fecha</span>*/}
+                                        {/*<SingleDatePickerWrapper*/}
+                                            {/*date={this.props.date2}*/}
+                                            {/*updateDate={(newDate) => this.props.updateDates(2, newDate)}*/}
+                                        {/*/>*/}
+                                    {/*</div>*/}
+                                {/*</div>*/}
                                 <PartyRadarGraph
                                     title={this.props.radarTitle + " de la fecha: " + moment().subtract(7, 'days').format("YYYY-MM-DD").toString()}
                                     showInfo={true}

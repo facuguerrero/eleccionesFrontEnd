@@ -16,6 +16,7 @@ class PartyLineGraph extends React.Component {
                         min={this.props.min}
                         data={this.props.data}
                         activeParties={this.props.activeParties}
+                        showHorizontalLine={this.props.showHorizontalLine}
                     />}
                 />
             </div>

@@ -25,7 +25,9 @@ class Similarities extends React.Component {
             radarMin1:-1,
             radarData2: [],
             radarMax2:1,
-            radarMin2:-1
+            radarMin2:-1,
+            date1: moment().subtract(1, 'days'),
+            date2: moment().subtract(1, 'days')
         };
     }
 
@@ -35,6 +37,7 @@ class Similarities extends React.Component {
         )
             .then((response) => {
                 this.setState({
+                    originalData: response.data,
                     data: this.processData(response.data),
                     maxData: this.getMaxData(response.data),
                     minData: this.getMinData(response.data),
@@ -55,6 +58,25 @@ class Similarities extends React.Component {
                     errorMessage: "Hubo un error al cargar los datos, intentá nuevamente más tarde",
                 })
             })
+    };
+
+    getRadarData = (radar, date) => {
+        switch (radar) {
+            case 1:
+                return this.setState({
+                    radarData1: this.processRadarData(this.state.originalData, moment().diff(date, "days") + 1),
+                    radarMax1: this.processRadarMax(this.state.originalData, moment().diff(date, "days") + 1),
+                    radarMin1: this.processRadarMin(this.state.originalData, moment().diff(date, "days") + 1),
+                    date1: date,
+                });
+            case 2:
+                return this.setState({
+                    radarData2: this.processRadarData(this.state.originalData, moment().diff(date, "days") + 1),
+                    radarMax2: this.processRadarMax(this.state.originalData, moment().diff(date, "days") + 1),
+                    radarMin2: this.processRadarMin(this.state.originalData, moment().diff(date, "days") + 1),
+                    date2: date,
+                })
+        }
     };
 
     processData = (data) => {
@@ -216,9 +238,12 @@ class Similarities extends React.Component {
                                                 radarData1={this.state.radarData1}
                                                 maxRadar1={this.state.radarMax1}
                                                 minRadar1={this.state.radarMin1}
+                                                date1={this.state.date1}
                                                 radarData2={this.state.radarData2}
                                                 maxRadar2={this.state.radarMax2}
                                                 minRadar2={this.state.radarMin2}
+                                                date2={this.state.date2}
+                                                updateDates={this.getRadarData}
                                             />
                                     </div>
                                     : <Loader/>

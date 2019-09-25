@@ -29,6 +29,7 @@ class CandidatesGraph extends React.Component {
             topicName: "",
             evolutionData: [],
             evolutionMax:0,
+            evolutionMin:0,
             showEvolution: false,
             showEvolutionError: false,
             activeNode: "",
@@ -83,6 +84,7 @@ class CandidatesGraph extends React.Component {
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, topicId),
                     evolutionMax: this.getEvolutionMax(response.data),
+                    evolutionMin: this.getEvolutionMin(response.data),
                     activeNode: topicId,
                     showEvolutionError: false,
                     tweetId: response.data.tweet_id,
@@ -113,6 +115,7 @@ class CandidatesGraph extends React.Component {
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, hashtagId),
                     evolutionMax: this.getEvolutionMax(response.data),
+                    evolutionMin: this.getEvolutionMin(response.data),
                     activeNode: hashtagId,
                     showEvolutionError: false,
                     tweetId: response.data.tweet_id,
@@ -190,6 +193,12 @@ class CandidatesGraph extends React.Component {
         return Math.max(Math.max.apply(Math, data.frentedetodos), Math.max.apply(Math, data.consensofederal),
             Math.max.apply(Math, data.frentedeizquierda), Math.max.apply(Math, data.juntosporelcambio),
             Math.max.apply(Math, data.frentedespertar));
+    };
+
+    getEvolutionMin = (data) => {
+        return Math.min(Math.min.apply(Math, data.frentedetodos), Math.min.apply(Math, data.consensofederal),
+            Math.min.apply(Math, data.frentedeizquierda), Math.min.apply(Math, data.juntosporelcambio),
+            Math.min.apply(Math, data.frentedespertar));
     };
 
     changeDateState = () => {
@@ -306,6 +315,7 @@ class CandidatesGraph extends React.Component {
                                                 <PartyLineGraphSelection
                                                     data={this.state.evolutionData}
                                                     max={this.state.evolutionMax}
+                                                    min={this.state.evolutionMin}
                                                     infoMessage={"Porcentaje de seguidores del partido que lo utilizó en cada día."}
                                                     title={"Proporción de uso por partido (%)"}
                                                 />
