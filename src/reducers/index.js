@@ -13,7 +13,7 @@ const FollowersInitialState = {
     processedCandidates:[],
     cumulativeCandidates:[],
     historicCumulativeCandidates:[],
-    activeDates:[moment("07/01/2019"), moment],
+    activeDates:[moment("07/01/2019"), moment()],
 };
 
 function rootReducer(state = FollowersInitialState, action) {
