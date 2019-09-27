@@ -1,6 +1,5 @@
 import React from 'react';
 import GenericTopic from "../GenericTopic";
-import {connect} from "react-redux";
 import "./CandidatesGraph.scss"
 import TopicTitleBar from "../TopicTitleBar/TopicTitleBar";
 import axios from "axios";
@@ -14,44 +13,44 @@ import EmptySelection from "../../EmptySelection/EmptySelection";
 import Loader from "../../Loader/Loader";
 import PartyLineGraphSelection from "../../Similarities/PartyLineGraphSelection/PartyLineGraphSelection";
 import {g3Formatter} from "../../../utils/graphFunctions";
+import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
+import SingleDatePickerWrapper from "../SingleDatePickerWrapper/SingleDatePickerWrapper";
 
-const mapStateToProps = state => {
-    return {
-        candidateGraphs: state.candidateGraphs
-    };
-};
-
-class CandidatesGraphConnected extends React.Component {
+class CandidatesGraph extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             mainGraph: true,
-            processedGraph: this.processGraphData(this.props.candidateGraphs),
+            originalGraph: this.processGraphData(this.props.data),
+            processedGraph: this.processGraphData(this.props.data),
             showErrorMessage: false,
             errorMessage: "",
             topicName: "",
             evolutionData: [],
             evolutionMax:0,
+            evolutionMin:0,
             showEvolution: false,
             showEvolutionError: false,
             activeNode: "",
             tweetId: "",
             showTweet: false,
             showTweetError: false,
+            openDates: false,
+            date: this.props.date
         };
     }
 
-    getTopicGraph = (topicId) => {
+    getTopicGraph = (topicId, date) => {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topics/' +
             topicId +
             '?start_date=' +
-            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
+            date.clone().subtract(28, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
-            moment() .subtract(1, 'days').format("YYYY-MM-DD").toString()
+            date.format("YYYY-MM-DD").toString()
             )
             .then((response) => {
                 this.props.changeMessage("hashtag");
@@ -69,22 +68,23 @@ class CandidatesGraphConnected extends React.Component {
             })
     };
 
-    getTopicEvolution = (topicId) => {
+    getTopicEvolution = (topicId, date) => {
         axios.get(
             'http://elecciones2019.fi.uba.ar/topic_usage/' +
             topicId +
             '?start_date=' +
-            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
+            date.clone().subtract(28, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
-            moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
+            date.format("YYYY-MM-DD").toString()
             )
             .then((response) => {
                 this.setState({
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, topicId),
                     evolutionMax: this.getEvolutionMax(response.data),
+                    evolutionMin: this.getEvolutionMin(response.data),
                     activeNode: topicId,
                     showEvolutionError: false,
                     tweetId: response.data.tweet_id,
@@ -99,22 +99,23 @@ class CandidatesGraphConnected extends React.Component {
             })
     };
 
-    getHashtagEvolution = (hashtagId) => {
+    getHashtagEvolution = (hashtagId, date) => {
         axios.get(
             'http://elecciones2019.fi.uba.ar/hashtag_usage/' +
             hashtagId +
             '?start_date=' +
-            moment().subtract(29, 'days').format("YYYY-MM-DD").toString() +
+            date.clone().subtract(28, 'days').format("YYYY-MM-DD").toString() +
             '&end_date=' +
             // "2019-08-07"
             //TODO veda
-            moment().subtract(1, 'days').format("YYYY-MM-DD").toString()
+            date.format("YYYY-MM-DD").toString()
         )
             .then((response) => {
                 this.setState({
                     showEvolution: true,
                     evolutionData: this.processEvolutionData(response.data, hashtagId),
                     evolutionMax: this.getEvolutionMax(response.data),
+                    evolutionMin: this.getEvolutionMin(response.data),
                     activeNode: hashtagId,
                     showEvolutionError: false,
                     tweetId: response.data.tweet_id,
@@ -132,10 +133,10 @@ class CandidatesGraphConnected extends React.Component {
     changeGraph = (nodeId) => {
 
         if(this.state.mainGraph){
-            this.getTopicGraph(nodeId);
-            this.getTopicEvolution(nodeId);
+            this.getTopicGraph(nodeId, this.state.date);
+            this.getTopicEvolution(nodeId, this.state.date);
         } else {
-            this.getHashtagEvolution(nodeId);
+            this.getHashtagEvolution(nodeId, this.state.date);
         }
 
     };
@@ -146,7 +147,7 @@ class CandidatesGraphConnected extends React.Component {
             this.setState({
                 showEvolution: false,
                 mainGraph: true,
-                processedGraph: this.processGraphData(this.props.candidateGraphs),
+                processedGraph: this.state.originalGraph,
                 showEvolutionError: false,
                 tweetId: "",
                 topicName:""
@@ -159,7 +160,7 @@ class CandidatesGraphConnected extends React.Component {
         const processedNodes = currentGraph.nodes.map(node => {
             let newNode = {};
             newNode["id"] = node.id;
-            newNode["size"] = node.size / 100;
+            newNode["size"] = node.size;
             return newNode;
 
         })
@@ -194,11 +195,76 @@ class CandidatesGraphConnected extends React.Component {
             Math.max.apply(Math, data.frentedespertar));
     };
 
+    getEvolutionMin = (data) => {
+        return Math.min(Math.min.apply(Math, data.frentedetodos), Math.min.apply(Math, data.consensofederal),
+            Math.min.apply(Math, data.frentedeizquierda), Math.min.apply(Math, data.juntosporelcambio),
+            Math.min.apply(Math, data.frentedespertar));
+    };
+
+    changeDateState = () => {
+        this.setState({ openDates: !this.state.openDates });
+    };
+
+    getMainGraphWithDate = (date) => {
+        axios.get('http://elecciones2019.fi.uba.ar/topics' +
+            '?start_date=' +
+            date.clone().subtract(28, 'days').format("YYYY-MM-DD").toString() +
+            '&end_date=' +
+            // '2019-08-07')
+            //TODO veda
+            date.format("YYYY-MM-DD").toString())
+            .then((response) => {
+                this.setState({
+                    showEvolution: false,
+                    mainGraph: true,
+                    processedGraph: this.processGraphData(response.data),
+                    originalGraph: this.processGraphData(response.data),
+                    showEvolutionError: false,
+                    tweetId: "",
+                    topicName:"",
+                    date: date
+                });
+                this.forceUpdate();
+            })
+            .catch((error) => {
+                this.setState({
+                    showErrorMessage: true,
+                    graphsAreLoaded: false,
+                    errorMessage: "Hubo un error al cargar los datos, intentá nuevamente más tarde",
+                })
+            });
+    };
+
+    updateDate = (newDate) =>{
+        this.getMainGraphWithDate(newDate);
+    };
+
     render() {
         return (
             <div>
                 { !this.state.showErrorMessage ?
                     <div>
+                        <div className="-filter-card-mg-pd dates-filter
+                                                header-box white-bc-color-light">
+                            <div className="flex-row date-and-arrow">
+                                <span className="filter-text font-xmd second-font-color-dark">Elegí una fecha</span>
+                                {this.state.openDates ?
+                                    <KeyboardArrowLeft
+                                        className="date-button"
+                                        fontSize="large"
+                                        onClick={this.changeDateState}
+                                    /> :
+                                    <KeyboardArrowRight
+                                        className="date-button fifth-font-color-dark"
+                                        fontSize="large"
+                                        onClick={this.changeDateState}
+                                    />}
+                            </div>
+                            {this.state.openDates ? <SingleDatePickerWrapper
+                                date={this.state.date}
+                                updateDate={this.updateDate}/>
+                                : null}
+                        </div>
                         <div className="topic-title">
                             {!this.state.mainGraph ?
                                 <span className="topic-title-text font-lg white-bc-color-light second-font-color-dark">
@@ -249,6 +315,7 @@ class CandidatesGraphConnected extends React.Component {
                                                 <PartyLineGraphSelection
                                                     data={this.state.evolutionData}
                                                     max={this.state.evolutionMax}
+                                                    min={this.state.evolutionMin}
                                                     infoMessage={"Porcentaje de seguidores del partido que lo utilizó en cada día."}
                                                     title={"Proporción de uso por partido (%)"}
                                                 />
@@ -314,5 +381,4 @@ class CandidatesGraphConnected extends React.Component {
     }
 }
 
-const CandidatesGraph = connect(mapStateToProps, null)(CandidatesGraphConnected);
 export default CandidatesGraph;

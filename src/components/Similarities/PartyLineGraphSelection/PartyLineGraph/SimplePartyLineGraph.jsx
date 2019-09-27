@@ -3,6 +3,7 @@ import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import {g3Formatter} from "../../../../utils/graphFunctions";
+import ReferenceLine from "recharts/es6/cartesian/ReferenceLine";
 
 const COLORS = {
     "Frente De Todos": "#188bb6",
@@ -36,7 +37,12 @@ class SimplePartyLineGraph extends React.Component {
                                textAnchor="end"
                                height={80}
                         />
-                        <YAxis domain={[0, parseFloat(g3Formatter(this.props.max))]}/>
+                        <YAxis domain={[parseFloat(g3Formatter(this.props.min)), parseFloat(g3Formatter(this.props.max))]}/>
+                        <ReferenceLine x="11/08/2019" stroke="orange" strokeDasharray="3 3" label="PASO" />
+                        {this.props.showHorizontalLine
+                            ? <ReferenceLine y={0} label="Similitud media de la sociedad" stroke="orange" strokeDasharray="3 3" />
+                            : null}
+
                         <Tooltip/>
                         <Legend />
                         {this.generateLines()}

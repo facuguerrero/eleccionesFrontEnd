@@ -4,6 +4,7 @@ import {
 } from 'recharts';
 import './Graphs.scss';
 import {gFormatter, kFormatter} from "../../../utils/graphFunctions";
+import ReferenceLine from "recharts/es6/cartesian/ReferenceLine";
 
 const COLORS = {
     "mauriciomacri": "#b3a712",
@@ -43,6 +44,7 @@ class SimpleLineGraph extends React.Component {
                                textAnchor="end"
                                height={80}
                         />
+                        <ReferenceLine x="11/08/2019" stroke="orange" strokeDasharray="3 3" label="PASO" />
                         <YAxis tickFormatter={(tick) => kFormatter(tick)} />
                         <Tooltip formatter={(value) => gFormatter(value)}/>
                         <Legend />
