@@ -14,7 +14,7 @@ const COLORS = {
 };
 
 function calculateWindowSize(){
-    return window.innerWidth > 340 ? 90 : 60
+    return window.innerWidth > 370 ? 90 : 60
 }
 
 class RadarGraph extends React.Component {
