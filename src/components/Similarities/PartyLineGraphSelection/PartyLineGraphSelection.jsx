@@ -3,7 +3,6 @@ import './PartyLineGraphSelection.scss'
 import PartySelection from "./PartySelection/PartySelection";
 import PartyLineGraph from "./PartyLineGraph/PartyLineGraph";
 import PartyRadarGraph from "./PartyRadarGraph/PartyRadarGraph";
-import moment from "moment";
 import SingleDatePickerWrapper from "../../Topics/SingleDatePickerWrapper/SingleDatePickerWrapper";
 
 class PartyLineGraphSelection extends React.Component {
@@ -24,7 +23,6 @@ class PartyLineGraphSelection extends React.Component {
     };
 
     render() {
-        console.log(this.props.data)
         return (
             <div>
                 <PartySelection
@@ -46,43 +44,47 @@ class PartyLineGraphSelection extends React.Component {
                         {this.props.showRadar ?
                             <div>
                                 <div className="h"/>
-                                {/*<div className="-filter-card-mg-pd dates-filter header-box white-bc-color-light">*/}
-                                    {/*<div className="flex-row date-and-arrow">*/}
-                                        {/*<span className="filter-text font-xmd second-font-color-dark">Elegí una fecha</span>*/}
-                                        {/*<SingleDatePickerWrapper*/}
-                                            {/*date={this.props.date1}*/}
-                                            {/*updateDate={(newDate) => this.props.updateDates(1, newDate)}*/}
-                                        {/*/>*/}
-                                    {/*</div>*/}
-                                {/*</div>*/}
-                                <PartyRadarGraph
-                                    title={this.props.radarTitle + " de la fecha: " + moment().format("YYYY-MM-DD").toString()}
-                                    showInfo={true}
-                                    infoMessage={this.props.radarInfoMessage}
-                                    data={this.props.radarData1}
-                                    activeParties={this.state.activeParties}
-                                    max={this.props.maxRadar1}
-                                    min={this.props.minRadar1}
-                                />
-                                <div className="h"/>
-                                {/*<div className="-filter-card-mg-pd dates-filter header-box white-bc-color-light">*/}
-                                    {/*<div className="flex-row date-and-arrow">*/}
-                                        {/*<span className="filter-text font-xmd second-font-color-dark">Elegí una fecha</span>*/}
-                                        {/*<SingleDatePickerWrapper*/}
-                                            {/*date={this.props.date2}*/}
-                                            {/*updateDate={(newDate) => this.props.updateDates(2, newDate)}*/}
-                                        {/*/>*/}
-                                    {/*</div>*/}
-                                {/*</div>*/}
-                                <PartyRadarGraph
-                                    title={this.props.radarTitle + " de la fecha: " + moment().subtract(7, 'days').format("YYYY-MM-DD").toString()}
-                                    showInfo={true}
-                                    infoMessage={this.props.radarInfoMessage}
-                                    data={this.props.radarData2}
-                                    activeParties={this.state.activeParties}
-                                    max={this.props.maxRadar2}
-                                    min={this.props.minRadar2}
-                                />
+
+                                <div className="radars">
+
+                                    <div className="radar-container">
+                                        <div className="single-date-picker-position-1">
+                                            <SingleDatePickerWrapper
+                                                date={this.props.date1}
+                                                updateDate={(newDate) => this.props.updateDates(1, newDate)}
+                                            />
+                                        </div>
+                                        <PartyRadarGraph
+                                            title={this.props.radarTitle}
+                                            showInfo={true}
+                                            infoMessage={this.props.radarInfoMessage}
+                                            data={this.props.radarData1}
+                                            activeParties={this.state.activeParties}
+                                            max={this.props.maxRadar1}
+                                            min={this.props.minRadar1}
+                                        />
+                                    </div>
+
+                                    <div className="radar-container">
+                                        <div className="single-date-picker-position-2">
+                                            <SingleDatePickerWrapper
+                                                date={this.props.date2}
+                                                updateDate={(newDate) => this.props.updateDates(2, newDate)}
+                                            />
+                                        </div>
+                                        <PartyRadarGraph
+                                            title={this.props.radarTitle}
+                                            showInfo={true}
+                                            infoMessage={this.props.radarInfoMessage}
+                                            data={this.props.radarData2}
+                                            activeParties={this.state.activeParties}
+                                            max={this.props.maxRadar2}
+                                            min={this.props.minRadar2}
+                                        />
+                                    </div>
+
+                                </div>
+
                             </div>
                             : null
                         }

@@ -26,6 +26,7 @@
     "axios": "^0.19.0",
     "axios-https-proxy-fix": "^0.17.1",
     "copy-webpack-plugin": "^4.6.0",
+    "create-react-class": "^15.6.3",
     "d3": "^5.9.2",
     "d3-scale": "^0.7.0",
     "file-loader": "^2.0.0",

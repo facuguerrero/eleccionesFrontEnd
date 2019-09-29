@@ -26,7 +26,7 @@ class Similarities extends React.Component {
             radarData2: [],
             radarMax2:1,
             radarMin2:-1,
-            date1: moment().subtract(1, 'days'),
+            date1: moment().subtract(7, 'days'),
             date2: moment().subtract(1, 'days')
         };
     }
@@ -131,7 +131,7 @@ class Similarities extends React.Component {
         const point = data[data.length - day];
 
         radarData.push({
-            party:"Frente De \n Todos",
+            party:"Frente De Todos",
             "Frente De Todos": parseFloat(g3Formatter(point["frentedetodos-frentedetodos"])),
             "Consenso Federal": parseFloat(g3Formatter(point["frentedetodos-consensofederal"])),
             "Frente De Izquierda": parseFloat(g3Formatter(point["frentedetodos-frentedeizquierda"])),
@@ -233,7 +233,7 @@ class Similarities extends React.Component {
                                                 title={"Similitud de cada partido"}
                                                 infoMessage={"Cada curva muestra la similitud entre los seguidores de cada partido"}
                                                 showRadar={true}
-                                                radarTitle={"Gráfico de similitudes entre partidos"}
+                                                radarTitle={"Gráfico de similitudes entre partidos de la fecha:"}
                                                 radarInfoMessage={"Cada polígono representa la similitud de un partido contra los demás"}
                                                 radarData1={this.state.radarData1}
                                                 maxRadar1={this.state.radarMax1}

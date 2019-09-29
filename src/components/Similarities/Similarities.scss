@@ -3,3 +3,45 @@
   margin-right: auto;
   max-width: 1280px;
 }
+
+.single-date-picker-position-1{
+  position: absolute;
+  left: 20px;
+  margin-top: 75px;
+}
+
+.single-date-picker-position-2{
+  position: absolute;
+  left: 20px;
+  margin-top: 75px;
+}
+
+@media (min-width: 350px) {
+
+  .single-date-picker-position-1{
+    margin-top: 55px;
+  }
+
+  .single-date-picker-position-2{
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 575px) {
+
+  .single-date-picker-position-1{
+    margin-top: 35px;
+  }
+
+  .single-date-picker-position-2{
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .single-date-picker-position-2{
+    left: 665px;
+  }
+
+}
