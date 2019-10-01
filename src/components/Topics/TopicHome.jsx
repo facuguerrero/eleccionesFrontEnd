@@ -8,9 +8,6 @@ import Particles from "react-particles-js";
 import axios from "axios";
 import moment from "moment";
 
-const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
-const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
-
 class TopicHome extends React.Component {
 
     constructor(props) {
@@ -19,8 +16,6 @@ class TopicHome extends React.Component {
             graphsAreLoaded: false,
             showErrorMessage: false,
             errorMessage: "",
-            selectionMessage: topicMessage,
-            topicsShowing: true,
             data: [],
             date: moment().subtract(1, 'days')
         };
@@ -56,14 +51,6 @@ class TopicHome extends React.Component {
         this.getMainGraphData(moment().subtract(1, 'days'));
     };
 
-    changeMessage = (type) => {
-        const message = type === "topic" ? topicMessage : hashtagMessage;
-        this.setState({
-            selectionMessage: message,
-            topicsShowing: !this.state.topicsShowing,
-        })
-    };
-
     render() {
         return (
             <main className="main">
@@ -72,7 +59,6 @@ class TopicHome extends React.Component {
                         <div className="topics z-index-top">
                         {this.state.graphsAreLoaded ? <CandidatesGraph
                                 id="graph1"
-                                changeMessage={this.changeMessage}
                                 topicsShowing={this.state.topicsShowing}
                                 selectionMessage={this.state.selectionMessage}
                                 data={this.state.data}
