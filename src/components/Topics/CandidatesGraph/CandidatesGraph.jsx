@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import GenericTopic from "../GenericTopic";
 import "./CandidatesGraph.scss"
 import TopicTitleBar from "../TopicTitleBar/TopicTitleBar";
@@ -16,7 +16,10 @@ import {g3Formatter} from "../../../utils/graphFunctions";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons";
 import SingleDatePickerWrapper from "../SingleDatePickerWrapper/SingleDatePickerWrapper";
 
-class CandidatesGraph extends React.Component {
+const topicMessage = "Seleccioná un Tópico para ver sus hashtags asociados";
+const hashtagMessage = "Seleccioná un Hashtag para ver su evolución";
+
+class CandidatesGraph extends PureComponent {
 
     constructor(props) {
         super(props);
@@ -37,9 +40,19 @@ class CandidatesGraph extends React.Component {
             showTweet: false,
             showTweetError: false,
             openDates: false,
-            date: this.props.date
+            date: this.props.date,
+            selectionMessage: topicMessage,
+            topicsShowing: true
         };
     }
+
+    changeMessage = (type) => {
+        const message = type === "topic" ? topicMessage : hashtagMessage;
+        this.setState({
+            selectionMessage: message,
+            topicsShowing: !this.state.topicsShowing,
+        })
+    };
 
     getTopicGraph = (topicId, date) => {
         axios.get(
@@ -53,7 +66,7 @@ class CandidatesGraph extends React.Component {
             date.format("YYYY-MM-DD").toString()
             )
             .then((response) => {
-                this.props.changeMessage("hashtag");
+                this.changeMessage("hashtag");
                 this.setState({
                     topicName: topicId,
                     mainGraph: false,
@@ -143,7 +156,7 @@ class CandidatesGraph extends React.Component {
 
     changeToPreviousGraph = () => {
         if(!this.state.mainGraph) {
-            this.props.changeMessage("topic");
+            this.changeMessage("topic");
             this.setState({
                 showEvolution: false,
                 mainGraph: true,
@@ -220,6 +233,8 @@ class CandidatesGraph extends React.Component {
                     processedGraph: this.processGraphData(response.data),
                     originalGraph: this.processGraphData(response.data),
                     showEvolutionError: false,
+                    showTweet: false,
+                    showTweetError: false,
                     tweetId: "",
                     topicName:"",
                     date: date
@@ -345,6 +360,7 @@ class CandidatesGraph extends React.Component {
                                                                         </span>
                                                                     </div>
                                                                     <TweetEmbed
+                                                                        key={this.state.date.unix()}
                                                                         className={!this.state.showTweet ? "no-display" : ""}
                                                                         id={this.state.tweetId}
                                                                         options={{dnt: true, lang: "es"}}
