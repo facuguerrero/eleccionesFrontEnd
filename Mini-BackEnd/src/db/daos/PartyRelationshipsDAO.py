@@ -10,6 +10,6 @@ class PartyRelationshipsDAO(GenericDAO, metaclass=Singleton):
         super(PartyRelationshipsDAO, self).__init__(Mongo().get().db.party_relationships)
         self.logger = Logger(self.__class__.__name__)
 
-    def last_party_vector(self, party):
+    def last_party_vectors_data(self, party):
         documents = self.get_all({'party': party})
         return sorted(documents, key=lambda d: d['date'], reverse=True)[0]

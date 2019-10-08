@@ -10,5 +10,10 @@ class PartyRelationshipsResource(Resource):
     def get():
         vectors = dict()
         for party in ['juntosporelcambio', 'frentedetodos', 'frentedespertar', 'consensofederal', 'frentedeizquierda']:
-            vectors[party] = PartyRelationshipsDAO().last_party_vector(party)['vector']
+            data = PartyRelationshipsDAO().last_party_vectors_data(party)
+            vectors[party] = {
+                'vector': data.get('vector'),
+                'normalized_vector': data.get('normalized_vector'),
+                'user_count': data.get('users_count')
+            }
         return ResponseBuilder.build(vectors, 200)
