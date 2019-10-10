@@ -66,6 +66,11 @@ class About extends React.Component {
                                 Facultad de ingeniería, Universidad de Buenos Aires
                             </a>
                         </li>
+                        <li className="margin-about font-xmd black-font-color-light list-item-about">
+                            <a href="http://project.u-cergy.fr/~opladyn/">
+                                Este desarrollo es parte del proyecto OpLaDyn (Understanding Opinion and Language Dynamics)
+                            </a>
+                        </li>
                     </ul>
                     <div className="h"/>
                     <span className="black-font-color-light font-lg bold-text">
