@@ -14,6 +14,7 @@ class PartyRelationshipsResource(Resource):
             vectors[party] = {
                 'vector': data.get('vector'),
                 'normalized_vector': data.get('normalized_vector'),
-                'user_count': data.get('users_count')
+                'user_count': data.get('users_count'),
+                'party_count': data.get('party_count')
             }
         return ResponseBuilder.build(vectors, 200)
