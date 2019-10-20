@@ -288,7 +288,7 @@ class CandidatesGraph extends PureComponent {
                                 </span>
                                 : null
                             }
-                            <EmptySelection message={this.props.selectionMessage} />
+                            <EmptySelection topics={true} message={this.state.selectionMessage} />
                         </div>
                         <div className="main-topics">
                             <div className="top-topics flex-column followers-graph white-bc-color-light">
