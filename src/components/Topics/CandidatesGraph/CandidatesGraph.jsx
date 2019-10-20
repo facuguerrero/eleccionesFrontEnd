@@ -293,7 +293,7 @@ class CandidatesGraph extends PureComponent {
                         <div className="main-topics">
                             <div className="top-topics flex-column followers-graph white-bc-color-light">
                                 <TopicTitleBar withPrevious={false}
-                                               title={(this.props.topicsShowing ? "Tópicos" : "Hashtags") +
+                                               title={(this.state.topicsShowing ? "Tópicos" : "Hashtags") +
                                                    " En Orden de Importancia"}
                                                showInfo={false}
                                                titleSize={"font-xmd"}
@@ -304,7 +304,7 @@ class CandidatesGraph extends PureComponent {
                                 <TopicTitleBar withPrevious={true}
                                                disabled={this.state.mainGraph}
                                                showPrevious={this.changeToPreviousGraph}
-                                               title={"Grafo de " + (this.props.topicsShowing ? "Tópicos" : "Hashtags")}
+                                               title={"Grafo de " + (this.state.topicsShowing ? "Tópicos" : "Hashtags")}
                                                titleSize={"font-md"}
                                                showInfo={true}
                                                infoMessage={"Los tópicos representan un conjunto de Hashtags " +
@@ -351,7 +351,7 @@ class CandidatesGraph extends PureComponent {
                                                 </div>
                                                 {!this.state.showTweetError ?
                                                     <div>
-                                                        {!this.props.topicsShowing ?
+                                                        {!this.state.topicsShowing ?
                                                             <div>
                                                                 <div className="flex-column tweet-wrapper">
                                                                     <div className="tweet-title white-bc-color-light">
