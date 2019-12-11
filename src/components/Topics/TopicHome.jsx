@@ -17,7 +17,7 @@ class TopicHome extends React.Component {
             showErrorMessage: false,
             errorMessage: "",
             data: [],
-            date: moment().subtract(1, 'days')
+            date: moment("10/12/2019").subtract(1, 'days')
         };
     }
 
@@ -48,7 +48,7 @@ class TopicHome extends React.Component {
     };
 
     componentDidMount = () => {
-        this.getMainGraphData(moment().subtract(1, 'days'));
+        this.getMainGraphData(moment("10/12/2019").subtract(1, 'days'));
     };
 
     render() {
