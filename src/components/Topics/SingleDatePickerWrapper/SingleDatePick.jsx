@@ -28,7 +28,7 @@ export default class SingleDatePick extends React.Component {
                         onFocusChange={this.onFocusChange}
                         hideKeyboardShortcutsPanel={true}
                         enableOutsideDays={true}
-                        isOutsideRange={date => date.isBefore(moment("07/01/2019"), 'day') || date.isAfter(moment("10/12/2019").subtract(1, 'days'), 'day')}
+                        isOutsideRange={date => date.isBefore(moment("07/01/2019"), 'day') || date.isAfter(moment("12/10/2019").subtract(1, 'days'), 'day')}
                         numberOfMonths={1}
                         displayFormat="DD/MM/YYYY"
                     />

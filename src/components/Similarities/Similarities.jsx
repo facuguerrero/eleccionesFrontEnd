@@ -26,8 +26,8 @@ class Similarities extends React.Component {
             radarData2: [],
             radarMax2:1,
             radarMin2:-1,
-            date1: moment("10/12/2019").subtract(7, 'days'),
-            date2: moment("10/12/2019").subtract(1, 'days')
+            date1: moment("12/10/2019").subtract(7, 'days'),
+            date2: moment("12/10/2019").subtract(1, 'days')
         };
     }
 
@@ -64,16 +64,16 @@ class Similarities extends React.Component {
         switch (radar) {
             case 1:
                 return this.setState({
-                    radarData1: this.processRadarData(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
-                    radarMax1: this.processRadarMax(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
-                    radarMin1: this.processRadarMin(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
+                    radarData1: this.processRadarData(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
+                    radarMax1: this.processRadarMax(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
+                    radarMin1: this.processRadarMin(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
                     date1: date,
                 });
             case 2:
                 return this.setState({
-                    radarData2: this.processRadarData(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
-                    radarMax2: this.processRadarMax(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
-                    radarMin2: this.processRadarMin(this.state.originalData, moment("10/12/2019").diff(date, "days") + 1),
+                    radarData2: this.processRadarData(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
+                    radarMax2: this.processRadarMax(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
+                    radarMin2: this.processRadarMin(this.state.originalData, moment("12/10/2019").diff(date, "days") + 1),
                     date2: date,
                 })
         }
