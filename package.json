@@ -46,6 +46,7 @@
     "react-dev-utils": "^6.1.1",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8",
+    "react-ionicons": "^3.0.1",
     "react-minimal-pie-chart": "^5.0.0",
     "react-moment-proptypes": "^1.6.0",
     "react-particles-js": "^2.7.0",
