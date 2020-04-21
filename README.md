@@ -39,13 +39,13 @@ Al visualizations are developed as generic React components which include filter
 
 Each part of the analysis required particular solutions. The following sections will display some of them organized by page, and the complete project can be found [here](http://elecciones2019.fi.uba.ar/)
 
-##### Topics
+#### Topics
 
 Interactive and animated graph with layers and a secondary component to support mobile responsiveness as the graph resulted to be better appreciated in desktop view.
 
 ![topics 1](images/topics1.png)
 
-##### Parties
+#### Parties
 
 Interactive selection bar with randomized sort of elements for objectivity as it's a political analysis
 
@@ -59,7 +59,7 @@ Interactive radar chart with date selection integrated
 
 ![parties 2](images/parties4.png)
 
-##### Followers
+#### Followers
 
 Another type of an interactive selection bar with image support for the icons.
 
@@ -69,7 +69,7 @@ Interactive line chart adapted to animate when data updates occurred.
 
 ![parties 1](images/followers2.png)
 
-##### Activity
+#### Activity
 
 Interactive ring type chart.
 
