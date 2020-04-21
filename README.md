@@ -1,13 +1,14 @@
 # Twitter: Argentinian Elections 2019
 ## Software Engineering Integral Final Work
 
-This repository holds all the codebase for the BackEnd server used in the development of the application found in
-http://elecciones2019.fi.uba.ar/. All this code, as well as all the code you can find 
-[here](https://github.com/RodrigoDeRosa/eleccionesFrontEnd) was designed, coded and tested by a team integrated by 
-[Rodrigo De Rosa](https://github.com/RodrigoDeRosa), 
-[Facundo Guerrero](https://github.com/facuguerrero) and 
-[Marcos Schapira](https://github.com/marcossch) in the context of the Software Engineering integral final work at the
-University of Buenos Aires. In this readme, the basics of this application will be explained as well as how to run it.
+This repository holds all the codebase for the Front End server and the Back End API used in the development of the 
+application found in http://elecciones2019.fi.uba.ar/. 
+
+All this code, as well as all the code you can find [here](https://github.com/RodrigoDeRosa/eleccionesFrontEnd) was 
+designed, coded and tested by a team integrated by [Rodrigo De Rosa](https://github.com/RodrigoDeRosa), 
+[Facundo Guerrero](https://github.com/facuguerrero) and [Marcos Schapira](https://github.com/marcossch) in the context 
+of the Software Engineering integral final work at the University of Buenos Aires. In this readme, the basics of this 
+application will be explained as well as how to run it.
 
 ## What is this project about?
 
