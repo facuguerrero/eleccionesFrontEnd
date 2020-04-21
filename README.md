@@ -37,7 +37,7 @@ the following sections, we will talk about both of them.
 This application consumes the data generated from the [Back End API](#Back-End-API) and generates visualizations to help analyze qualitative and quantitative data and metrics.
 Al visualizations are developed as generic React components which include filters, labels and interactions. This type of approach helped as adapt to the many varied visualizations we needed and work as agile as possible. They can be adapted to any particular graphic library, in this case we used [Recharts](https://recharts.org/en-US/).
 
-Each part of the analysis required particular solutions. The following sections will display some of them organized by page, and the complete project can be found [here](http://elecciones2019.fi.uba.ar/)
+Each part of the analysis required particular solutions. The following sections will display some of them organized by page. The complete project can be found [here](http://elecciones2019.fi.uba.ar/)
 
 #### Topics
 
