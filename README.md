@@ -1,13 +1,13 @@
 # Twitter: Argentinian Elections 2019
 ## Software Engineering Integral Final Work
 
-This repository holds all the codebase for the Front End server and the Back End API used in the development of the 
-application found in http://elecciones2019.fi.uba.ar/. 
+This repository holds all the codebase for the Front End server and the Back End API used in the development of the
+application found in http://elecciones2019.fi.uba.ar/.
 
-All this code, as well as all the code you can find [here](https://github.com/facuguerrero/eleccionesBackEnd) was 
-designed, coded and tested by a team integrated by [Rodrigo De Rosa](https://github.com/RodrigoDeRosa), 
-[Facundo Guerrero](https://github.com/facuguerrero) and [Marcos Schapira](https://github.com/marcossch) in the context 
-of the Software Engineering integral final work at the University of Buenos Aires. In this readme, the basics of this 
+All this code, as well as all the code you can find [here](https://github.com/facuguerrero/eleccionesBackEnd) was
+designed, coded and tested by a team integrated by [Rodrigo De Rosa](https://github.com/RodrigoDeRosa),
+[Facundo Guerrero](https://github.com/facuguerrero) and [Marcos Schapira](https://github.com/marcossch) in the context
+of the Software Engineering integral final work at the University of Buenos Aires. In this readme, the basics of this
 application will be explained as well as how to run it.
 
 ## What is this project about?
@@ -29,8 +29,55 @@ they have in common.
 
 ## What does this repository host?
 
-In this repository, you can find both the code for the Front End React application and for the Back End API server. In
+In this repository, you can find both the code for the Front End React application and for the Back End API server. It mainly works as a dashboard with multiple types of visualizations to help user analysis of the Argentinian presidential campaign. In
 the following sections, we will talk about both of them.
+
+### Front End React server
+
+This application consumes the data generated from the [Back End API](#Back-End-API) and generates visualizations to help analyze qualitative and quantitative data and metrics.
+Al visualizations are developed as generic React components which include filters, labels and interactions. This type of approach helped as adapt to the many varied visualizations we needed and work as agile as possible. They can be adapted to any particular graphic library, in this case we used [Recharts](https://recharts.org/en-US/).
+
+Each part of the analysis required particular solutions. The following sections will display some of them organized by page, and the complete project can be found [here](http://elecciones2019.fi.uba.ar/)
+
+##### Topics
+
+Interactive and animated graph with layers and a secondary component to support mobile responsiveness as the graph resulted to be better appreciated in desktop view.
+
+![topics 1](images/topics1.png)
+
+##### Parties
+
+Interactive selection bar with randomized sort of elements for objectivity as it's a political analysis
+
+![parties 1](images/parties1.png)
+
+![parties 2](images/parties2.png)
+
+Interactive radar chart with date selection integrated
+
+![parties 1](images/parties3.png)
+
+![parties 2](images/parties4.png)
+
+##### Followers
+
+Another type of an interactive selection bar with image support for the icons.
+
+![parties 1](images/followers1.png)
+
+Interactive line chart adapted to animate when data updates occurred.
+
+![parties 1](images/followers2.png)
+
+##### Activity
+
+Interactive ring type chart.
+
+![activity 1](images/activity1.png)
+
+Interactive Stacked bar chart.
+
+![activity 1](images/activity2.png)
 
 ### Back End API
 
@@ -39,14 +86,14 @@ from the Front End application related requests, we created a simple server that
 from the database and map them to a model the Front End application could easily display.
 
 The code for this API server is [here](https://github.com/facuguerrero/eleccionesFrontEnd/tree/master/Mini-BackEnd) and
-it is a Python Flask application running with [gUnicorn](https://gunicorn.org/) for a dynamic multiple worker 
+it is a Python Flask application running with [gUnicorn](https://gunicorn.org/) for a dynamic multiple worker
 architecture in case we needed higher availability.
 
 #### Endpoints
 
 This server's endpoints were all designed to have the best possible experience while developing the Front End application;
 we wanted it to received exactly the information it needed for display so that we would only need to worry about how
-to show said data. 
+to show said data.
 
 These endpoints were:
 
@@ -59,7 +106,7 @@ conversation topic and how they were connected to each other.
 * `/dashboard` returns the home dashboard numbers; this is number of processed tweets, number of users analyzed, number
 of hashtags found and number of conversation topics computed. Some of these values were calculated only once a day and
 stored in order to make this particular response faster.
-* `/hashtag_usage/<hashtag_name>` returns data about how many supporters of each party used an specific hashtag in a 
+* `/hashtag_usage/<hashtag_name>` returns data about how many supporters of each party used an specific hashtag in a
 certain window of time.
 * `/topic_usage/<topic_id>` returns data about how many supporters of each party used at least one hashtag of an
 specific conversation topic in a certain window of time.
@@ -68,6 +115,12 @@ explained [here](https://github.com/facuguerrero/eleccionesBackEnd).
 * `/party_relationships` returns information about how polarized the user network is; a concept you can also find
 explained [here](https://github.com/facuguerrero/eleccionesBackEnd).
 * `/<path:path>` would handle all wrong paths and return an exception.
+
+## Deployment
+
+This application was running in a server owned by the University of Buenos Aires and was deployed there using the
+`deploy` script; there, we build and injected the static files so that the python back-end could serve them. The deployment was made manually via SCP due to university's restrictions.
+
 
 #### How to run it locally
 
