@@ -29,15 +29,14 @@ they have in common.
 
 ## What does this repository host?
 
-In this repository, you can find both the code for the Front End React application and for the Back End API server. It mainly works as a dashboard with multiple types of visualizations to help user analysis of the Argentinian presidential campaign. In
-the following sections, we will talk about both of them.
+In this repository, you can find both the code for the Front End React application and for the Back End API server. It mainly works as a dashboard with multiple types of visualizations to help user analysis of the Argentinian presidential campaign. In the following sections, we will talk about both of them.
 
 ### Front End React server
 
 This application consumes the data generated from the [Back End API](#Back-End-API) and generates visualizations to help analyze qualitative and quantitative data and metrics.
 Al visualizations are developed as generic React components which include filters, labels and interactions. This type of approach helped as adapt to the many varied visualizations we needed and work as agile as possible. They can be adapted to any particular graphic library, in this case we used [Recharts](https://recharts.org/en-US/).
 
-Each part of the analysis required particular solutions. The following sections will display some of them organized by page. The complete project can be found [here](http://elecciones2019.fi.uba.ar/)
+Each part of the analysis required particular solutions. The following sections will display some of them organized by page. The complete project can be found [here](http://elecciones2019.fi.uba.ar/).
 
 #### Topics
 
@@ -47,13 +46,13 @@ Interactive and animated graph with layers and a secondary component to support 
 
 #### Parties
 
-Interactive selection bar with randomized sort of elements for objectivity as it's a political analysis
+##### Interactive selection bar with randomized sort of elements for objectivity as it's a political analysis
 
 ![parties 1](images/parties1.png)
 
 ![parties 2](images/parties2.png)
 
-Interactive radar chart with date selection integrated
+##### Interactive radar chart with date selection integrated
 
 ![parties 1](images/parties3.png)
 
@@ -61,21 +60,21 @@ Interactive radar chart with date selection integrated
 
 #### Followers
 
-Another type of an interactive selection bar with image support for the icons.
+##### Another type of an interactive selection bar with image support for the icons.
 
 ![parties 1](images/followers1.png)
 
-Interactive line chart adapted to animate when data updates occurred.
+##### Interactive line chart adapted to animate when data updates occurred.
 
 ![parties 1](images/followers2.png)
 
 #### Activity
 
-Interactive ring type chart.
+##### Interactive ring type chart.
 
 ![activity 1](images/activity1.png)
 
-Interactive Stacked bar chart.
+##### Interactive Stacked bar chart.
 
 ![activity 1](images/activity2.png)
 
