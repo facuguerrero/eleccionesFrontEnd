@@ -23,7 +23,7 @@
     "@material/theme": "^1.1.0",
     "@materialr/drawer": "^2.0.2",
     "@trendmicro/react-sidenav": "^0.4.5",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "axios-https-proxy-fix": "^0.17.1",
     "copy-webpack-plugin": "^4.6.0",
     "create-react-class": "^15.6.3",
