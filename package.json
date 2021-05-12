@@ -36,7 +36,7 @@
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.10.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-cssnext": "^3.1.0",
     "prop-types": "latest",
     "react": "^16.8.6",
