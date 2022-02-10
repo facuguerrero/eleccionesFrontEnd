@@ -34,7 +34,7 @@
     "http-server": "^0.11.1",
     "lodash": "^4.17.15",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss": "^7.0.17",
     "postcss-cssnext": "^3.1.0",
